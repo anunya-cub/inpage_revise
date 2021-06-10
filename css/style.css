@@ -1,0 +1,479 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+*, body {
+	line-height: 1;
+	font-family: 'Roboto Condensed', sans-serif;
+	letter-spacing: .2px
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*******************************************************/
+
+
+
+
+
+
+/******************************** navbar ********************************/
+.navbar-one{
+	background: #115d5e;
+}
+.navbar-one a{
+	font-size: 1rem;
+	transition: .2s;
+}
+.navbar-one a:hover{
+	color: #cccbcb;
+	text-decoration: none;
+}
+nav a{
+	color: white;
+}
+.navbar-one button.button-sall{
+	font-size: .9rem;
+	font-weight: bold;
+	background: #ffa800;
+	border: none;
+	color: #115d5e;
+	border-radius: 20px;
+	transition: .2s;
+}
+.navbar-one button.button-sall:hover{
+	background: #eea005;
+}
+
+.navbar-two{
+	background: #d3d3d3;
+}
+.navbar-two a{
+	font-size: 1rem;
+	font-weight: bold;
+	color: #115d5e;
+	transition: .2s;
+}
+.navbar-two a:hover{
+	color: #000000;
+	text-decoration: none;
+}
+form p{
+	color: #115d5e;
+}
+.navbar-two button.lastest{
+	border-radius: 20px;
+}
+.navbar-two form{
+	
+}
+.navbar-two form input.form-control{
+	position: relative;
+	border-radius: 20px;
+}
+.navbar-two button.search{
+	position: absolute;
+	text-align: center;
+	width: 50px;
+	height: 33px;
+	font-size: 10px;
+	color: #b9b8b8;
+	padding: 0;
+	margin: 0;
+	right: 0;
+	top: 0;
+	border: none;
+	background: transparent;
+}
+
+
+/************************ Trending Topic & Latest News **************************/
+
+.data-time{
+	position: relative;
+}
+.data-time::before{
+	position: absolute;
+	content: "";
+    top: 0px;
+    left: 88px;
+    height: 20px;
+    border-left: 1px solid #ccc;
+}
+.data-time i{
+	margin-top: .2rem;
+}
+.section-1 h1{
+	font-size: 2rem;
+	font-weight: bolder;
+	padding-bottom: .3rem;
+	color: #115d5e;
+}
+.section-1 h2{
+	font-size: 1.5rem;
+	font-weight: bolder;
+	padding-bottom: .2rem;
+}
+.section-1 p{
+	padding-top: .2rem;
+	padding-bottom: .2rem;
+}
+.section-1 h6{
+	font-size: 1.2rem;
+	font-weight: bold;
+	
+}
+.section-1 h6 span{
+	padding-top: .2rem;
+	font-size: .7rem;
+	background: #115d5e;
+	color: white;
+	margin: 2px;
+}
+.section-1 button.btn{
+	border: 1.5px solid #115d5e;
+	margin: 2px;
+	transition: .2s;
+}
+.section-1 button.btn:hover{
+	color: white;
+	background: #f26e24;
+	border: 1.5px solid #f26e24;
+}
+.section-1 h3{
+	font-size: 1.7rem;
+	font-weight: bold;
+	padding-bottom: .4rem;
+	color: #115d5e;
+}
+
+
+
+/********************************** MLT Original **************************/
+
+.section-2 h2{
+	font-size: 1.7rem;
+	font-weight: bold;
+	color: #115d5e;
+}
+.section-2 h6{
+	font-size: .9rem;
+	font-weight: bold;
+	padding-top: .2rem;
+	padding-bottom: .2rem;
+}
+.section-2 button{
+	background: #f26e24;
+	border: #f26e24;
+	color: white;
+	transition: .2s;
+}
+.section-2 button:hover{
+	background: #ff971f;
+}
+.section-2 h6 span{
+	font-size: .7rem;
+	background: #115d5e;
+}
+.section-2 p{
+	font-size: .8rem;
+	padding: .2rem;
+}
+
+
+
+/******************************* EVENT *****************************/ 
+
+
+.section-3 h2{
+	font-size: 1.7rem;
+	font-weight: bolder;
+	color: #115d5e;
+}
+.section-3 button{
+	background: #f26e24;
+	border: #f26e24;
+	color: white;
+}
+.section-3 button:hover{
+	background: #ff971f;
+}
+button.icon-btn{
+	color: #ffa800;
+	border: 1px solid #ffa800;
+	background: white;
+}
+.section-3 p.px-3{
+	font-size: .7rem;
+	font-weight: bold;
+	line-height: 10pt;
+}
+.section-3 span{
+	padding: 4px;
+}
+.section-3 p{
+	font-size: .7rem;
+	margin-top: .6rem;
+	letter-spacing: 0px
+}
+.section-3 h6 a{
+	font-size: .1rem;
+	font-weight: bold;
+	border: 1px solid #f26e24;
+	color: #f26e24;
+	background: white;
+	letter-spacing: .5px;
+}
+.section-3 h6{
+	margin-top: .5rem;
+}
+.icon-star{
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	align-items: center;
+	margin-top: .5rem;
+	color: #a7a7a7;
+}
+
+
+
+
+/************************************* Channel *********************************/
+
+
+.section-4 h2{
+	font-size: 1.7rem;
+	font-weight: bold;
+	color: #115d5e;
+}
+.section-4 button{
+	background: #f26e24;
+	color: white;
+}
+.section-4 button:hover{
+	background: #ff971f;
+}
+.section-4 h5{
+	font-size: 1rem;
+}
+.section-4 p{
+	font-size: .8rem;
+	padding-top: .3rem;
+	padding-bottom: .3rem;
+}
+.section-4 a{
+	background: #a7a7a7;
+	font-weight: lighter;
+}
+
+.card-icon{
+	display: flex;
+}
+.heart-comment{
+	display: flex;
+	justify-content: space-between;
+	background: #999999;
+	width: 33px;
+	color: white;
+	border-radius: 20%;
+}
+.heart-comment i{
+	font-size: .7rem;
+}
+.comment{
+	font-size: .7rem;
+	display: flex;
+	align-items: center;
+}
+.heart-comment-two{
+	display: flex;
+	justify-content: space-between;
+	background: #999999;
+	width: 32px;
+	color: white;
+	border-radius: 20%;
+}
+.heart-comment-two i{
+	font-size: .7rem;	   
+}
+.icon{
+	color: white;
+	background-color: #999999;
+}
+
+.img-fluid{
+	background: url(../img/pic-b.png);
+	height: auto;
+}
+.section-4 h3{
+	font-weight: bold;
+}
+.section-4 h1{
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+
+
+
+/****************************** list ************************/
+
+
+.section-5 ul {
+	list-style: none;
+	font-size: 1rem;
+	line-height: 18pt;
+}
+.section-5 ul li a.list-one{
+	color: #115d5e;
+	font-weight: bold;
+}
+
+
+/******************************* footer ************************/
+
+footer{
+	background: #115d5e;
+}
+/****************************** reponsive *****************************/
+
+
+@media (max-width: 567px) {
+	.section-1 h2{
+		padding-top: 1rem;
+		padding-bottom: .5rem;
+	}
+	.section-1 h3{
+		padding-top: 1rem;
+	}
+	.group-1{
+		padding: 1px 6px 1px 6px;
+	}
+
+
+	.section-2 h6{
+		font-size: 1rem;
+	}
+
+
+	.section-3 i{
+		font-size: .8rem;
+		margin-top: .2rem;
+	}
+	.section-3 img{
+		margin-bottom: .5rem;
+	}
+	.section-3 p{
+		font-size: .9rem;
+	}
+	.section-3 p.px-3{
+		font-size: .9rem;
+		line-height: 18px;
+		margin-top: -.5rem;
+	}
+
+
+	.section-4 h5{
+		font-size: 1.2rem;
+	}
+	.section-4 p{
+		font-size: 1rem;
+		padding-bottom: 8px;
+	}
+	.section-4 i{
+		padding-top: 6px;
+	}
+
+	.section-5 .img-logo-button{
+		padding-top: 3rem;
+	}
+
+	footer p{
+        line-height: 18pt;
+    }
+}
+
+
+
+@media (min-width: 786px) {
+	.section-1 h3{
+		padding-top: 1rem;
+	}
+
+	
+	.section-2 h6{
+		font-size: 1rem;
+	}
+
+	
+	.section-3 p.px-3{
+		font-size: 13px;
+		line-height: 17px;
+		margin-top: -.5rem;
+	}
+	.section-3 p{
+		font-size: .9rem;
+	}
+
+
+	.section-4 h5{
+		font-size: 1.2rem;
+	}
+	.section-4 p{
+		font-size: 1rem;
+		padding-bottom: 8px;
+	}
+	.section-4 i{
+		padding-top: 6px;
+	}
+
+
+	footer p{
+        line-height: 18pt;
+    }
+
+}	
