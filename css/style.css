@@ -1,12 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
-html, body, div, span, applet, object, iframe,
+/* html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -27,13 +24,13 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+/*article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
-}
+} */
 *, body {
 	line-height: 1;
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family:'Prompt', 'Roboto Condensed', sans-serif;
 	letter-spacing: .2px
 }
 ol, ul {
@@ -63,10 +60,14 @@ table {
 /******************************** navbar ********************************/
 .navbar-one{
 	background: #115d5e;
+	padding-top: 0.3rem;
+	padding-bottom: 0.3rem;
 }
 .navbar-one a{
 	font-size: 1rem;
 	transition: .2s;
+	margin-left: 1rem;
+	margin-right: 1rem;
 }
 .navbar-one a:hover{
 	color: #cccbcb;
