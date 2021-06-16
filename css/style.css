@@ -102,7 +102,7 @@ nav a{
 	color: #000000;
 	text-decoration: none;
 }
-form p{
+form .nav-link{
 	color: #115d5e;
 }
 .navbar-two button.lastest{
@@ -140,7 +140,7 @@ form p{
 	position: absolute;
 	content: "";
     top: 0px;
-    left: 88px;
+    left: 110px;
     height: 20px;
     border-left: 1px solid #ccc;
 }
@@ -361,15 +361,16 @@ button.icon-btn{
 
 
 
-/****************************** list ************************/
+/****************************** section-list-button ************************/
 
 
-.section-5 ul {
+.section-list-button ul li {
 	list-style: none;
-	font-size: 1rem;
-	line-height: 18pt;
+  	letter-spacing: 0.5px;
+  	line-height: 18pt;
+	text-align: left;
 }
-.section-5 ul li a.list-one{
+.section-list-button ul li a.list-one{
 	color: #115d5e;
 	font-weight: bold;
 }
@@ -429,9 +430,6 @@ footer{
 		padding-top: 6px;
 	}
 
-	.section-5 .img-logo-button{
-		padding-top: 3rem;
-	}
 
 	footer p{
         line-height: 18pt;
@@ -478,3 +476,491 @@ footer{
     }
 
 }	
+
+
+
+
+
+
+
+/************************************** Sale_revise3 **********************************/
+
+
+
+/************************ section-1-sale img slie ***************************/
+
+.section-1-sale .button-medical{
+	background-color: #ff6400;
+	border: none;
+	margin-top: .5rem;
+	color: white;
+	font-size: 1rem;
+}
+.carousel-indicators li {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #9f9f9f;
+  }
+  .carousel-indicators .active {
+	background-color: #ff6400;
+  }
+
+           /***************** imgAbsoluteSlide **************/
+
+.section-1-sale {
+  position: relative;
+  background-image: url("../img/img-sale/bg_slide.png");
+  background-size: 100% auto;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+.section-1-sale .imgAbsoluteSlide {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  
+  height: auto;
+}
+
+
+/************************ secstion-2-sale SOLUTIONS & CORE SERVICES ***********************/
+
+.section-2-sale h2 {
+	color: #115d5e;
+	font-size: 2rem;
+	font-weight: bold;
+	margin-top: 5rem;
+  }
+  .section-2-sale p {
+	color: #115d5e;
+	font-size: 0.9rem;
+	letter-spacing: 0.8px;
+	line-height: 15pt;
+  }
+  .section-2-sale img {
+	width: 45px;
+	height: 50px;
+	margin-bottom: 0.5rem;
+  }
+  .section-2-sale .icon-item {
+	background-color: #f3f3f3;
+	border-radius: 20px;
+	cursor: pointer;
+  }
+  .section-2-sale h6 {
+	font-size: 0.7rem;
+	font-weight: bold;
+	color: #909090;
+  }
+  .section-2-sale .icon-item:hover {
+	background-color: #115d5e;
+  }
+  .section-2-sale .icon-text-2 i {
+	color: #909090;
+	font-size: 3rem;
+	align-items: center;
+  }
+  .section-2-sale .icon-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	grid-gap: 1rem;
+  }
+  
+
+
+/************************ section-3-sale VIRTUAL REALITY AUGMENTED REALITY & VEDIO-IMG *************************/
+
+.section-3-sale h3 {
+  color: #115d5e;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.section-3-sale p {
+  color: #115d5e;
+  font-size: 1rem;
+  letter-spacing: 0.8px;
+  line-height: 15pt;
+}
+.section-3-sale p.text-left {
+  color: #909090;
+  letter-spacing: 0.8px;
+  line-height: 15pt;
+}
+.section-3-sale ul.text-left li {
+  color: #909090;
+  letter-spacing: 0.8px;
+  line-height: 15pt;
+  list-style: disc;
+  
+}
+
+
+/************************** section-5-sale APP FEATURES ***********************/
+
+.section-5-sale h1 {
+	font-size: 1.5rem;
+	font-weight: 700;
+  }
+  .section-5-sale h2 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #fae221;
+  }
+  .section-5-sale h4 {
+	font-weight: bold;
+	letter-spacing: 0.8px;
+	line-height: 16pt;
+	font-size: 1.2rem;
+  }
+  .section-5-sale p {
+	font-size: 0.8rem;
+	color: #cac8cc;
+	letter-spacing: 0.8px;
+	line-height: 13pt;
+  }
+
+
+
+/********************** section-52-sale *************************/
+
+.section-52-sale .img-Verified {
+	height: 167px;
+	background: url(../img/img-sale/01.png);
+	background-position: center;
+	background-size: cover;
+	border-radius: 20px;
+	border: 1.5px solid #115d5e;
+  }
+  
+  .section-52-sale h1 {
+	font-size: 3.5rem;
+	font-weight: bold;
+	color: #f39b0e;
+	display: flex;
+	justify-content: flex-end;
+  }
+  .section-52-sale h3 {
+	font-size: 1.4rem;
+	color: #115d5e;
+	font-weight: 500;
+	padding-top: 3px;
+	line-height: 10pt;
+	display: flex;
+	justify-content: flex-end;
+  }
+  
+  .section-52-sale .img-cpe {
+	height: 167px;
+	background: url(../img/img-sale/02.png);
+	background-position: center;
+	background-size: cover;
+	border-radius: 20px;
+	border: 1.5px solid #115d5e;
+  }
+  .section-52-sale .img-Partnerships {
+	height: 167px;
+	background: url(../img/img-sale/03.png);
+	background-position: center;
+	background-size: cover;
+	border-radius: 20px;
+	border: 1.5px solid #115d5e;
+  }
+  
+  .section-52-sale .number-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 1rem;
+  }
+
+
+  /********************* section-6-sale Today on MLT & Press release ************************/
+
+  .section-6-sale h2 {
+	background: #115d5e;
+	font-size: 1.7rem;
+	color: white;
+	margin-bottom: 0.5rem;
+	letter-spacing: 0.6px;
+	line-height: 15pt;
+  }
+  .section-6-sale h3 {
+	font-size: 1.4rem;
+	font-weight: bold;
+	color: #333132;
+	letter-spacing: 0.8px;
+	line-height: 18pt;
+  }
+  .section-6-sale p {
+	font-size: 0.7rem;
+	color: #333132;
+	letter-spacing: 0.9px;
+	/* line-height: 14pt; */
+  }
+  .section-6-sale .data-time {
+	position: relative;
+  }
+  .section-6-sale .data-time::before {
+	position: absolute;
+	content: "";
+	top: 3px;
+	left: 159px;
+	height: 11px;
+	border-left: 1px solid #ccc;
+  }
+  .section-6-sale .data-timee {
+	position: relative;
+  }
+  .section-6-sale .data-timee::before {
+	position: absolute;
+	content: "";
+	top: 0px;
+	left: 134px;
+	height: 10px;
+	border-left: 1px solid #ccc;
+  }
+  .section-6-sale .data-timeee {
+	position: relative;
+  }
+  .section-6-sale .data-timeee::before {
+	position: absolute;
+	content: "";
+	top: 3px;
+	left: 159px;
+	height: 11px;
+	border-left: 1px solid #ccc;
+  }
+  .section-6-sale .data-timeeee {
+	position: relative;
+  }
+  .section-6-sale .data-timeeee::before {
+	position: absolute;
+	content: "";
+	top: 0px;
+	left: 134px;
+	height: 10px;
+	border-left: 1px solid #ccc;
+  }
+  
+  .section-6-sale h4 {
+	font-size: 0.9rem;
+	letter-spacing: 0.8px;
+	line-height: 13pt;
+  }
+  .section-6-sale h6 {
+	font-size: 1rem;
+	font-weight: bold;
+	letter-spacing: 0.7px;
+	line-height: 15pt;
+  }
+  
+  .section-6-sale button {
+	background: #115d5e;
+	border: none;
+	transition: 0.2s;
+  }
+  .section-6-sale button:hover {
+	background: #1d8b8d;
+  }
+  .section-6-sale button a:hover {
+	text-decoration: none;
+  }
+  .section-6-sale button a {
+	color: white;
+  }
+
+
+  /*************************** section-8-sale img-3 ************************/
+
+  .section-8-sale .img-list-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-gap: 1rem;
+  }
+  .section-8-sale .img-list-text-1 {
+	background-image: url(../img/img-sale/pic-b-1.png);
+	height: 515px;
+	object-fit: cover;
+  }
+  .section-8-sale .img-list-text-2 {
+	background-image: url(../img/img-sale/pic-b-2.png);
+	height: 515px;
+	object-fit: cover;
+  }
+  .section-8-sale .img-list-text-3 {
+	background-image: url(../img/img-sale/pic-b-3.png);
+	height: 515px;
+	object-fit: cover;
+  }
+  .section-8-sale .img-list-item p {
+	font-size: 2rem;
+	color: white;
+  }
+
+
+  /*************************** section-9-sale support **********************/
+
+  .section-9-sale .support-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	grid-gap: 0.6rem;
+  }
+  .section-9-sale .support-grid .support-item {
+	align-items: center;
+	margin: 0 auto;
+  }
+
+
+
+
+  /**************************** reposive *******************************/
+
+@media (max-width: 567px) {
+	.container {
+	  	width: 98% !important;
+	}
+  
+	.section-1-sale {
+	  	position: relative;
+	}
+
+	.carousel-indicators li {
+		width: 6px;
+		height: 6px;
+		border-radius: 50%;
+	  }
+  
+	.section-2-sale h2 {
+	  	font-size: 1.7rem;
+	}
+	.section-2-sale p {
+	  	font-size: 0.9rem;
+	}
+	.section-2-sale img {
+	  	width: 35px;
+	  	height: 40px;
+	}
+	.section-2-sale h6 {
+	  	margin-top: -0.4rem;
+	  	font-size: 0.8rem;
+	  	letter-spacing: 0.5px;
+	  	line-height: 12pt;
+	}
+  
+	.section-3-sale img {
+	}
+	.section-3-sale h3 {
+	  	font-size: 1.7rem;
+	}
+	.section-3-sale p {
+	  	font-size: 0.9rem;
+	}
+	.section-3-sale ul li {
+	  	font-size: 0.9rem;
+	}
+  
+	.section-5-sale {
+	  	margin-top: 2rem;
+	}
+	.section-5-sale h2{
+		font-size: 1.3rem;
+	}
+	.section-5-sale h4{
+		font-size: 1.1rem;
+	}
+
+	.section-52-sale h1 {
+		padding-top: 1rem;
+	  	font-size: 2.4rem;
+	}
+	.section-52-sale h3 {
+		font-size: 1rem;
+		line-height: 8pt;
+	}
+  
+	.section-6-sale h3 {
+	  	padding-top: 0.6rem;
+	}
+	.section-6-sale h2.Press {
+	  	margin-top: 2rem;
+	}
+  
+	.section-9-sale .support-grid {
+	  	display: grid;
+	  	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	  	grid-gap: 1.5rem;
+	  
+	}
+  
+	.section-list-button img {
+	  	padding-top: 3rem;
+	}
+  
+	footer p {
+	  	line-height: 18pt;
+	}
+  }
+
+
+  
+  @media (min-width: 768px) and (max-width: 991.98px) {
+	.section-1-sale h4 {
+	  	font-size: 0.8rem;
+	  	line-height: 15pt;
+	}
+	.section-1-sale button {
+	  	margin-top: 0.8rem;
+	  	font-size: 0.6rem;
+	}
+	.section-1-sale {
+	  	position: relative;
+	}
+  
+	.section-5-sale {
+	 	 margin-top: 2rem;
+	}
+  
+	.section-52-sale .number-grid {
+	  	display: grid;
+	  	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	  	grid-gap: 1rem;
+	}
+	.section-52-sale h1 {
+		padding-top: .5rem;
+	  	font-size: 2.5rem;
+	}
+	.section-52-sale h3 {
+		font-size: 1rem;
+		line-height: 8pt;
+	}
+	.section-52-sale .img-Verified {
+	  	height: 145px;
+	}
+	.section-52-sale .img-cpe {
+	  	height: 145px;
+	}
+	.section-52-sale .img-Partnerships {
+	  	height: 145px;
+	}
+  
+	.section-6-sale .Press {
+	  	margin-top: 2rem;
+	}
+	.section-8-sale .img-list-grid {
+	  	display: grid;
+	  	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	  	grid-gap: 1rem;
+	}
+	.section-8-sale p {
+	  	font-size: 1.4rem !important;
+	}
+
+	.section-list-button img {
+		padding-top: 3rem;
+	  }
+
+	footer p {
+	  	line-height: 18pt;
+	}
+  }
+  
