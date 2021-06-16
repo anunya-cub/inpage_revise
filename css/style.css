@@ -780,17 +780,14 @@ footer{
   .section-8-sale .img-list-text-1 {
 	background-image: url(../img/img-sale/pic-b-1.png);
 	height: 515px;
-	object-fit: cover;
   }
   .section-8-sale .img-list-text-2 {
 	background-image: url(../img/img-sale/pic-b-2.png);
 	height: 515px;
-	object-fit: cover;
   }
   .section-8-sale .img-list-text-3 {
 	background-image: url(../img/img-sale/pic-b-3.png);
 	height: 515px;
-	object-fit: cover;
   }
   .section-8-sale .img-list-item p {
 	font-size: 2rem;
