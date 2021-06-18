@@ -66,8 +66,9 @@ table {
 .navbar-one a{
 	font-size: 1rem;
 	transition: .2s;
-	margin-left: 1rem;
 	margin-right: 1rem;
+	margin-top: .5rem;
+	margin-left: .5rem;
 }
 .navbar-one a:hover{
 	color: #cccbcb;
@@ -88,7 +89,6 @@ nav a{
 .navbar-one button.button-sall:hover{
 	background: #f5b433;
 }
-
 
 .navbar-two{
 	background: #d3d3d3;
@@ -394,6 +394,7 @@ footer{
 
 
 @media (max-width: 567px) {
+	
 	
 	.section-1 h2{
 		padding-top: 1rem;
@@ -1269,9 +1270,9 @@ footer{
 	.rx-sharing .New-Register{
 		font-size: .7rem;
 	}
-	.rx-sharing h3{
+	/* .rx-sharing h3{
 		margin-top: 2rem;
-	}
+	} */
 }
 
 @media (min-width: 992px) {
