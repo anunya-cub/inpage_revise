@@ -13,24 +13,38 @@
 <body>
  
     <header>
-        <div class="logo fluid-top text-center m-0 p-4">
+        <div class="logo fluid-top text-center m-0 p-4 d-none d-sm-block">
             <img src="img/logo-top.png" alt="">
         </div>
     </header>
 
     <div class="navbar-one w-100">
-        <div class="container">
+        <div class="container"> 
 
             <nav class="navbar navbar-expand-lg p-0">
-                <a class="navbar-item active" href="#">HOME</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+                <div class="logo d-block d-sm-none" style="width:10px h">
+                    <img src="img/logo-top.png" alt="">
+                </div>
+
+                <button class="navbar-toggler ml-auto" 
+                    type="button" 
+                    data-toggle="collapse" 
+                    data-target="#navbarSupportedContent" 
+                    aria-controls="navbarSupportedContent" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
               
+
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
+                    <li class="navbar-item active">
+                        <a class="nav-link" href="#">HOME</a>
+                    </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">ABOUT US <span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="#">ABOUT US</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">FAQs</a>
@@ -43,9 +57,64 @@
                     </li>
                   </ul>
                   <form class="form-inline m-0 my-lg-0">
-                    <button class="button-sall btn btn-warning m-0 my-sm-0 px-3 p-0" type="submit">SALE PAGE</button>
+                    <button class="button-sall btn btn-warning m-0 my-sm-0 px-3 p-1" type="submit">SALE PAGE</button>
                   </form>
+
+<hr class="mt-4" style="border: 1px solid rgb(175, 174, 174);">
+
+                  <span class="d-block d-lg-none">
+                        <ul class="navbar-nav">
+                          <li class="nav-item active">
+                            <a class="nav-link" href="#">MEDICAL</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">MEDICINE</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">MLT ORIGINAL</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">PRESS RELEASE</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">JOURNAL</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">LIFESTYLE</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">CPD</a>
+                          </li>
+                        </ul>
+          
+                        <form class="form-inline my-0 my-lg-0">
+                            <div class="nav-item">
+                                <p class="nav-link text-white">Sort by</p>
+                            </div>
+        
+                            <div class="btn-group w-100" role="group">
+                                <button id="btnGroupDrop1" 
+                                    type="button" 
+                                    class="lastestbtn-block btn-light dropdown-toggle text-secondary p-1 px-2 w-100"
+                                    style="background: #ffa800; border: 1px solid #ffa800; border-radius:5px" 
+                                    data-toggle="dropdown" 
+                                    aria-haspopup="true" 
+                                    aria-expanded="false">
+                                  Lastest
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                  <a class="dropdown-item" href="#">Dropdown link</a>
+                                  <a class="dropdown-item" href="#">Dropdown link</a>
+                                </div>
+                              </div> &nbsp;&nbsp;
+                            
+                            <input class="form-control mr-sm-2 p-0 px-3 w-100" type="search" placeholder="Search" aria-label="Search">
+                            <!-- <button class="search btn" type="submit"><i class="fa fa-search"></i></button> -->
+                        </form>
+                     </span>
+
                 </div>
+
               </nav>
 
         </div>
@@ -57,9 +126,15 @@
     <div class="navbar-two">
         <div class="container">
 
-          <nav class="navbar navbar-expand-lg p-0">
+          <nav class="navbar navbar-expand-lg p-0 d-none d-lg-block">
               <a class="navbar-item" href="#">TOP</a>
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupported" aria-controls="navbarSupported" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler" 
+                type="button" 
+                data-toggle="collapse" 
+                data-target="#navbarSupported" 
+                aria-controls="navbarSupported" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon "></span>
               </button>
             
@@ -152,7 +227,7 @@
                         <div class="col-lg-9 col-md-9 col-sm-8 col-8">
                             <h6 class="m-0">Online social therapy helps prevent relapse in patients with first-episode</h6>
                             <p class="m-0 text-dark">A novel digital peer-support intervention can help sustain the benefits of specialist first-episode psychosis services, a study has found.</p>
-                            <p class="m-0 text-muted">4 hours ago</p>
+                            <p class="hours-ago m-0">4 hours ago</p>
                             <h6><span class="badge px-2">CDP:CPE</span></h6>
                         </div>
                     </div>
@@ -164,7 +239,7 @@
                         <div class="col-lg-9 col-md-9 col-sm-8 col-8">
                             <h6 class="m-0">Online social therapy helps prevent relapse in patients with first-episode</h6>
                             <p class="m-0 text-dark">A novel digital peer-support intervention can help sustain the benefits of specialist first-episode psychosis services, a study has found.</p>
-                            <p class="m-0 text-muted">4 hours ago</p>
+                            <p class="hours-ago m-0">4 hours ago</p>
                             <h6><span class="badge px-2">CDP:CPE</span></h6>
                         </div>
                     </div>
@@ -176,7 +251,7 @@
                         <div class="col-lg-9 col-md-9 col-sm-8 col-8">
                             <h6 class="m-0">Online social therapy helps prevent relapse in patients with first-episode</h6>
                             <p class="m-0 text-dark">A novel digital peer-support intervention can help sustain the benefits of specialist first-episode psychosis services, a study has found.</p>
-                            <p class="m-0 text-muted">4 hours ago</p>
+                            <p class="hours-ago m-0">4 hours ago</p>
                             <h6><span class="badge px-2">CDP:CPE</span></h6>
                         </div>
                     </div>
@@ -188,7 +263,7 @@
                         <div class="col-lg-9 col-md-9 col-sm-8 col-8">
                             <h6 class="m-0">Online social therapy helps prevent relapse in patients with first-episode</h6>
                             <p class="m-0 text-dark">A novel digital peer-support intervention can help sustain the benefits of specialist first-episode psychosis services, a study has found.</p>
-                            <p class="m-0 text-muted">4 hours ago</p>
+                            <p class="hours-ago m-0">4 hours ago</p>
                             <h6><span class="badge px-2">CDP:CPE</span></h6>
                         </div>
                     </div>
@@ -220,7 +295,7 @@
                                 <div class="col-9 m-0">
                                     <h6 class="m-0">Online social therapy</h6>
                                     <p class="m-0">A novel digital peer-support sustain the benefits of a study has found.</p>
-                                    <p class="m-0 text-muted">4 hours ago</p>
+                                    <p class="hours-ago m-0">4 hours ago</p>
                                     <h6><span class="badge badge-info px-2">CPD:CPE</span></h6>
                                 </div>
                             </div>
@@ -233,7 +308,7 @@
                                 <div class="col-9">
                                     <h6 class="m-0">Online social therapy</h6>
                                     <p class="m-0">A novel digital peer-support sustain the benefits of a study has found.</p>
-                                    <p class="m-0 text-muted">4 hours ago</p>
+                                    <p class="hours-ago m-0">4 hours ago</p>
                                     <h6><span class="badge badge-info px-2">CPD:CPE</span></h6>
                                 </div>
                             </div>
@@ -246,7 +321,7 @@
                                 <div class="col-9">
                                     <h6 class="m-0">Online social therapy</h6>
                                     <p class="m-0">A novel digital peer-support sustain the benefits of a study has found.</p>
-                                    <p class="m-0 text-muted">4 hours ago</p>
+                                    <p class="hours-ago m-0">4 hours ago</p>
                                     <h6><span class="badge badge-info px-2">CPD:CPE</span></h6>
                                 </div>
                             </div>
@@ -259,7 +334,7 @@
                                 <div class="col-9">
                                     <h6 class="m-0">Online social therapy</h6>
                                     <p class="m-0">A novel digital peer-support sustain the benefits of a study has found.</p>
-                                    <p class="m-0 text-muted">4 hours ago</p>
+                                    <p class="hours-ago m-0">4 hours ago</p>
                                     <h6><span class="badge badge-info px-2">CPD:CPE</span></h6>
                                 </div>
                             </div>
@@ -352,20 +427,20 @@
 
                     <div class="col-sm-12 col-md-6 col-lg-3 my-3 bg-white p-3">
                         <div class="row">
-                            <div class="col-2">
+                            <div class="col-1 col-sm-1 col-md-2 col-lg-2 col-xl-2">
                                 <img src="img/logo-HP.png" alt="" width="50px">
                             </div>
-                            <div class="col-10">
+                            <div class="col-11 col-sm-11 col-md-10 col-lg-10 col-xl-10">
                                 <p class="px-3">งานประชุมวิชาการและประชุมใหญ่สามัญประจำปี 2564 สมาคมเภสัชกรรมโรงพยาบาล (ประเทศไทย) เรื่อง "PHARMACIST AND"</p>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-2 col-sm-2 col-md-2 col-lg-3 col-xl-3">
                                 <h6><a class="btn btn-outline p-1" href="">Schedule</a></h6>
                                 <h6><a class="btn btn-outline p-1" href="">Place</a></h6>
                                 <h6><a class="btn btn-outline p-1" href="">Speaker</a></h6>
                             </div>
-                            <div class="col-9">
+                            <div class="col-10 col-sm-10 col-md-10 col-lg-9 col-xl-9">
                                 <p>08:00 - 16:30 (28/05/2021) - 29/05/2021</p>
                                 <p>สมาคมเภสัชกรรมโรงพยาบาล</p>
                                 <p>สมาคมเภสัชกรรมโรงพยาบาล (ประเทศไทย)</p>
@@ -383,21 +458,21 @@
 
                     <div class="col-sm-12 col-md-6 col-lg-3 my-3 bg-white p-3">
                         <div class="row">
-                            <div class="col-2">
+                            <div class="col-1 col-sm-1 col-md-2 col-lg-2 col-xl-2">
                                 <img src="img/logo-HP.png" alt="" width="50px">
                             </div>
-                            <div class="col-10">
+                            <div class="col-11 col-sm-11 col-md-10 col-lg-10 col-xl-10">
                                 <p class="px-3">งานประชุมวิชาการและประชุมใหญ่สามัญประจำปี 2564 สมาคมเภสัชกรรมโรงพยาบาล (ประเทศไทย) เรื่อง "PHARMACIST AND"</p>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-2 col-sm-2 col-md-2 col-lg-3 col-xl-3">
                                 <h6><a class="btn btn-outline p-1" href="">Schedule</a></h6>
                                 <h6><a class="btn btn-outline p-1" href="">Place</a></h6>
                                 <h6><a class="btn btn-outline p-1" href="">Speaker</a></h6>
                             </div>
-                            <div class="col-9">
+                            <div class="col-10 col-sm-10 col-md-10 col-lg-9 col-xl-9">
                                 <p>08:00 - 16:30 (28/05/2021) - 29/05/2021</p>
                                 <p>สมาคมเภสัชกรรมโรงพยาบาล</p>
                                 <p>สมาคมเภสัชกรรมโรงพยาบาล (ประเทศไทย)</p>
@@ -415,20 +490,20 @@
 
                     <div class="col-sm-12 col-md-6 col-lg-3 my-3 bg-white p-3">
                         <div class="row">
-                            <div class="col-2">
+                            <div class="col-1 col-sm-1 col-md-2 col-lg-2 col-xl-2">
                                 <img src="img/logo-HP.png" alt="" width="50px">
                             </div>
-                            <div class="col-10">
+                            <div class="col-11 col-sm-11 col-md-10 col-lg-10 col-xl-10">
                                 <p class="px-3">งานประชุมวิชาการและประชุมใหญ่สามัญประจำปี 2564 สมาคมเภสัชกรรมโรงพยาบาล (ประเทศไทย) เรื่อง "PHARMACIST AND"</p>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-2 col-sm-2 col-md-2 col-lg-3 col-xl-3">
                                 <h6><a class="btn btn-outline p-1" href="">Schedule</a></h6>
                                 <h6><a class="btn btn-outline p-1" href="">Place</a></h6>
                                 <h6><a class="btn btn-outline p-1" href="">Speaker</a></h6>
                             </div>
-                            <div class="col-9">
+                            <div class="col-10 col-sm-10 col-md-10 col-lg-9 col-xl-9">
                                 <p>08:00 - 16:30 (28/05/2021) - 29/05/2021</p>
                                 <p>สมาคมเภสัชกรรมโรงพยาบาล</p>
                                 <p>สมาคมเภสัชกรรมโรงพยาบาล (ประเทศไทย)</p>
@@ -446,20 +521,20 @@
 
                     <div class="col-sm-12 col-md-6 col-lg-3 my-3 bg-white p-3">
                         <div class="row">
-                            <div class="col-2">
+                            <div class="col-1 col-sm-1 col-md-2 col-lg-2 col-xl-2">
                                 <img src="img/logo-HP.png" alt="" width="50px">
                             </div>
-                            <div class="col-10">
+                            <div class="col-11 col-sm-11 col-md-10 col-lg-10 col-xl-10">
                                 <p class="px-3">งานประชุมวิชาการและประชุมใหญ่สามัญประจำปี 2564 สมาคมเภสัชกรรมโรงพยาบาล (ประเทศไทย) เรื่อง "PHARMACIST AND"</p>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-2 col-sm-2 col-md-2 col-lg-3 col-xl-3">
                                 <h6><a class="btn btn-outline p-1" href="">Schedule</a></h6>
                                 <h6><a class="btn btn-outline p-1" href="">Place</a></h6>
                                 <h6><a class="btn btn-outline p-1" href="">Speaker</a></h6>
                             </div>
-                            <div class="col-9">
+                            <div class="col-10 col-sm-10 col-md-10 col-lg-9 col-xl-9">
                                 <p>08:00 - 16:30 (28/05/2021) - 29/05/2021</p>
                                 <p>สมาคมเภสัชกรรมโรงพยาบาล</p>
                                 <p>สมาคมเภสัชกรรมโรงพยาบาล (ประเทศไทย)</p>
