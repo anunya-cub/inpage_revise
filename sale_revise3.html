@@ -931,10 +931,13 @@
             <a href="#" class="btn p-1 px-4 mt-3 float-right mb-4">more</a>
 
             <div class="btnPageTodayonMLT text-center">
-              <a class="btn active p-0" onclick="changeSlide('boxToday')"></a>
-              <a class="btn p-0" onclick="changeSlide('boxEvent')"></a>
-              <a class="btn p-0" onclick="changeSlide('boxChanel')"></a>
-              <a class="btn p-0" onclick="changeSlide('boxBoard')"></a>
+              <a
+                class="btn active p-0"
+                onclick="changeSlide('boxToday', this)"
+              ></a>
+              <a class="btn p-0" onclick="changeSlide('boxEvent', this)"></a>
+              <a class="btn p-0" onclick="changeSlide('boxChanel', this)"></a>
+              <a class="btn p-0" onclick="changeSlide('boxBoard', this)"></a>
             </div>
           </div>
 
@@ -1373,5 +1376,5 @@
     src="https://kit.fontawesome.com/51d227fab0.js"
     crossorigin="anonymous"
   ></script>
-  <script type="text/script" src="./js/javascript.js"></script>
+  <script src="./js/javascript.js"></script>
 </html>

@@ -15,7 +15,9 @@ $(".accordion-toggle").click(function (e) {
   }
 });
 
-
-function changeSlide(data){
-  
+function changeSlide(data, e) {
+  $(".listBoxSlideNews").addClass("d-none");
+  $(".btnPageTodayonMLT a.btn").removeClass("active");
+  $(`.` + data).removeClass("d-none");
+  $(e).addClass("active");
 }
