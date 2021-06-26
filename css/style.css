@@ -787,7 +787,11 @@ header
 }
 
 /************** Carousel ******************/
-
+.sectionCarousel{
+  background-image: url(../img/img-sale/BgSlide.jpeg);
+  background-position: bottom center;
+  background-size: cover;
+}
 .sectionCarousel .carousel-caption {
   background-image: url(../img/img-sale/sale_revise_bg_white2.png);
   background-repeat: no-repeat;
@@ -1783,6 +1787,10 @@ header
   }
   header .MyPageSignOut {
     display: none;
+  }
+  
+  .Carousel{
+    z-index: -999;
   }
 }
 
