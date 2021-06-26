@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous"
+  />
+        
+<link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body>
+ 
+    <header>
+            <div class="BennerSitemap">
+                <h3 class="textSitemapImg p-2">Sitemap</h3>
+            </div>
+    </header>
+
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" type="text/css" >
+    
+        <ul class="accordion">
+            <li class="accordion-chevron">
+              <a class="accordion-toggle" href="javascript:void(0);"><i class="fa fa-chevron-down"></i>Master Page</a>
+              <ul class="accordion-inner">
+                <!-- 1st nested -->
+                <li class="accordion-chevron">
+                    <a class="accordion-toggle" href="#"><i class="fa fa-chevron-down"></i><xmp>Add to <head> tag</xmp></a>
+                    <div class="accordion-inner">
+                        <p><xmp style="font-family: Arial;">Add to <head> tag on Master page.</xmp></p>
+                        <xmp>
+          <!-- JQuery for animation -->          
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js" type="text/css" />
+          <!-- Google for fonts -->
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700" type="text/css" />
+          <!-- Icons for Chevron -->
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" type="text/css" />
+                          </xmp>
+                      </div>
+                  </li>
+                  <!-- 2nd nested, same level -->
+                  <li class="accordion-chevron">
+                  <a class="accordion-toggle" href="#"><i class="fa fa-chevron-down"></i><xmp>Add to <body> tag</xmp></a>
+                  <div class="accordion-inner">
+                    <p><xmp style="font-family: Arial;">Add jquery script before end of <body> tag on Master page.</xmp></p>
+                  <xmp>
+                  <!-- accordion sections -->
+                  <script type="text/javascript">
+                      /*<![CDATA[*/
+                      $('.accordion-toggle').click(function(e) {
+                      e.preventDefault();  
+                      $("a:first-of-type").removeClass('chev');
+              
+                      var $this = $(this);
+                      if ($this.next().hasClass('show')) {
+                      $this.next().removeClass('show');
+                      $this.next().slideUp(350);
+                      } else {
+                      $this.parent().parent().find('li .accordion-inner').removeClass('show');
+                      $this.parent().parent().find('li .accordion-inner').slideUp(350);
+                      $this.toggleClass('chev');
+                      $this.next().toggleClass('show');
+                      $this.next().slideToggle(350);
+                      }
+                      });
+                      /*]]>*/
+                  </script>
+                        </xmp>
+                </p>
+                  </div>
+                </li>
+          
+              </ul>
+            </li>
+            <!-- section 2 -->
+          
+                  <li class="accordion-chevron">
+                    <a class="accordion-toggle" href="#"><i class="fa fa-chevron-down"></i>Target Configuration</a>
+                    <div class="accordion-inner">
+                      <p>To ensure that Flare recognizes FontAwesome and other custom links in the Master page header, enable Allow Local Stylesheets check box in the project. To enable:</p>
+                      <p style="font-family: 'Courier New';">Project Organizer -> Targets -> [project target file]</p>
+                      <p>In the target file, in the General tab, check Allow Local Stylesheets</p>
+                    </div>
+                  </li>
+          
+            
+            
+            <li class="accordion-chevron">
+              <a class="accordion-toggle" href="javascript:void(0);"><i class="fa fa-chevron-down"></i>CSS</a>
+              <ul class="accordion-inner">
+                <p>Add the following code to your CSS.</p>
+                  <xmp>
+          .accordion {
+              box-sizing: border-box;
+              font-weight: 300;
+              /* Space section box from left margin*/
+              padding: 0;
+              /* Hide bullets to the left of section box */
+              list-style: none;
+          }
+          </xmp>
+          
+          
+          
+              </ul>
+            </li>
+            
+            <li class="accordion-chevron">
+              <a class="accordion-toggle" href="#"><i class="fa fa-chevron-down"></i>XML Code</a>
+              <ul class="accordion-inner">
+                <p>A single level or base level can contain headings, text and lists.</p>
+                <xmp>
+                <ul class="accordion">    <!-- Wrapper needed for accordion to work -->
+                  <li class="accordion-chevron">
+                    <a class="accordion-toggle" href="#"><i class="fa fa-chevron-down"></i>Toggle Section Title</a>
+                    <div class="accordion-inner">
+                      <p>Note: Use of <div> tag for -inner.</p>
+                    </div>
+                  </li>
+                </ul>
+                </xmp>
+                <p>Nested sections are added after each -inner declaration. A nested section consists of:</p>
+                 <xmp>
+                <ul class="accordion">    <!-- Wrapper needed for accordion to work -->
+                <li class="accordion-chevron">
+                  <a class="accordion-toggle" href="#"><i class="fa fa-chevron-down"></i>Toggle Section Title</a>
+                  <ul class="accordion-inner">
+                      <li class="accordion-chevron">
+                      <a class="accordion-toggle" href="#"><i class="fa fa-chevron-down"></i>Toggle Section Title</a>
+                        <div class="accordion-inner">
+                          <p>Note: Parent -inner tag is UL and child -inner tag is DIV</p>
+                        </div>
+                      </li>
+                  </ul>
+                </li>
+                </ul>
+                </xmp>
+          
+              </ul>
+            </li>
+            
+            <li class="accordion-chevron">
+              <a class="accordion-toggle" href="#"><i class="fa fa-chevron-down"></i>3 Level Nested Example</a>
+              <ul class="accordion-inner">
+                <p>1st level paragraph example.</p>
+            
+                
+                
+                    <li class="accordion-chevron">
+                      <a class="accordion-toggle" href="#">
+                          <i class="fa fa-chevron-down"></i>2nd level Example 1 of nested element
+                      </a>
+                          <ul class="accordion-inner">
+                             <p>2nd level paragaph example</p>
+                             <p>Technically any number of nested elements can be added.</p>
+                    
+                                  <li class="accordion-chevron">
+                                    <a class="accordion-toggle" href="#" >
+                                      <i class="fa fa-chevron-down"></i>3rd level nested element
+                                    </a>
+                                      <div class="accordion-inner">
+                                          <p>As long as the inner element has inner as one of its classes then it will be toggled.</p>
+                                          <div>
+                                            <ul style="list-style-type: square;">
+                                              <li>Bullet 1</li>
+                                              <li>Bullet 2</li>
+                                             </ul>
+                                          </div>
+                                          <p>3rd level paragraph text.</p>
+                                    </div>
+                                 </li>
+                    
+                        </ul>
+                  </li>
+                    <li class="accordion-chevron">
+                      <a class="accordion-toggle" href="#">
+                          <i class="fa fa-chevron-down"></i>2nd level Example 2 of nested element
+                      </a>
+                          <ul class="accordion-inner">
+                             <p>2nd level paragaph example</p>
+                             <p>Technically any number of nested elements can be added.</p>
+                    
+                                  <li class="accordion-chevron">
+                                    <a class="accordion-toggle" href="#" >
+                                      <i class="fa fa-chevron-down"></i>3rd level nested element
+                                    </a>
+                                      <div class="accordion-inner">
+                                          <p>As long as the inner element has inner as one of its classes then it will be toggled.</p>
+                                          <div>
+                                            <ul style="list-style-type: square;">
+                                              <li>Bullet 1</li>
+                                              <li>Bullet 2</li>
+                                             </ul>
+                                          </div>
+                                          <p>3rd level paragraph text.</p>
+                                    </div>
+                                 </li>
+                    
+                        </ul>
+                  </li>      
+          
+                <p>1st level paragraph text.</p>
+          
+              </ul>
+            </li>
+          
+          
+          
+          <!-- End of Accordion  -->
+          </ul>
+          
+    
+    
+</body>
+
+<script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://kit.fontawesome.com/51d227fab0.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="stylesheet" href="js/javascript.js"></script>
+
+</html>
