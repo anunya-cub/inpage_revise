@@ -67,24 +67,28 @@ header .MyPageSignOut {
 }
 header .MyPageSignOut img {
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   border-radius: 100px;
-  margin-top: -2.3rem;
-  right: 360px;
+  margin-top: -1.5rem;
+  right: 310px;
 }
 header .MyPageSignOut a {
   position: absolute;
-  font-size: 16px;
+  font-size: 12px;
   color: #115d5e;
   font-weight: 500;
-  top: 50px;
-  margin-right: 270px;
+  top: 60px;
+  margin-right: 245px;
+  text-decoration: none;
+  transform: .2s;
+}
+header .MyPageSignOut a:hover{
+  color: #991a26;
 }
 header .MyPageSignOut .MyPage {
-  margin-right: 185px;
+  margin-right: 180px;
 }
-
 .navbar-one {
   background: #115d5e;
 }
@@ -93,6 +97,7 @@ header .MyPageSignOut .MyPage {
   transition: 0.2s;
   margin-right: 1rem;
   margin-left: 0.5rem;
+  padding: 0!important;
 }
 .navbar-one a:hover {
   color: #cccbcb;
@@ -223,7 +228,8 @@ nav a {
   font-weight: bold;
   color: #115d5e;
   transition: 0.2s;
-  /* padding: 1rem; */
+  margin-right: 1.2rem;
+  padding: 0!important;
 }
 .navbar-two a:hover {
   color: #000000;
@@ -243,6 +249,14 @@ form .nav-link {
   border-radius: 20px;
   width: 200px;
 }
+.navbar-one .navbar-collapse ul li {
+  margin: 0.4em;
+}
+.navbar-two .navbar-collapse ul li {
+  margin: 0;
+}
+
+
 .navbar-two button.search {
   position: absolute;
   text-align: center;
@@ -253,7 +267,7 @@ form .nav-link {
   padding: 0;
   margin: 0;
   right: 0;
-  top: 4px;
+  top: 2px;
   border: none;
   background: transparent;
 }
@@ -275,13 +289,15 @@ form .nav-link {
 
 .data-time {
   position: relative;
+  display:flex;
+
 }
 .data-time::before {
   position: absolute;
   content: "";
-  top: 0px;
+  top: 4px;
   left: 110px;
-  height: 20px;
+  height: 16px;
   border-left: 1px solid #ccc;
 }
 .data-time i {
@@ -308,16 +324,27 @@ form .nav-link {
   color: #9d9d9d;
   font-style: oblique;
 }
-.section-1 h6 {
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-.section-1 h6 span {
-  padding-top: 0.2rem;
-  font-size: 0.7rem;
+
+.section-1 .CDPCPE{
   background: #115d5e;
   color: white;
-  margin: 2px;
+  text-decoration: none;
+  font-size: 10px;
+  border-radius: 3px;
+  padding: 2px 6px!important;
+}
+.section-1 .covid-19{
+  margin-left: .5rem;
+  background: #9d9d9d;
+  transform: .2s;
+  color: white;
+  text-decoration: none;
+  font-size: 10px;
+  border-radius: 3px;
+  padding: 2px 6px!important;
+}
+.section-1 .covid-19:hover{
+  background: #115d5e;
 }
 .section-1 button.btn {
   border: 1.5px solid #115d5e;
@@ -335,6 +362,15 @@ form .nav-link {
   padding-bottom: 0.4rem;
   color: #115d5e;
 }
+.badgeTextCovid-19{
+  margin: 0 !important;
+  padding: 0;
+}
+.Textdetalls-Moderna p{
+  margin-bottom: 3px;
+  padding: 0;
+}
+
 
 /********************************** MLT Original **************************/
 
@@ -431,8 +467,9 @@ button.icon-btn {
   margin-right: 5px;
 }
 .section-3 .row-card-event .title-card {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
+  line-height: 16px;
 }
 .section-3 .row-card-event .box-type-event {
   width: 50px;
@@ -482,7 +519,6 @@ button.icon-btn {
   background: #a7a7a7;
   font-weight: lighter;
 }
-
 .card-icon {
   display: flex;
   justify-content: flex-start;
@@ -528,6 +564,9 @@ button.icon-btn {
 .section-4 h1 {
   font-size: 2rem;
   font-weight: 500;
+}
+.section-4 .card-text{
+  font-size: 14px;
 }
 
 /****************************** section-list-button ************************/
@@ -1032,15 +1071,16 @@ header
 
 /*************** Today on MLT Press release **************/
 
-.sectionTodayPress .btnPageTodayonMLT button {
+.sectionTodayPress .btnPageTodayonMLT a {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   margin-top: 5rem;
   margin-bottom: 2rem;
   position: relative;
+  background-color: #96bbd3;
 }
-.sectionTodayPress .btnPageTodayonMLT button:hover {
+.sectionTodayPress .btnPageTodayonMLT a:hover, .sectionTodayPress .btnPageTodayonMLT a.active {
   background-color: #115d5e;
 }
 .sectionTodayPress h1 {
@@ -1586,8 +1626,9 @@ header
     margin-left: 0;
   }
   .ASECFrontier form::before {
-    display: none;
+   display:none;
   }
+ 
 }
 
 @media screen and (max-width: 991.98px) {
@@ -2150,19 +2191,20 @@ header
   background-size: cover;
   max-width: 100%;
   width: 100%;
-  height: 40px;
+  height: 170px;
   object-fit: cover;
   margin: 0;
   padding: 0;
-  position: relative;
-}
+} 
 .textSitemapImg {
   position: absolute;
   color: #115d5e;
-  margin-left: 1rem;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 26px;
+  font-weight: 500;
+  margin-top: 8rem;
+  text-decoration: underline;
 }
+
 
 .accordion {
   /* box-sizing: border-box; */
@@ -2186,7 +2228,7 @@ ul .accordion-inner {
 }
 
 /* Spacing between sections */
-li {
+.accordion ul li {
   margin: 0.7em 0;
 }
 
@@ -2194,34 +2236,34 @@ li {
 li a.accordion-toggle {
   text-decoration: none;
   color: inherit;
-  margin-left: 1rem;
-  width: 90%;
+  width: 100%;
   display: block;
-  background: rgba(0, 0, 0, 0.78);
-  color: #fefefe;
+  background: #e6e6e6;
+  color: #6b7c8c;
   padding: 0.45em;
   transition: background 0.3s ease;
   -webkit-border-radius: 7px;
   -moz-border-radius: 7px;
   border-radius: 7px;
+  font-weight: 500;
 }
 
 /* Hover effect on a sections */
 li a.accordion-toggle:hover {
-  background: rgba(0, 0, 0, 0.9);
+  background: #96bbd3;
+  color: white;
 }
 
 .accordion a .fa-chevron-down {
   position: relative;
   /* green, top level  */
-  color: #29d909;
+  color: #6b7c8c;
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
-  transition: all 0.4s ease;
+  transition: color all 0.4s ease;
 }
-
 .accordion a.chev .fa-chevron-down {
-  color: #c63b4d;
+  color: #f17784;
 }
 
 .accordion a .fa-chevron-down {
