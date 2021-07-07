@@ -16,16 +16,18 @@
   </head>
   <body>
     <header>
-      <div class="logo fluid-top text-center m-0 p-3 d-none d-sm-block">
-        <img class="imgLogoMedical" src="img/logo-top.png" alt="" />
-      </div>
-      <div class="MyPageSignOut">
-        <img
-          src="https://f.ptcdn.info/651/065/000/pwqxxro11zd1sdKXvgg-o.jpg"
-          alt=""
-        />
-        <a class="MyPage" href="#">MY PAGE</a>
-        <a class="SignOut" href="#">SIGN OUT</a>
+      <div class="container">
+        <div class="logo fluid-top text-center m-0 p-3 d-none d-sm-block">
+          <img class="imgLogoMedical" src="img/logo-top.png" alt="" />
+        </div>
+        <div class="MyPageSignOut">
+          <!-- <img 
+            src="https://f.ptcdn.info/651/065/000/pwqxxro11zd1sdKXvgg-o.jpg"
+            alt=""
+          /> -->
+          <a class="MyPage" href="#">Register</a>
+          <a class="SignOut" href="#">Sign in</a>
+        </div>
       </div>
     </header>
 
@@ -59,34 +61,34 @@
             <i class="navbar-toggler-icon fas fa-bars"></i>
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse navbarBx" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-              <li class="navbar-item active">
+              <li class="nav-item navitem active">
                 <a class="nav-link" href="#">HOME</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">ABOUT US</a>
+              <li class="nav-item navitem">
+                <a class="nav-link navitem" href="#">NEWS</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">FAQs</a>
-              </li>
-            </ul>
-
-            <ul class="navbar-nav ml-auto">
-              <li class="navbar-item active">
-                <a class="nav-link" href="#">NEWS</a>
-              </li>
-              <li class="nav-item">
+              <li class="nav-item navitem">
                 <a class="nav-link" href="#">EVENT</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item navitem">
                 <a class="nav-link" href="#">CHANNEL</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item navitem">
                 <a class="nav-link" href="#">BOARD</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item navitem">
                 <a class="nav-link" href="#">CONTACT</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+              
+              <li class="nav-item navitem">
+                <a class="nav-link" href="#">ABOUT US</a>
+              </li>
+              <li class="nav-item navitem">
+                <a class="nav-link" href="#">FAQs</a>
               </li>
             </ul>
 
@@ -108,7 +110,7 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#">TOP</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                   <a class="nav-link" href="#">MEDICAL</a>
                 </li>
                 <li class="nav-item">
@@ -137,7 +139,7 @@
                 </li>
               </ul>
 
-              <form class="form-inline my-0 my-lg-0">
+              <!-- <form class="form-inline my-0 my-lg-0">
                 <div class="nav-item mb-2">
                   <p class="nav-link text-white">Sort by</p>
                 </div>
@@ -179,8 +181,8 @@
                   placeholder="Search"
                   aria-label="Search"
                 />
-                <!-- <button class="search btn" type="submit"><i class="fa fa-search"></i></button> -->
-              </form>
+                <!-- <button class="search btn" type="submit"><i class="fa fa-search"></i></button> 
+              </form> -->
             </span>
           </div>
         </nav>
@@ -203,8 +205,8 @@
           </button>
 
           <div class="collapse navbar-collapse p-1" id="navbarSupported">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
+            <ul class="navbar-nav mr-auto p-2">
+              <li class="nav-item active">
                 <a class="nav-link" href="#">TOP</a>
               </li>
               <li class="nav-item">
@@ -230,7 +232,7 @@
               </li>
             </ul>
 
-            <form class="form-inline my-0 my-lg-0">
+            <!-- <form class="form-inline my-0 my-lg-0">
               <div class="nav-item">
                 <p class="nav-link" href="#">Sort by</p>
               </div>
@@ -269,7 +271,7 @@
               <button class="search btn" type="submit">
                 <i class="fa fa-search"></i>
               </button>
-            </form>
+            </form> -->
           </div>
         </nav>
       </div>
@@ -287,7 +289,7 @@
 
             <div class="row mt-3">
               <div class="col-lg-6 col-md-6 col-sm-12">
-                <img class="img-fluid w-100 h-100" src="img/pic1.png" alt="" />
+                <img class="img-fluid w-100 ImgPic1" src="img/pic1.png" alt="" />
               </div>
               <div class="col-6 col-md-6 col-sm-12 col-12">
                 <h2>
@@ -424,85 +426,70 @@
 
             <div class="latest border border-muted p-3 rounded">
               <div class="row">
-                <div class="col-3">
-                  <img
-                    class="img-fluid w-100"
-                    src="img/pic-list-r1.png"
-                    alt=""
-                  />
+                <div class="col-3 col-sm-3 col-md-2 col-lg-5">
+                  <img src="img/pic-list-r1.png" alt=""/>
                 </div>
 
-                <div class="col-9 m-0">
-                  <h6 class="m-0">Online social therapy</h6>
-                  <p class="m-0">
+                <div class="col-9 col-sm-9 col-md-10 col-lg-7 p-0 m-0">
+                  <h6 class="Online-social m-0">Online social therapy</h6>
+                  <p class="novel-digital m-0">
                     A novel digital peer-support sustain the benefits of a study
                     has found.
                   </p>
-                  <p class="hours-ago m-0">4 hours ago</p>
+                  <p class="hours-ago m-0 py-0">4 hours ago</p>
                   <a href="#" class="CDPCPE">CDP:CPE</a>
                 </div>
               </div>
               <hr />
               <div class="row">
-                <div class="col-3">
-                  <img
-                    class="img-fluid w-100"
-                    src="img/pic-list-r1.png"
-                    alt=""
-                  />
+                <div class="col-3 col-sm-3 col-md-2 col-lg-5">
+                  <img src="img/pic-list-r1.png" alt="" />
                 </div>
 
-                <div class="col-9">
-                  <h6 class="m-0">Online social therapy</h6>
-                  <p class="m-0">
+                <div class="col-9 col-sm-9 col-md-10 col-lg-7 m-0 p-0">
+                  <h6 class="Online-social m-0">Online social therapy</h6>
+                  <p class="novel-digital m-0">
                     A novel digital peer-support sustain the benefits of a study
                     has found.
                   </p>
-                  <p class="hours-ago m-0">4 hours ago</p>
+                  <p class="hours-ago m-0 py-0">4 hours ago</p>
                   <a href="#" class="CDPCPE">CDP:CPE</a>
                 </div>
               </div>
               <hr />
               <div class="row">
-                <div class="col-3">
-                  <img
-                    class="img-fluid w-100"
-                    src="img/pic-list-r1.png"
-                    alt=""
-                  />
+                <div class="col-3 col-sm-3 col-md-2 col-lg-5">
+                  <img src="img/pic-list-r1.png" alt="" />
                 </div>
 
-                <div class="col-9">
-                  <h6 class="m-0">Online social therapy</h6>
-                  <p class="m-0">
+                <div class="col-9 col-sm-9 col-md-10 col-lg-7 p-0 m-0">
+                  <h6 class="Online-social m-0">Online social therapy</h6>
+                  <p class="novel-digital m-0">
                     A novel digital peer-support sustain the benefits of a study
                     has found.
                   </p>
-                  <p class="hours-ago m-0">4 hours ago</p>
+                  <p class="hours-ago m-0 py-0">4 hours ago</p>
                   <a href="#" class="CDPCPE">CDP:CPE</a>
                 </div>
               </div>
               <hr />
               <div class="row">
-                <div class="col-3">
-                  <img
-                    class="img-fluid w-100"
-                    src="img/pic-list-r1.png"
-                    alt=""
-                  />
+                <div class="col-3 col-sm-3 col-md-2 col-lg-5">
+                  <img src="img/pic-list-r1.png" alt="" />
                 </div>
 
-                <div class="col-9">
-                  <h6 class="m-0">Online social therapy</h6>
-                  <p class="m-0">
+                <div class="col-9 col-sm-9 col-md-10 col-lg-7 p-0 m-0">
+                  <h6 class="Online-social m-0">Online social therapy</h6>
+                  <p class="novel-digital m-0">
                     A novel digital peer-support sustain the benefits of a study
                     has found.
                   </p>
-                  <p class="hours-ago m-0">4 hours ago</p>
+                  <p class="hours-ago m-0 py-0">4 hours ago</p>
                   <a href="#" class="CDPCPE">CDP:CPE</a>
                 </div>
               </div>
             </div>
+
 
             <div class="button mt-2">
               <a href="#" class="badge badge-secondary px-3 py-1 m-1"
