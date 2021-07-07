@@ -2218,7 +2218,11 @@ header
     margin-top: 1rem;
   }
   .navbar-one .navbarBx ul li.active{
-    display: none;
+    background: #115d5e;
+  }
+  .navbar-one ul .active a{
+    color: #fff;
+    font-weight: 400;
   }
 }
 
@@ -2247,12 +2251,20 @@ header
 }
 @media (max-width: 768px){
   .navbar-one .navbarBx ul li.active{
-    display: none;
+  background: #115d5e;  
+  }
+  .navbar-one ul .active a{
+    color: #fff;
+    font-weight: 400;
   }
 }
 @media (max-width: 992px){
   .navbar-one .navbarBx ul li.active{
-    display: none;
+    background: #115d5e;
+  }
+  .navbar-one ul .active a{
+    color: #fff;
+    font-weight: 400;
   }
 }
 
