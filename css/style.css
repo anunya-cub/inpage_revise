@@ -256,7 +256,7 @@ form .nav-link {
 .navbar-two form input.form-control {
   position: relative;
   border-radius: 20px;
-  width: 200px;
+  width: 180px;
 }
 .navbar-one .navbar-collapse ul li {
   margin: 0.4em;
@@ -270,7 +270,7 @@ form .nav-link {
   position: absolute;
   text-align: center;
   width: 60px;
-  height: 38px;
+  height: 40px;
   font-size: 10px;
   color: #b9b8b8;
   padding: 0;
@@ -2217,6 +2217,9 @@ header
     margin-bottom: 1.5rem;
     margin-top: 1rem;
   }
+  .navbar-one .navbarBx ul li.active{
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -2241,7 +2244,16 @@ header
   .raedApplication{
     margin-bottom: 1.5rem;
   }
-
+}
+@media (max-width: 768px){
+  .navbar-one .navbarBx ul li.active{
+    display: none;
+  }
+}
+@media (max-width: 992px){
+  .navbar-one .navbarBx ul li.active{
+    display: none;
+  }
 }
 
 @media (min-width: 992px) {
