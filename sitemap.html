@@ -21,16 +21,18 @@
   </head>
   <body>
     <header>
-      <div class="logo fluid-top text-center m-0 p-3 d-none d-sm-block">
-        <img class="imgLogoMedical" src="img/logo-top.png" alt="" />
-      </div>
-      <div class="MyPageSignOut">
-        <img
-          src="https://f.ptcdn.info/651/065/000/pwqxxro11zd1sdKXvgg-o.jpg"
-          alt=""
-        />
-        <a class="MyPage" href="#">MY PAGE</a>
-        <a class="SignOut" href="#">SIGN OUT</a>
+      <div class="container">
+        <div class="logo fluid-top text-center m-0 p-3 d-none d-sm-block">
+          <img class="imgLogoMedical" src="img/logo-top.png" alt="" />
+        </div>
+        <div class="MyPageSignOut">
+          <!-- <img 
+            src="https://f.ptcdn.info/651/065/000/pwqxxro11zd1sdKXvgg-o.jpg"
+            alt=""
+          /> -->
+          <a class="MyPage" href="#">Register</a>
+          <a class="SignOut" href="#">Sign in</a>
+        </div>
       </div>
     </header>
 
@@ -64,32 +66,33 @@
             <i class="navbar-toggler-icon fas fa-bars"></i>
           </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse navbarBx" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-              <li class="navbar-item active">
-                <a class="nav-link" href="#">NEWS</a>
+              <li class="nav-item navitem active">
+                <a class="nav-link" href="#">HOME</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item navitem">
+                <a class="nav-link navitem" href="#">NEWS</a>
+              </li>
+              <li class="nav-item navitem">
                 <a class="nav-link" href="#">EVENT</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item navitem">
                 <a class="nav-link" href="#">CHANNEL</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item navitem">
                 <a class="nav-link" href="#">BOARD</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item navitem">
                 <a class="nav-link" href="#">CONTACT</a>
               </li>
             </ul>
             <ul class="navbar-nav ml-auto">
-              <li class="navbar-item active">
-                <a class="nav-link" href="#">HOME</a>
-              </li>
-              <li class="nav-item">
+              
+              <li class="nav-item navitem">
                 <a class="nav-link" href="#">ABOUT US</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item navitem">
                 <a class="nav-link" href="#">FAQs</a>
               </li>
             </ul>
@@ -112,7 +115,7 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#">TOP</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                   <a class="nav-link" href="#">MEDICAL</a>
                 </li>
                 <li class="nav-item">
@@ -141,7 +144,7 @@
                 </li>
               </ul>
 
-              <form class="form-inline my-0 my-lg-0">
+              <!-- <form class="form-inline my-0 my-lg-0">
                 <div class="nav-item mb-2">
                   <p class="nav-link text-white">Sort by</p>
                 </div>
@@ -183,8 +186,8 @@
                   placeholder="Search"
                   aria-label="Search"
                 />
-                <!-- <button class="search btn" type="submit"><i class="fa fa-search"></i></button> -->
-              </form>
+                <!-- <button class="search btn" type="submit"><i class="fa fa-search"></i></button> 
+              </form> -->
             </span>
           </div>
         </nav>
