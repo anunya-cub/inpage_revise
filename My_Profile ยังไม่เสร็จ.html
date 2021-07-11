@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NewPage</title>
+  <title>My Profile</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -257,227 +257,140 @@
   </div>
 
 
-  <div class="main-nav-bg"></div>
-
   <section class="info-block -innerspace">
-    <div class="container ">
-      <form action="">
-        <div class="filtering-block">
-          <div class="search-input-block">
-            <input placeholder="Enter keywords" class="search-input" type="search" autocomplete="off" />
-            <button class="submit-search-btn" type="submit"><span class="search-icon"><i class="fa fa-search"
-                  aria-hidden="true"></i></span></button>
-            <div class="error-txt">Please enter your keywords!</div>
-          </div>
-
-          <div class="custom-filter-wrap">
-            <span class="label">Sort by :</span>
-
-            <div class="custom-radiobox-list">
-              <div class="radiobox-list">
-                <div class="custom-radiobox">
-                  <input class="radio-input" id="latest-filter" type="radio" name="filter-list" />
-                  <div class="radio-circle"></div>
-                </div><label class="radio-label" for="latest-filter">Latest</label>
-              </div>
-
-              <div class="radiobox-list">
-                <input class="radio-input -outside" id="date-month" type="radio" name="filter-list" checked />
-                <div class="custom-radiobox">
-                  <div class="radio-circle"></div>
-                  <label class="radio-label" for="date-month"></label>
-                </div>
-
-                <div class="input-block -lock">
-                  <input id="date-picker" placeholder="Start Date" class="input-Start-data" type="text" name="date"
-                    readonly />
-                </div>
-              </div>
-            </div> <!-- End custom-radiobox-wrap -->
-
-          </div> <!-- End custom-filter-wrap -->
-        </div> <!-- End filtering-block -->
-
-
-        <!-- End article-block-wrap -->
-      </form>
-      <div class="row">
-        <div class="col-12 col-md-6 col-lg-4 mb-3">
-          <div class="article-thumb">
-            <a class="ImgNewsDetail" href="news-detail.html"><img src="images/news/news-thumb-01.jpg" alt=""
-                class="img-fluid" /></a>
-
-            <div class="bookmark-button-icon toggle-actived-elm -actived" title="bookmark this article"><span
-                class="bookmark-icon"><i class="fa fa-bookmark-o" aria-hidden="true"></i></span></div>
-          </div>
-
-          <div class="article-detail">
-            <a href="news-detail.html"
-              class="article-title">แอปพลิเคชั่นแรกที่ผ่านการอนุมัติเพื่อช่วยในการเลิกบุหรี่</a>
-
-            <div class="article-highlight">MEDICAL</div>
-
-            <div class="article-date">02/09/2020 09:55</div>
-
-
-            <ul class="tag-nav-ul">
-              <li class="tag-nav-list"><a href="news-1.html">#MedicalTribute</a></li>
-              <li class="tag-nav-list"><a href="news-1.html">#Application</a></li>
-              <li class="tag-nav-list"><a href="news-1.html">#CureAppSC</a></li>
-              <li class="tag-nav-list"><a href="news-1.html">#Smoking</a></li>
-            </ul> <!-- End tag-nav-ul -->
-
-          </div>
+    <form action="" class="profile-block -full">
+      <div class="profile-thumb">
+        <div class="camera-icon-block">
+          <div class="camera-icon"></div>
         </div>
-        <div class="col-12 col-md-6 col-lg-4 mb-3">
-          <div class="article-thumb">
-            <a class="ImgNewsDetail" href="news-detail.html"><img src="images/news/news-thumb-01.jpg" alt=""
-                class="img-fluid" /></a>
-
-            <div class="bookmark-button-icon toggle-actived-elm" title="bookmark this article"><span
-                class="bookmark-icon"><i class="fa fa-bookmark-o" aria-hidden="true"></i></span></div>
+        <input class="upload-photo" type="file" />
+        <img src="images/user/user-pic-01.jpg" alt="" />
+      </div> <!-- End profile-thumb -->
+    
+      <div class="profile-desc-block">
+          <div class="input-block-top -float">
+            <label class="label">Display Name <span class="red-txt text-danger">*</span></label> <br>
+            <input class="input px-2 py-1" type="text" placeholder=" " value="Keanu Reeves" />
+            <span class="error-txt">Please enter your display name</span>
           </div>
 
-          <div class="article-detail">
-            <a href="news-detail.html"
-              class="article-title">แอปพลิเคชั่นแรกที่ผ่านการอนุมัติเพื่อช่วยในการเลิกบุหรี่</a>
-
-            <div class="article-highlight">MEDICAL</div>
-
-            <div class="article-date">02/09/2020 09:55</div>
-
-
-            <ul class="tag-nav-ul">
-              <li class="tag-nav-list"><a href="news-1.html">#MedicalTribute</a></li>
-              <li class="tag-nav-list"><a href="news-1.html">#Application</a></li>
-              <li class="tag-nav-list"><a href="news-1.html">#CureAppSC</a></li>
-              <li class="tag-nav-list"><a href="news-1.html">#Smoking</a></li>
-            </ul> <!-- End tag-nav-ul -->
-
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 mb-3">
-          <div class="article-thumb">
-            <a class="ImgNewsDetail" href="news-detail.html"><img src="images/news/news-thumb-01.jpg" alt=""
-                class="img-fluid" /></a>
-
-            <div class="bookmark-button-icon toggle-actived-elm" title="bookmark this article"><span
-                class="bookmark-icon"><i class="fa fa-bookmark-o" aria-hidden="true"></i></span></div>
+          <div class="profile-inner">
+          <div class="input-block mt-5">
+            <label class="label">Firstname <span class="red-txt text-danger">*</span></label>
+            <input class="input px-2 py-1" type="text" placeholder=" " value="Keanu" />
+            <!-- <span class="error-txt">Your info doesn't look right.</span> -->
           </div>
 
-          <div class="article-detail">
-            <a href="news-detail.html"
-              class="article-title">แอปพลิเคชั่นแรกที่ผ่านการอนุมัติเพื่อช่วยในการเลิกบุหรี่</a>
-
-            <div class="article-highlight">MEDICAL</div>
-
-            <div class="article-date">02/09/2020 09:55</div>
-
-
-            <ul class="tag-nav-ul">
-              <li class="tag-nav-list"><a href="news-1.html">#MedicalTribute</a></li>
-              <li class="tag-nav-list"><a href="news-1.html">#Application</a></li>
-              <li class="tag-nav-list"><a href="news-1.html">#CureAppSC</a></li>
-              <li class="tag-nav-list"><a href="news-1.html">#Smoking</a></li>
-            </ul> <!-- End tag-nav-ul -->
-
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 mb-3">
-          <div class="article-thumb">
-            <a class="ImgNewsDetail" href="news-detail.html"><img src="images/news/news-thumb-01.jpg" alt=""
-                class="img-fluid" /></a>
-
-            <div class="bookmark-button-icon toggle-actived-elm -actived" title="bookmark this article"><span
-                class="bookmark-icon"><i class="fa fa-bookmark-o" aria-hidden="true"></i></span></div>
+          <div class="input-block mt-5">
+            <label class="label">Lastname <span class="red-txt text-danger">*</span></label>
+            <input class="input px-2 py-1" type="text" placeholder=" " value="Reeves" />
+            <!-- <span class="error-txt">Your info doesn't look right.</span> -->
           </div>
 
-          <div class="article-detail">
-            <a href="news-detail.html"
-              class="article-title">แอปพลิเคชั่นแรกที่ผ่านการอนุมัติเพื่อช่วยในการเลิกบุหรี่</a>
-
-            <div class="article-highlight">MEDICAL</div>
-
-            <div class="article-date">02/09/2020 09:55</div>
-
-
-            <ul class="tag-nav-ul">
-              <li class="tag-nav-list"><a href="news-1.html">#MedicalTribute</a></li>
-              <li class="tag-nav-list"><a href="news-1.html">#Application</a></li>
-              <li class="tag-nav-list"><a href="news-1.html">#CureAppSC</a></li>
-              <li class="tag-nav-list"><a href="news-1.html">#Smoking</a></li>
-            </ul> <!-- End tag-nav-ul -->
-
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 mb-3">
-          <div class="article-thumb">
-            <a class="ImgNewsDetail" href="news-detail.html"><img src="images/news/news-thumb-01.jpg" alt=""
-                class="img-fluid" /></a>
-
-            <div class="bookmark-button-icon toggle-actived-elm" title="bookmark this article"><span
-                class="bookmark-icon"><i class="fa fa-bookmark-o" aria-hidden="true"></i></span></div>
+          <div class="input-block">
+            <label class="label mt-3">ชื่อ <span class="red-txt text-danger">*</span></label>
+            <input class="input px-2 py-1" type="text" placeholder=" " value="คีอานู" />
+            <!-- <span class="error-txt">Your info doesn't look right.</span> -->
           </div>
 
-          <div class="article-detail">
-            <a href="news-detail.html"
-              class="article-title">แอปพลิเคชั่นแรกที่ผ่านการอนุมัติเพื่อช่วยในการเลิกบุหรี่</a>
-
-            <div class="article-highlight">MEDICAL</div>
-
-            <div class="article-date">02/09/2020 09:55</div>
-
-
-            <ul class="tag-nav-ul">
-              <li class="tag-nav-list"><a href="news-1.html">#MedicalTribute</a></li>
-              <li class="tag-nav-list"><a href="news-1.html">#Application</a></li>
-              <li class="tag-nav-list"><a href="news-1.html">#CureAppSC</a></li>
-              <li class="tag-nav-list"><a href="news-1.html">#Smoking</a></li>
-            </ul> <!-- End tag-nav-ul -->
-
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-4 mb-3">
-          <div class="article-thumb">
-            <a class="ImgNewsDetail" href="news-detail.html"><img src="images/news/news-thumb-01.jpg" alt=""
-                class="img-fluid" /></a>
-
-            <div class="bookmark-button-icon toggle-actived-elm" title="bookmark this article"><span
-                class="bookmark-icon"><i class="fa fa-bookmark-o" aria-hidden="true"></i></span></div>
+          <div class="input-block">
+            <label class="label mt-3">นามสกุล <span class="red-txt text-danger">*</span></label>
+            <input class="input px-2 py-1" type="text" placeholder=" " value="รีฟส์" />
+            <!-- <span class="error-txt">Your info doesn't look right.</span> -->
           </div>
 
-          <div class="article-detail">
-            <a href="news-detail.html"
-              class="article-title">แอปพลิเคชั่นแรกที่ผ่านการอนุมัติเพื่อช่วยในการเลิกบุหรี่</a>
-
-            <div class="article-highlight">MEDICAL</div>
-
-            <div class="article-date">02/09/2020 09:55</div>
-
-
-            <ul class="tag-nav-ul">
-              <li class="tag-nav-list"><a href="news-1.html">#MedicalTribute</a></li>
-              <li class="tag-nav-list"><a href="news-1.html">#Application</a></li>
-              <li class="tag-nav-list"><a href="news-1.html">#CureAppSC</a></li>
-              <li class="tag-nav-list"><a href="news-1.html">#Smoking</a></li>
-            </ul> <!-- End tag-nav-ul -->
-
+          <div class="input-block">
+            <label class="label mt-3">Position <span class="red-txt text-danger">*</span></label>
+            <div class="select-menu-block">
+              <select class="px-2 py-1">
+                <option value="">Dentist</option>
+                <option value="">Doctor</option>
+                <option value="">Nurse</option>
+              </select>
+            
+              <div class="custom-arrow"></div>
+            </div>
+            <!-- <span class="error-txt">Your info doesn't look right.</span> -->
           </div>
-        </div>
+
+          <div class="input-block">
+            <label class="label mt-3">Doctor (Speciality) <span class="red-txt text-danger">*</span></label>
+            <div class="select-menu-block">
+              <select class="px-2 py-1">
+                <option value="">Allergy and Immunology</option>
+                <option value="">Anaesthesiology</option>
+                <option value="">Cardilogy</option>
+              </select>
+            
+              <div class="custom-arrow"></div>
+            </div>
+            <!-- <span class="error-txt">Your info doesn't look right.</span> -->
+          </div>
+
+          <div class="input-block">
+            <label class="label mt-3">Birthday <span class="red-txt text-danger">*</span></label>
+            <input id="date-picker px-2 py-1" placeholder="" class="input" type="text" name="date" value=" 31/05/1988" />
+            <!-- <span class="error-txt">Your info doesn't look right.</span> -->
+          </div>
+    
+          <div class="input-block">
+            <label class="label mt-3">Age</label>
+            <input class="input px-2 py-1" type="text" placeholder="" value=" 29" disabled readonly />
+          </div>
+    
+          <div class="input-block">
+            <label class="label mt-3">Mobile <span class="red-txt text-danger">*</span></label>
+            <input class="input px-2 py-1" type="tel" placeholder=" " value="0999999999" />
+          </div>
+
+          <div class="input-block">
+            <label class="label mt-3">Province <span class="red-txt text-danger">*</span></label>
+            <div class="select-menu-block">
+              <select class="px-2 py-1">
+                <option value="">Bangkok</option>
+                <option value="">Phuket</option>
+              </select>
+            
+              <div class="custom-arrow"></div>
+            </div>
+          </div>
+    
+          <div class="input-block -full">
+            <label class="label mt-3">Address</label>
+            <textarea class="input px-2 py-1" placeholder="Enter your addredd">29 Fortune Place</textarea>
+          </div>
+
+          <div class="input-block -full">
+            <label class="label mt-3">Zone/Area</label>
+            <textarea class="input px-2 py-1" placeholder="Enter your zone or area">Soi Lardphrao 98</textarea>
+          </div>
+
+          <div class="all-checklist-block">
+            <li class="checklist-item">
+              <div class="square-check"><span class="check-list-icon "></span></div>  Kasemrad BK Hospital
+            </li>
+
+            <li class="checklist-item">
+              <div class="square-check"><span class="check-list-icon"></span></div>  World Medical Hospital
+            </li>
+
+            <li class="checklist-item">
+              <div class="square-check"><span class="check-list-icon"></span></div>  MLT Hospital
+            </li>
+          </div>  <!-- End all-checklist-block -->
+    
+          
+        </div> <!-- End profile-inner -->
+      </div> <!-- End profile-desc-block -->
+      <div class="button-wrap">
+        <a href="my-bookmark.html" class="cmn-button -med -gray ">CANCEL</a>
+        <button type="submit" class="cmn-button -med -orange">SAVE</button>
       </div>
-    </div>
+    </form> <!-- End profile-block -->
 
-    <nav class="paging-block">
-      <ul class="paging-list">
-        <li class="paging-list-item -disable"><a href="#">First page</a></li>
-        <li class="paging-list-item -number -actived"><a href="#">1</a></li>
-        <li class="paging-list-item -number"><a href="#">2</a></li>
-        <li class="paging-list-item -number"><a href="#">3</a></li>
-        <li class="paging-list-item -actived"><a href="#">Last page</a></li>
-      </ul> <!-- End paging-list -->
-    </nav> <!-- End paging-block -->
+  </section>  <!-- End info-block -->
 
-  </section> <!-- End info-block -->
+  
 
 
 
