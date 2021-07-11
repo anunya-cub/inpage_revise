@@ -49,7 +49,8 @@ header .MyPageSignOut img {
   height: 20px;
   border-radius: 100px;
   margin-top: -1.5rem;
-  margin-right: 120px;
+  margin-right: 130px;
+
 }
 header .MyPageSignOut a {
   position: absolute;
@@ -65,7 +66,7 @@ header .MyPageSignOut a:hover {
   color: #991a26;
 }
 header .MyPageSignOut .MyPage {
-  margin-right: 60px;
+  margin-right: 65px;
 }
 .navbar-one {
   background: #115d5e;
@@ -3782,18 +3783,18 @@ textarea.input {
   margin-right: 0.5rem;
   margin-top: 1.5rem;
 }
-.toggle-actived-elm.-actived {
+.toggle-actived-elme.-actived {
   background: #ff971f;
   width: 120px;
   padding: 3px 5px;
   border-radius: 5px;
   margin-top: 0.7rem;
 }
-.toggle-actived-elm.-actived .toggle-txt {
+.toggle-actived-elme.-actived .toggle-txt {
   color: #fff;
   margin-left: 10px;
 }
-.toggle-actived-elm.-actived i {
+.toggle-actived-elme.-actived i {
   color: #f8cb70;
   margin-left: 6px;
 }
@@ -3818,6 +3819,7 @@ textarea.input {
     right: 0;
     top: -5px;
     text-align: center;
+    margin-top: 1rem;
   }
 }
 
