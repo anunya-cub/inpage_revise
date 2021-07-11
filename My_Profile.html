@@ -257,6 +257,9 @@
   </div>
 
 
+
+  <div class="main-nav-bg"></div>
+
   <section class="info-block -innerspace">
     <form action="" class="profile-block -full">
       <div class="profile-thumb">
@@ -268,41 +271,41 @@
       </div> <!-- End profile-thumb -->
     
       <div class="profile-desc-block">
-          <div class="input-block-top -float">
-            <label class="label">Display Name <span class="red-txt text-danger">*</span></label> <br>
-            <input class="input px-2 py-1" type="text" placeholder=" " value="Keanu Reeves" />
+        <div class="profile-inner">
+          <div class="input-block -float">
+            <label class="label">Display Name <span class="red-txt">*</span></label>
+            <input class="input" type="text" placeholder=" " value="Keanu Reeves" />
             <span class="error-txt">Please enter your display name</span>
           </div>
 
-          <div class="profile-inner">
-          <div class="input-block mt-5">
-            <label class="label">Firstname <span class="red-txt text-danger">*</span></label>
-            <input class="input px-2 py-1" type="text" placeholder=" " value="Keanu" />
-            <!-- <span class="error-txt">Your info doesn't look right.</span> -->
-          </div>
-
-          <div class="input-block mt-5">
-            <label class="label">Lastname <span class="red-txt text-danger">*</span></label>
-            <input class="input px-2 py-1" type="text" placeholder=" " value="Reeves" />
+          <div class="input-block">
+            <label class="label">Firstname <span class="red-txt">*</span></label>
+            <input class="input" type="text" placeholder=" " value="Keanu" />
             <!-- <span class="error-txt">Your info doesn't look right.</span> -->
           </div>
 
           <div class="input-block">
-            <label class="label mt-3">ชื่อ <span class="red-txt text-danger">*</span></label>
-            <input class="input px-2 py-1" type="text" placeholder=" " value="คีอานู" />
+            <label class="label">Lastname <span class="red-txt">*</span></label>
+            <input class="input" type="text" placeholder=" " value="Reeves" />
             <!-- <span class="error-txt">Your info doesn't look right.</span> -->
           </div>
 
           <div class="input-block">
-            <label class="label mt-3">นามสกุล <span class="red-txt text-danger">*</span></label>
-            <input class="input px-2 py-1" type="text" placeholder=" " value="รีฟส์" />
+            <label class="label">ชื่อ <span class="red-txt">*</span></label>
+            <input class="input" type="text" placeholder=" " value="คีอานู" />
             <!-- <span class="error-txt">Your info doesn't look right.</span> -->
           </div>
 
           <div class="input-block">
-            <label class="label mt-3">Position <span class="red-txt text-danger">*</span></label>
+            <label class="label">นามสกุล <span class="red-txt">*</span></label>
+            <input class="input" type="text" placeholder=" " value="รีฟส์" />
+            <!-- <span class="error-txt">Your info doesn't look right.</span> -->
+          </div>
+
+          <div class="input-block">
+            <label class="label">Position <span class="red-txt">*</span></label>
             <div class="select-menu-block">
-              <select class="px-2 py-1">
+              <select class="menu-block-ss">
                 <option value="">Dentist</option>
                 <option value="">Doctor</option>
                 <option value="">Nurse</option>
@@ -314,9 +317,9 @@
           </div>
 
           <div class="input-block">
-            <label class="label mt-3">Doctor (Speciality) <span class="red-txt text-danger">*</span></label>
+            <label class="label">Doctor (Speciality) <span class="red-txt">*</span></label>
             <div class="select-menu-block">
-              <select class="px-2 py-1">
+              <select class="menu-block-ss">
                 <option value="">Allergy and Immunology</option>
                 <option value="">Anaesthesiology</option>
                 <option value="">Cardilogy</option>
@@ -328,25 +331,25 @@
           </div>
 
           <div class="input-block">
-            <label class="label mt-3">Birthday <span class="red-txt text-danger">*</span></label>
-            <input id="date-picker px-2 py-1" placeholder="" class="input" type="text" name="date" value=" 31/05/1988" />
+            <label class="label">Birthday <span class="red-txt">*</span></label>
+            <input id="date-picker" placeholder="" class="input" type="text" name="date" value="31/05/1988" />
             <!-- <span class="error-txt">Your info doesn't look right.</span> -->
           </div>
     
           <div class="input-block">
-            <label class="label mt-3">Age</label>
-            <input class="input px-2 py-1" type="text" placeholder="" value=" 29" disabled readonly />
+            <label class="label">Age</label>
+            <input class="input secondary" type="text" placeholder="" value="29" disabled readonly />
           </div>
     
           <div class="input-block">
-            <label class="label mt-3">Mobile <span class="red-txt text-danger">*</span></label>
-            <input class="input px-2 py-1" type="tel" placeholder=" " value="0999999999" />
+            <label class="label">Mobile <span class="red-txt">*</span></label>
+            <input class="input" type="tel" placeholder=" " value="0999999999" />
           </div>
 
           <div class="input-block">
-            <label class="label mt-3">Province <span class="red-txt text-danger">*</span></label>
+            <label class="label">Province <span class="red-txt">*</span></label>
             <div class="select-menu-block">
-              <select class="px-2 py-1">
+              <select>
                 <option value="">Bangkok</option>
                 <option value="">Phuket</option>
               </select>
@@ -356,45 +359,46 @@
           </div>
     
           <div class="input-block -full">
-            <label class="label mt-3">Address</label>
-            <textarea class="input px-2 py-1" placeholder="Enter your addredd">29 Fortune Place</textarea>
+            <label class="label">Address</label>
+            <textarea class="input" placeholder="Enter your addredd">29 Fortune Place</textarea>
           </div>
 
           <div class="input-block -full">
-            <label class="label mt-3">Zone/Area</label>
-            <textarea class="input px-2 py-1" placeholder="Enter your zone or area">Soi Lardphrao 98</textarea>
+            <label class="label">Zone/Area</label>
+            <textarea class="input" placeholder="Enter your zone or area">Soi Lardphrao 98</textarea>
           </div>
 
           <div class="all-checklist-block">
             <li class="checklist-item">
-              <div class="square-check"><span class="check-list-icon "></span></div>  Kasemrad BK Hospital
+              <div class="square-check"><span class="check-list-icon"><i class="fa fa-check" aria-hidden="true"></i></span></div>  Kasemrad BK Hospital
             </li>
 
             <li class="checklist-item">
-              <div class="square-check"><span class="check-list-icon"></span></div>  World Medical Hospital
+              <div class="square-check"><span class="check-list-icon"><i class="fa fa-check" aria-hidden="true"></i></span></div>  World Medical Hospital
             </li>
 
             <li class="checklist-item">
-              <div class="square-check"><span class="check-list-icon"></span></div>  MLT Hospital
+              <div class="square-check"><span class="check-list-icon"><i class="fa fa-check" aria-hidden="true"></i></span></div>  MLT Hospital
             </li>
           </div>  <!-- End all-checklist-block -->
     
-          
+         
         </div> <!-- End profile-inner -->
       </div> <!-- End profile-desc-block -->
-      <div class="button-wrap">
-        <a href="my-bookmark.html" class="cmn-button -med -gray ">CANCEL</a>
+
+      <div class="button-wrap mt-5">
+        <a href="my-bookmark.html" class="cmn-button -med -gray">CANCEL</a>
         <button type="submit" class="cmn-button -med -orange">SAVE</button>
       </div>
+
     </form> <!-- End profile-block -->
 
   </section>  <!-- End info-block -->
 
+
+
+
   
-
-
-
-
 
   <section class="section-list-button bg-light">
     <!-- footer list -->
@@ -493,6 +497,7 @@
     </div>
     <!-- end container -->
   </section>
+
 
 
   <section class="ASECFrontier m-5">
