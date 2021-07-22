@@ -50,7 +50,6 @@ header .MyPageSignOut img {
   border-radius: 100px;
   margin-top: -1.5rem;
   margin-right: 130px;
-
 }
 header .MyPageSignOut a {
   position: absolute;
@@ -2431,7 +2430,11 @@ li a.accordion-toggle:hover {
   transform: rotate(180deg);
 }
 
-/******************************************** New Page ***********************************/
+/*****************************************************************************************/
+/*****************************************************************************************/
+/*****************************************************************************************/
+/*****************************************************************************************/
+/*************************************** New Page ****************************************/
 
 .-innerspace {
   max-width: 100%;
@@ -3089,83 +3092,6 @@ li a.accordion-toggle:hover {
 
 /****************************** My Proflie ******************************/
 
-@media screen and (min-width: 900px) {
-  .info-block.-innerspace {
-    padding-bottom: 80px;
-  }
-  .info-block {
-    margin-bottom: 25px;
-  }
-  .profile-block,
-  .dashboard-block {
-    padding-bottom: 110px;
-  }
-}
-@media screen and (min-width: 760px) {
-  .main-nav.-fix ~ .info-block.-innerspace {
-    padding-top: 0;
-  }
-  .profile-block.-full {
-    margin-top: 100px;
-  }
-}
-@media screen and (min-width: 576px) {
-}
-@media screen and (max-width: 576px) {
-  .input-block {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-}
-
-@media screen and (min-width: 640px) {
-  .profile-block.-full {
-    max-width: 760px;
-    padding-top: 30px;
-  }
-  .profile-block.-full .input-block {
-    width: 47%;
-    margin-right: 6%;
-    margin-bottom: 30px;
-  }
-  .profile-block.-full .input-block.-float {
-    position: absolute;
-    left: 230px;
-    top: 50px;
-    margin-bottom: 0;
-  }
-  .profile-block.-full .input-block + .input-block {
-    margin-top: 0;
-  }
-  .profile-block.-full .input-block {
-    width: 47%;
-  }
-  .info-block {
-    margin-bottom: 0;
-  }
-  .red-txt {
-    color: red;
-  }
-  .profile-block.-full .input-block:nth-child(2n + 1) {
-    margin-right: 0;
-  }
-  .profile-block.-full .profile-desc-block {
-    max-width: 95%;
-  }
-  .profile-block.-full .profile-thumb {
-    margin-right: auto;
-    margin-left: 70px;
-    margin-bottom: 40px;
-  }
-  .profile-block.-full .profile-inner {
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    flex-flow: row wrap;
-    align-items: flex-start;
-  }
-}
-
 .main-nav.-fix ~ .info-block.-innerspace {
   margin-top: 0;
 }
@@ -3507,6 +3433,84 @@ textarea.input {
   font: 400 13.3333px Arial;
 }
 
+@media screen and (min-width: 900px) {
+  .info-block.-innerspace {
+    padding-bottom: 80px;
+  }
+  .info-block {
+    margin-bottom: 25px;
+  }
+  .profile-block,
+  .dashboard-block {
+    padding-bottom: 110px;
+  }
+}
+@media screen and (min-width: 760px) {
+  .main-nav.-fix ~ .info-block.-innerspace {
+    padding-top: 0;
+  }
+  .profile-block.-full {
+    margin-top: 100px;
+  }
+}
+@media screen and (min-width: 576px) {
+}
+
+@media screen and (max-width: 576px) {
+  .input-block {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .profile-block.-full {
+    max-width: 760px;
+    padding-top: 30px;
+  }
+  .profile-block.-full .input-block {
+    width: 47%;
+    margin-right: 6%;
+    margin-bottom: 30px;
+  }
+  .profile-block.-full .input-block.-float {
+    position: absolute;
+    left: 230px;
+    top: 50px;
+    margin-bottom: 0;
+  }
+  .profile-block.-full .input-block + .input-block {
+    margin-top: 0;
+  }
+  .profile-block.-full .input-block {
+    width: 47%;
+  }
+  .info-block {
+    margin-bottom: 0;
+  }
+  .red-txt {
+    color: red;
+  }
+  .profile-block.-full .input-block:nth-child(2n + 1) {
+    margin-right: 0;
+  }
+  .profile-block.-full .profile-desc-block {
+    max-width: 95%;
+  }
+  .profile-block.-full .profile-thumb {
+    margin-right: auto;
+    margin-left: 70px;
+    margin-bottom: 40px;
+  }
+  .profile-block.-full .profile-inner {
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap;
+    align-items: flex-start;
+  }
+}
+
 /*********************** My baard ********************/
 
 .article-block-title.-right {
@@ -3669,6 +3673,7 @@ textarea.input {
 }
 
 /************************ my Schedule **********************/
+
 .article-block-title.-right .select-menu-block {
   width: 200px;
   margin-left: auto;
@@ -3701,56 +3706,6 @@ textarea.input {
 }
 .article-block.-full .article-title {
   font-size: 24px;
-}
-
-@media screen and (min-width: 760px) {
-  .article-inner-block .article-list-item-block {
-    margin-top: 5px;
-  }
-  .article-inner-block .article-list-item-block {
-    position: relative;
-  }
-  .article-list-item {
-    position: relative;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    flex-flow: row wrap;
-    align-items: center;
-    line-height: 1.3em;
-    color: #333;
-  }
-  .article-inner-block .article-border-box {
-    margin-right: 5px;
-  }
-  .article-border-box {
-    border: 1px solid #ff5c00;
-    background-color: #fff;
-    padding: 1px 3px;
-    line-height: 1.3em;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    color: #ff5c00;
-    text-align: center;
-  }
-}
-@media screen and (min-width: 760px) {
-  .article-list-item .article-note {
-    width: calc(100% - 92px);
-  }
-  .article-list-item {
-    font-size: 16px;
-  }
-  .article-border-box {
-    min-width: 80px;
-    font-size: 15px;
-  }
-  .article-list-item .article-note {
-    width: calc(100% - 92px);
-  }
-  .article-inner-block .article-list-item + .article-list-item {
-    margin-top: 12px;
-  }
 }
 
 .article-list-item .article-note {
@@ -3808,6 +3763,14 @@ textarea.input {
   -webkit-box-direction: normal;
   flex-flow: column wrap;
 }
+.article-block .article-list.-highlight .rate-block {
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-flow: column wrap;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
 
 @media screen and (min-width: 560px) {
   .article-inner-block {
@@ -3821,15 +3784,6 @@ textarea.input {
     text-align: center;
     margin-top: 1rem;
   }
-}
-
-.article-block .article-list.-highlight .rate-block {
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  flex-flow: column wrap;
-  -webkit-box-pack: center;
-  justify-content: center;
 }
 
 @media screen and (min-width: 414px) {
@@ -3848,27 +3802,79 @@ textarea.input {
     font-size: 14px;
   }
 }
+
 @media screen and (max-width: 767px) {
-  .article-block.-full .article-thumb{
+  .article-block.-full .article-thumb {
     width: 100%;
   }
-  .article-block.-full .article-detail{
+  .article-block.-full .article-detail {
     width: 100%;
   }
-  .article-inner-block .article-border-box{
+  .article-inner-block .article-border-box {
     display: inline-block;
   }
-  .article-list-item .article-note{
+  .article-list-item .article-note {
     display: inline-block;
   }
-  .article-border-box{
+  .article-border-box {
     padding: 4px;
     border-radius: 4px;
   }
-  .article-list-item{
+  .article-list-item {
     margin-bottom: 9px;
   }
-  .rate-star-block i{
+  .rate-star-block i {
     margin-top: 0.25rem;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .article-inner-block .article-list-item-block {
+    margin-top: 5px;
+  }
+  .article-inner-block .article-list-item-block {
+    position: relative;
+  }
+  .article-list-item {
+    position: relative;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap;
+    align-items: center;
+    line-height: 1.3em;
+    color: #333;
+  }
+  .article-inner-block .article-border-box {
+    margin-right: 5px;
+  }
+  .article-border-box {
+    border: 1px solid #ff5c00;
+    background-color: #fff;
+    padding: 1px 3px;
+    line-height: 1.3em;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #ff5c00;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .article-list-item .article-note {
+    width: calc(100% - 92px);
+  }
+  .article-list-item {
+    font-size: 16px;
+  }
+  .article-border-box {
+    min-width: 80px;
+    font-size: 15px;
+  }
+  .article-list-item .article-note {
+    width: calc(100% - 92px);
+  }
+  .article-inner-block .article-list-item + .article-list-item {
+    margin-top: 12px;
   }
 }
