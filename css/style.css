@@ -2184,6 +2184,20 @@ header
     color: #fff;
     font-weight: 400;
   }
+  .rx-sharing .FormCheckKFN{
+    display: block;
+    width: 100%;
+  }
+  .rx-sharing .FormCheckKFN .col-6{
+    max-width: 100% !important;
+  }
+  .rx-sharing .form-check{
+    left: 0 !important;
+    text-align: center;
+  }
+  .rx-sharing .form-group{
+    text-align: center;
+  }
 }
 
 @media (min-width: 768px) {
@@ -2524,15 +2538,18 @@ li a.accordion-toggle:hover {
   background: rgb(168, 166, 166) !important;
 }
 .submit-search-btn {
+  position: absolute;
   border: none;
   background: none;
   color: #969393;
   font-size: 20px;
+  padding-left: 1rem;
+  top: 13px;
 }
 .search-input .submit-search-btn {
   cursor: pointer;
   position: absolute;
-  right: 9px;
+  right: px;
   top: 21px;
   outline: none;
   border: none;
@@ -3079,6 +3096,23 @@ li a.accordion-toggle:hover {
   .search-icon {
     padding-right: 0.5rem;
   }
+  .filtering-block{
+    padding-bottom: 0;
+  }
+  .article-detail .article-inner-block a.article-title{
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .rate-star-block i{
+    font-size: 22px !important;
+    /* margin-top: 1.5rem !important; */
+  }
+  .rate-star-block i.active {
+    margin-left: 15px;
+  }
+  .article-list-item .article-note{
+    margin-top: .5rem;
+  }
 }
 @media screen and (max-width: 1200px) {
   .search-input {
@@ -3106,7 +3140,7 @@ li a.accordion-toggle:hover {
   background-color: #fff;
   box-shadow: 0 0 9px rgb(0 0 0 / 30%);
   border-radius: 10px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 .profile-thumb {
   position: relative;
@@ -3272,6 +3306,7 @@ textarea.input {
   list-style: none;
   margin: 30px 0 0;
   padding: 0;
+  width: 100%;
 }
 .all-checklist-block .checklist-item {
   position: relative;
@@ -3318,9 +3353,14 @@ textarea.input {
 .button-wrap .cmn-button:first-child,
 .button-wrap .cmn-button.-fullmax {
   margin-left: 0;
-  background: #969393;
-  color: black;
+  background: #a8a6a6;
+  color: #fff;
   text-decoration: none;
+  transform: 0.2s;
+}
+.button-wrap .cmn-button:hover,
+.button-wrap .cmn-button.-fullmax {
+  box-shadow: 3px 3px 12px 3px rgba(145, 143, 143, 0.5);
 }
 .cmn-button.-med {
   font-size: 18px;
@@ -3433,6 +3473,7 @@ textarea.input {
   font: 400 13.3333px Arial;
 }
 
+
 @media screen and (min-width: 900px) {
   .info-block.-innerspace {
     padding-bottom: 80px;
@@ -3449,11 +3490,23 @@ textarea.input {
   .main-nav.-fix ~ .info-block.-innerspace {
     padding-top: 0;
   }
-  .profile-block.-full {
+  /* .profile-block.-full {
     margin-top: 100px;
-  }
+  } */
+  
 }
+
+
 @media screen and (min-width: 576px) {
+  .info-block.-innerspace{
+    padding-bottom: 80px;
+    padding-top: 50px;
+  }
+  .input-block .label {
+    padding-top: 1.5rem;
+  }
+  .profile-block .upload-photo {
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -3461,6 +3514,11 @@ textarea.input {
     margin-top: 2rem;
     margin-bottom: 2rem;
   }
+  .info-block.-innerspace{
+    padding-bottom: 80px;
+    padding-top: 50px;
+  }
+  
 }
 
 @media screen and (min-width: 640px) {
@@ -3501,6 +3559,7 @@ textarea.input {
     margin-right: auto;
     margin-left: 70px;
     margin-bottom: 40px;
+    margin-top: 1rem;
   }
   .profile-block.-full .profile-inner {
     display: flex;
@@ -3675,7 +3734,7 @@ textarea.input {
 /************************ my Schedule **********************/
 
 .article-block-title.-right .select-menu-block {
-  width: 200px;
+  width: 100%;
   margin-left: auto;
 }
 .article-block.-full {
@@ -3721,11 +3780,7 @@ textarea.input {
   color: #ff5c00;
   text-align: center;
 }
-.article-list-item .article-note {
-  position: relative;
-  display: block;
-  margin-left: auto;
-}
+
 .article-inner-block .article-border-box {
   margin-right: 5px;
 }
@@ -3783,6 +3838,9 @@ textarea.input {
     top: -5px;
     text-align: center;
     margin-top: 1rem;
+  }
+  .article-list-item .article-note {
+    margin-top: 7px;
   }
 }
 
