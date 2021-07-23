@@ -2545,7 +2545,7 @@ li a.accordion-toggle:hover {
   color: #969393;
   font-size: 20px;
   padding-left: 1rem;
-  top: 13px;
+  top: 3px;
 }
 .search-input .submit-search-btn {
   cursor: pointer;
