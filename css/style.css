@@ -985,6 +985,7 @@ header
   background: #f3f3f3;
   border-radius: 10px;
   cursor: pointer;
+  border: none;
   transition: 0.2s;
 }
 .sectionOurServices .digital-grid .Digital-item i {
@@ -1007,6 +1008,14 @@ header
   transition: 0.2s;
 }
 
+.modal-dialog .ModalDetallsImg{
+  padding: 30px;
+  width: 100%;
+}
+.modal-dialog .ModalDetallsImg ul li{
+  list-style: inside;
+}
+
 /************* Video & VirtualReality **************/
 
 .Video-VirtualReality {
@@ -1026,6 +1035,7 @@ header
   text-align: left;
   line-height: 24px;
   list-style-type: circle;
+  list-style: inside;
 }
 .VideoVirtualReality .bg-background {
   height: auto;
@@ -1362,8 +1372,8 @@ header
   margin-bottom: 3rem;
 }
 .sectionReachTheNextLevel .bgReachTheNextLevel {
-  max-width: 90%;
-  width: 90%;
+  max-width: 100%;
+  width: 100%;
   margin-left: auto;
   position: relative;
 }
@@ -1371,11 +1381,14 @@ header
   width: 100%;
   height: auto;
   margin-bottom: 3rem;
-  border-radius: 20px 0 0 20px;
+  /* border-radius: 20px 0 0 20px; */
+}
+.sectionReachTheNextLevel .bgReachTheNextLevel .textReachTheNextLevel h1,
+.sectionReachTheNextLevel .bgReachTheNextLevel .textReachTheNextLevel h5 {
+  left: 200px;
 }
 .sectionReachTheNextLevel .bgReachTheNextLevel .textReachTheNextLevel h1 {
   position: absolute;
-  width: 600px;
   top: 20px;
   color: white;
   text-transform: uppercase;
@@ -1383,30 +1396,18 @@ header
   font-size: 30px;
   margin-left: 3rem;
 }
-.sectionReachTheNextLevel
-  .bgReachTheNextLevel
-  .textReachTheNextLevel
-  .textBusinessFully
-  h5 {
+.sectionReachTheNextLevel .bgReachTheNextLevel .textReachTheNextLevel .textBusinessFully h5 {
   position: absolute;
-  width: 800px;
   top: 55px;
   color: #fff25f;
   font-weight: 400;
   font-size: 16px;
   margin-left: 3rem;
 }
-.sectionReachTheNextLevel
-  .bgReachTheNextLevel
-  .textReachTheNextLevel
-  .textBusinessFully
-  #textyellow {
-  position: absolute;
-  width: 800px;
-  top: 55px;
-  left: 127px;
+.sectionReachTheNextLevel .bgReachTheNextLevel .textReachTheNextLevel .textBusinessFully h5 #textyellow {
   color: #de961c;
 }
+
 
 /*************** sectionHospital-HGO **************/
 .sectionHospital-HGO .card {
