@@ -1052,7 +1052,7 @@ header
   position: relative;
 }
 .sectionTechnology .bgTechnology .imgTechnology {
-  width: 80%;
+  width: 100%;
   height: 310px;
   margin-bottom: 3rem;
 }
