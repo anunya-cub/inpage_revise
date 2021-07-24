@@ -33,6 +33,10 @@ table {
 /*******************************************************/
 
 /******************************** navbar ********************************/
+.container-fluid{
+  padding-left: 0;
+  padding-right: 0;
+}
 .imgLogoMedical {
   width: 80px;
   height: 80px;
@@ -48,7 +52,7 @@ header .MyPageSignOut img {
   width: 20px;
   height: 20px;
   border-radius: 100px;
-  margin-top: -1.5rem;
+  margin-top: -2rem;
   margin-right: 130px;
 }
 header .MyPageSignOut a {
@@ -56,7 +60,7 @@ header .MyPageSignOut a {
   font-size: 12px;
   color: #115d5e;
   font-weight: 500;
-  top: 60px;
+  top: 83px;
   /* margin-right: 245px; */
   text-decoration: none;
   transform: 0.2s;
@@ -303,6 +307,7 @@ form .nav-link {
   margin-bottom: 0;
   background: #d3d3d3;
 }
+
 /************************ Trending Topic & Latest News **************************/
 
 .data-time {
@@ -617,6 +622,19 @@ button.icon-btn {
   color: #115d5e;
   font-weight: bold;
 }
+.section-list-button #TextFooterGreenLink {
+  color: #115d5e !important;
+}
+.section-list-button .FooterListDetalls::after{
+  position: absolute;
+  content: "";
+  top: 0;
+  right: -15px;
+  height: 100%;
+  border-left: 2px solid rgb(235, 232, 232);
+}
+
+
 
 /******************************* footer ************************/
 
@@ -702,6 +720,9 @@ footer {
   }
   .section-3 .row-card-event .col-left img {
     margin-bottom: 1rem;
+  }
+  .section-list-button .FooterListDetalls::after{
+    display: none;
   }
 }
 
@@ -1371,24 +1392,33 @@ header
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
+.bgReachTheNextLevel {
+  position: relative;
+}
 .sectionReachTheNextLevel .bgReachTheNextLevel {
   max-width: 100%;
   width: 100%;
-  margin-left: auto;
+  /* margin-left: auto; */
   position: relative;
 }
-.sectionReachTheNextLevel .bgReachTheNextLevel .imgReachTheNextLevel {
+.sectionReachTheNextLevel .bgReachTheNextLevel {
   width: 100%;
   height: auto;
   margin-bottom: 3rem;
+  /* position: relative; */
+  background-image: url('../img/img-sale/sale_revise_bg_green_small2.jpge.jpg');
+  padding: 1rem;
+
   /* border-radius: 20px 0 0 20px; */
 }
 .sectionReachTheNextLevel .bgReachTheNextLevel .textReachTheNextLevel h1,
 .sectionReachTheNextLevel .bgReachTheNextLevel .textReachTheNextLevel h5 {
-  left: 200px;
+  /* position: absolute; */
+  padding-left: 150px;
+  margin-top: .2rem;
 }
 .sectionReachTheNextLevel .bgReachTheNextLevel .textReachTheNextLevel h1 {
-  position: absolute;
+  /* position: absolute; */
   top: 20px;
   color: white;
   text-transform: uppercase;
@@ -1396,15 +1426,15 @@ header
   font-size: 30px;
   margin-left: 3rem;
 }
-.sectionReachTheNextLevel .bgReachTheNextLevel .textReachTheNextLevel .textBusinessFully h5 {
-  position: absolute;
+.sectionReachTheNextLevel .bgReachTheNextLevel .textReachTheNextLevel h5 {
+  /* position: absolute; */
   top: 55px;
   color: #fff25f;
   font-weight: 400;
   font-size: 16px;
   margin-left: 3rem;
 }
-.sectionReachTheNextLevel .bgReachTheNextLevel .textReachTheNextLevel .textBusinessFully h5 #textyellow {
+.sectionReachTheNextLevel .bgReachTheNextLevel .textReachTheNextLevel h5 #textyellow {
   color: #de961c;
 }
 
@@ -1646,6 +1676,10 @@ header
   .textBoardslide img {
     margin-bottom: 0.7rem;
   }
+  .sectionReachTheNextLevel .bgReachTheNextLevel .textReachTheNextLevel h1,
+.sectionReachTheNextLevel .bgReachTheNextLevel .textReachTheNextLevel h5 {
+  padding-left: 0px;
+}
 }
 
 @media screen and (max-width: 767.98px) {
@@ -1676,6 +1710,13 @@ header
   .ASECFrontier form::before {
     display: none;
   }
+  .section-list-button .FooterListDetalls::after{
+    display: none;
+  }
+  .sectionReachTheNextLevel .bgReachTheNextLevel .textReachTheNextLevel h1,
+.sectionReachTheNextLevel .bgReachTheNextLevel .textReachTheNextLevel h5 {
+  padding-left: 0px;
+}
 }
 
 @media screen and (max-width: 991.98px) {
@@ -1705,8 +1746,8 @@ header
     height: 145px;
   }
   .sectionReachTheNextLevel .bgReachTheNextLevel {
-    max-width: 95%;
-    width: 95%;
+    max-width: 100%;
+    width: 100%;
   }
   .sectionReachTheNextLevel .bgReachTheNextLevel .textReachTheNextLevel h1 {
     top: 12px;
@@ -1714,16 +1755,13 @@ header
   }
   .sectionReachTheNextLevel
     .bgReachTheNextLevel
-    .textReachTheNextLevel
-    .textBusinessFully
-    h5 {
+    .textReachTheNextLevel h5 {
     top: 35px;
     font-size: 14px;
   }
   .sectionReachTheNextLevel
     .bgReachTheNextLevel
     .textReachTheNextLevel
-    .textBusinessFully
     #textyellow {
     top: 35px;
     left: 110px;
@@ -1740,7 +1778,7 @@ header
   }
 
   .sectionTechnology .bgTechnology .imgTechnology {
-    width: 70%;
+    width: 100%;
     height: 190px;
   }
   .sectionTechnology .bgTechnology .imgLaptop {
@@ -1835,11 +1873,15 @@ header
   .Carousel {
     z-index: -999;
   }
+  .sectionReachTheNextLevel .bgReachTheNextLevel .textReachTheNextLevel h1,
+.sectionReachTheNextLevel .bgReachTheNextLevel .textReachTheNextLevel h5 {
+  padding-left: 0px;
+}
 }
 
 @media screen and (max-width: 1200px) {
   .sectionTechnology .bgTechnology .imgTechnology {
-    width: 70%;
+    width: 100%;
     height: 250px;
   }
   .sectionTechnology .bgTechnology .imgLaptop {
@@ -1883,8 +1925,8 @@ header
     font-size: 10px;
   }
   .sectionReachTheNextLevel .bgReachTheNextLevel {
-    max-width: 95%;
-    width: 95%;
+    max-width: 100%;
+    width: 100%;
   }
   .sectionReachTheNextLevel .bgReachTheNextLevel .textReachTheNextLevel h1 {
     top: 12px;
@@ -1893,7 +1935,6 @@ header
   .sectionReachTheNextLevel
     .bgReachTheNextLevel
     .textReachTheNextLevel
-    .textBusinessFully
     h5 {
     top: 35px;
     font-size: 14px;
@@ -1901,7 +1942,6 @@ header
   .sectionReachTheNextLevel
     .bgReachTheNextLevel
     .textReachTheNextLevel
-    .textBusinessFully
     #textyellow {
     top: 35px;
     left: 110px;
@@ -2539,19 +2579,16 @@ li a.accordion-toggle:hover {
   background: rgb(168, 166, 166) !important;
 }
 .submit-search-btn {
-  position: absolute;
+  /* position: relative; */
   border: none;
   background: none;
   color: #969393;
   font-size: 20px;
-  padding-left: 1rem;
-  top: 3px;
-}
-.search-input .submit-search-btn {
+  padding-left: 0 !important;
   cursor: pointer;
-  position: absolute;
-  right: px;
-  top: 21px;
+  margin-left: .5rem;
+  /* right: 15px; */
+  top: 5px;
   outline: none;
   border: none;
   padding: 0;
@@ -2559,6 +2596,18 @@ li a.accordion-toggle:hover {
   border-radius: 0;
   -webkit-appearance: none;
 }
+/* .search-input .submit-search-btn {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 21px;
+  outline: none;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 0;
+  -webkit-appearance: none;
+} */
 .search-input .submit-search-btn .search-icon {
   display: inline-block;
   vertical-align: top;

@@ -1,3 +1,38 @@
+.TextHeaderLasted{
+    color: #115d5e;
+    font-size: 34px;
+    font-weight: 500;
+}
+.TextHeaderPressRelease{
+    color: #115d5e;
+    font-size: 34px;
+    font-weight: 500;
+}
+.ThailiandandCovid-19{
+    display: flex;
+    width: 100%;
+}
+.TextTime-right{
+    display: flex;
+    margin-left: auto;
+}
+.TextTime-right p{
+    position: relative;
+}
+.TextTime-right p::after{
+    position: absolute;
+    content: "";
+    top: 15%;
+    right: -15px;
+    height: 65%;
+    border-left: 2px solid rgb(197, 195, 195);
+}
+.TextTime-right i{
+    margin-left: 1.3rem;
+    margin-top: .3rem;
+    color: rgb(124, 124, 124);
+    margin-right: 1rem;
+}
 .card-TimeComment{
     display: flex;
 }
@@ -20,7 +55,52 @@
     border: none;
 }
 .card-TimeComment p{
-    padding: 0;
+    position: relative;
     font-size: 14px;
-    color: #bdbdbd;
+    color: rgb(182, 182, 182);
 }
+.card-TimeComment p::after{
+    position: absolute;
+    content: "";
+    top: 15%;
+    right: -15px;
+    height: 65%;
+    border-left: 2px solid rgb(197, 195, 195);
+}
+.card-TimeComment {
+    display: flex;
+    margin-top: 1rem;
+  }
+  .card-TimeComment i {
+      margin-left: 1.3rem;
+      margin-top: .3rem;
+      color: rgb(124, 124, 124);
+  }
+  
+  .TimeandComment a {
+    border: 1px solid #115d5e;
+    margin: 0;
+    padding: 0;
+    padding: 1px 4px;
+    font-size: 12px;
+    background: #115d5e;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    margin-left: 0.5rem;
+    transition: 0.2s;
+    position: relative;
+  }
+  .TextThailiandInCovid .card-body{
+      padding: 0;
+      margin-top: .5rem;
+  }
+  .ThailiandandCovid-19 h5{
+      font-size: 20px;
+      color: #115d5e;
+  }
+  .TextThaiCovid h2{
+      font-size: 18px;
+  }
+  

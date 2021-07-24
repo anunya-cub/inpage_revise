@@ -1,39 +1,47 @@
-.TextHeaderPressRelease h3{
-    font-size: 32px;
-    font-weight: 500;
-    color: #115d5e;
+.TextHeaderPressRelease h3 {
+  font-size: 32px;
+  font-weight: 500;
+  color: #115d5e;
 }
-.card-TimeComment{
-    display: flex;
-    margin-top: 1rem;
-}
-.TimeandComment a{
-    border: 1px solid #115d5e;
-    margin: 0;
-    padding: 0;
-    padding: 1px 4px;
-    font-size: 12px;
-    background: #115d5e;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    border-radius: 5px;
-    margin-left: .5rem;
-    transition: .2s;
-}
-.TimeandComment a:hover{
-    background: #f26e24;
-    border: none;
-}
-/* .TimeandComment a:first-child{
-    position: relative;
-    content: '';
-    height: 10px;
-    top: 0;
-    border: 1px solid #8d8d8d;
-} */
 .card-TimeComment p{
-    padding: 0;
+    position: relative;
     font-size: 14px;
-    color: #bdbdbd;
+    color: rgb(182, 182, 182);
 }
+.card-TimeComment p::after{
+    position: absolute;
+    content: "";
+    top: 15%;
+    right: -15px;
+    height: 65%;
+    border-left: 2px solid rgb(197, 195, 195);;
+}
+.card-TimeComment {
+  display: flex;
+  margin-top: 1rem;
+}
+.card-TimeComment i {
+    margin-left: 1.3rem;
+    margin-top: .2rem;
+    color: rgb(124, 124, 124);
+}
+.TimeandComment a {
+  border: 1px solid #115d5e;
+  margin: 0;
+  padding: 0;
+  padding: 1px 4px;
+  font-size: 12px;
+  background: #115d5e;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin-left: 0.5rem;
+  transition: 0.2s;
+  position: relative;
+}
+.TimeandComment a:hover {
+  background: #f26e24;
+  border: none;
+}
+
