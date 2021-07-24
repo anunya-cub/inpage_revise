@@ -34,8 +34,8 @@ table {
 
 /******************************** navbar ********************************/
 .imgLogoMedical {
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
   position: relative;
 }
 header .MyPageSignOut {
@@ -3501,7 +3501,7 @@ textarea.input {
 @media screen and (min-width: 576px) {
   .info-block.-innerspace{
     padding-bottom: 80px;
-    padding-top: 50px;
+    padding-top: 30px;
   }
   .input-block .label {
     padding-top: 1.5rem;
@@ -3517,7 +3517,7 @@ textarea.input {
   }
   .info-block.-innerspace{
     padding-bottom: 80px;
-    padding-top: 50px;
+    padding-top: 30px;
   }
   
 }

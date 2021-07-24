@@ -1,11 +1,5 @@
-.TextHeaderPressRelease h3{
-    font-size: 32px;
-    font-weight: 500;
-    color: #115d5e;
-}
 .card-TimeComment{
     display: flex;
-    margin-top: 1rem;
 }
 .TimeandComment a{
     border: 1px solid #115d5e;
@@ -18,20 +12,13 @@
     text-decoration: none;
     text-transform: uppercase;
     border-radius: 5px;
-    margin-left: .5rem;
     transition: .2s;
+    margin-left: .5rem;
 }
 .TimeandComment a:hover{
     background: #f26e24;
     border: none;
 }
-/* .TimeandComment a:first-child{
-    position: relative;
-    content: '';
-    height: 10px;
-    top: 0;
-    border: 1px solid #8d8d8d;
-} */
 .card-TimeComment p{
     padding: 0;
     font-size: 14px;
