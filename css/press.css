@@ -1,0 +1,26 @@
+.card-TimeComment{
+    display: flex;
+    margin-top: 1rem;
+}
+.TimeandComment a{
+    border: 1px solid #115d5e;
+    margin: 0;
+    padding: 0;
+    padding: 1px 4px;
+    font-size: 12px;
+    background: #115d5e;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: .2s;
+}
+.TimeandComment a:hover{
+    background: #f26e24;
+    border: none;
+}
+.TimeandComment p{
+    padding: 0;
+    font-size: 12px;
+    color: #e6e6e6;
+}
