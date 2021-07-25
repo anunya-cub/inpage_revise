@@ -95,7 +95,7 @@ nav a {
 }
 .navbar-one button.button-sall {
   font-size: 0.9rem;
-  font-weight: bold;
+  font-weight: 500;
   background: #ffa800;
   border: none;
   color: #115d5e;
@@ -103,7 +103,7 @@ nav a {
   transition: 0.2s;
 }
 .navbar-one button.button-sall:hover {
-  background: #f5b433;
+  background: #b4b1b1;
 }
 .modal .modal-content {
   padding-left: 1.5rem;
@@ -810,6 +810,8 @@ footer {
   footer p {
     line-height: 18pt;
   }
+  
+  
 }
 
 @media (min-width: 992px) {
@@ -825,6 +827,7 @@ footer {
   .icon-star {
     margin-top: 0rem;
   }
+  
 }
 
 /******************************************** Sale_revise3 ************************************/
@@ -928,27 +931,31 @@ header
 
 /************** STRENGTH **************/
 
-.sectionStrength {
+/* .sectionStrength h1 {
   background-image: url(../img/img-sale/sale_revise_strength.png);
   background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 22%;
+  background-position: top;
+  background-size: 35%;
   z-index: -999;
-}
+  position: relative;
+} */
 .sectionStrength h1 {
   color: #115d5e;
   font-weight: 600;
   font-size: 42px;
-  margin-top: 5rem;
-  padding-top: 0.9rem;
+  /* margin-top: 6rem; */
+  padding-top: 0rem;
+  position: relative;
 }
 
 .sectionStrength .card {
+  position: relative;
   border: none;
   -webkit-box-shadow: 0 12px 34px rgba(0, 0, 0, 0.12);
   -moz-box-shadow: 0 12px 34px rgba(0, 0, 0, 0.12);
   box-shadow: 0 12px 34px rgba(0, 0, 0, 0.12);
   transition: 0.3s;
+  height: 100%;
 }
 .sectionStrength .card:hover {
   transform: scale3d(1.1, 1.1, 0.3);
@@ -982,13 +989,13 @@ header
 }
 
 /******************* OurServices ****************/
-.sectionOurServices h1 {
+/* .sectionOurServices h1 {
   background-image: url("../img/img-sale/sale_revise_OurServices.png");
   background-position: top;
   background-repeat: no-repeat;
   background-size: 35%;
   z-index: -999;
-}
+} */
 .sectionOurServices h1 {
   color: #115d5e;
   font-weight: 600;
@@ -1001,6 +1008,7 @@ header
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-gap: 1rem;
+  box-sizing: border-box;
 }
 .sectionOurServices .digital-grid .Digital-item {
   background: #f3f3f3;
@@ -1008,6 +1016,7 @@ header
   cursor: pointer;
   border: none;
   transition: 0.2s;
+  box-sizing: border-box;
 }
 .sectionOurServices .digital-grid .Digital-item i {
   font-size: 3rem;
@@ -1027,6 +1036,7 @@ header
   color: #9a9898;
   font-weight: 700;
   transition: 0.2s;
+  height: 20px;
 }
 
 .modal-dialog .ModalDetallsImg{
@@ -1058,6 +1068,9 @@ header
   font-size: 18px;
   font-weight: 400;
 }
+/* .sectionOurServices .Digital-item .TextCommunication{
+  font-size: 12px !important;
+} */
 /************* Video & VirtualReality **************/
 
 .Video-VirtualReality {
@@ -1757,7 +1770,15 @@ header
   top: 12px;
   font-size: 20px;
 }
-
+.ShowDetallsListServer h2{
+  font-size: 22px;
+}
+.ShowDetallsListServer p{
+  font-size: 20px;
+}
+.ShowDetallsListServer .li-ListTxetServer{
+  font-size: 14px;
+}
 }
 
 @media screen and (max-width: 767.98px) {
