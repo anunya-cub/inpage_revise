@@ -20,4 +20,11 @@ function changeSlide(data, e) {
   $(".btnPageTodayonMLT a.btn").removeClass("active");
   $(`.` + data).removeClass("d-none");
   $(e).addClass("active");
+};
+
+function OurServerSlide(data, e) {
+  $(".listBoxSlideDetalls").addClass("d-none");
+  $(".Digital-item a.btn").removeClass("active");
+  $(`.` + data).removeClass("d-none");
+  $(e).addClass("active");
 }

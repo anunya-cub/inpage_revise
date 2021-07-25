@@ -1036,7 +1036,28 @@ header
 .modal-dialog .ModalDetallsImg ul li{
   list-style: inside;
 }
-
+.ShowDetallsListServer{
+  box-sizing: border-box;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  padding: 2.5rem;
+  border: 1px solid rgb(228, 226, 226);
+}
+.ShowDetallsListServer h2{
+  color: #115d5e;
+  font-weight: 500;
+  font-size: 28px;
+}
+.ShowDetallsListServer p{
+  color: #115d5e;
+  font-weight: 400;
+  font-size: 20px;
+}
+.ShowDetallsListServer .li-ListTxetServer{
+  color: #969393;
+  list-style: inside;
+  font-size: 18px;
+  font-weight: 400;
+}
 /************* Video & VirtualReality **************/
 
 .Video-VirtualReality {
@@ -1103,6 +1124,7 @@ header
   text-transform: uppercase;
   font-weight: 500;
   font-size: 34px;
+  z-index: 999;
 }
 .sectionTechnology .textMedicalLeaders h2 {
   position: absolute;
@@ -1112,6 +1134,7 @@ header
   text-transform: uppercase;
   font-weight: 500;
   font-size: 34px;
+  z-index: 999;
 }
 .sectionTechnology .textMedicalLeaders .textBuildAwareness h6 {
   position: absolute;
@@ -1120,18 +1143,21 @@ header
   color: #fff25f;
   font-size: 16px;
   font-weight: 400;
+  z-index: 999;
 }
 .sectionTechnology .textMedicalLeaders .textBuildAwareness #textyellow {
   position: absolute;
   width: 660px;
   top: 245px;
   color: #de961c;
+  z-index: 999;
 }
 .sectionTechnology .textMedicalLeaders .Readmore {
   position: absolute;
   top: 265px;
   width: 660px;
   margin-top: 0.1rem;
+  z-index: 999;
 }
 .sectionTechnology .textMedicalLeaders .btnReadmore {
   background: #f26e24;
@@ -1680,6 +1706,58 @@ header
 .sectionReachTheNextLevel .bgReachTheNextLevel .textReachTheNextLevel h5 {
   padding-left: 0px;
 }
+
+.sectionTechnology .bgTechnology .imgTechnology {
+  width: 100% !important;
+  height: 110px !important;
+}
+.sectionTechnology .bgTechnology .imgLaptop {
+  /* width: 140px !important;
+  left: calc(60% - 10px) !important; */
+  display: none;
+}
+.sectionTechnology .bgTechnology .imgTablet {
+  display: none;
+}
+.sectionTechnology .bgTechnology .imgMobile {
+  display: none;
+}
+.sectionTechnology .textMedicalLeaders h1 {
+  max-width: 450px !important;
+  top: 15px !important;
+  font-size: 20px;
+}
+.sectionTechnology .textMedicalLeaders h2 {
+  max-width: 450px;
+  top: 35px !important;
+  font-size: 20px;
+}
+.sectionTechnology .textMedicalLeaders .textBuildAwareness h6 {
+  max-width: 230px;
+  top: 60px !important;
+  font-size: 12px;
+}
+.sectionTechnology .textMedicalLeaders .textBuildAwareness #textyellow {
+  max-width: 450px;
+  top: 60px !important;
+  font-size: 12px;
+}
+.sectionTechnology .textMedicalLeaders .Readmore {
+  top: 73px !important;
+  max-width: 450px;
+}
+.sectionTechnology .textMedicalLeaders .btnReadmore {
+  font-size: 10px;
+}
+.sectionReachTheNextLevel .bgReachTheNextLevel {
+  max-width: 100%;
+  width: 100%;
+}
+.sectionReachTheNextLevel .bgReachTheNextLevel .textReachTheNextLevel h1 {
+  top: 12px;
+  font-size: 20px;
+}
+
 }
 
 @media screen and (max-width: 767.98px) {
@@ -1890,36 +1968,36 @@ header
   }
   .sectionTechnology .bgTechnology .imgTablet {
     width: 240px;
-    left: calc(45% - 160px);
+    left: calc(45% - 115px);
   }
   .sectionTechnology .bgTechnology .imgMobile {
     width: 110px;
-    top: 120px;
-    left: calc(57% - 165px);
+    top: 110px;
+    left: calc(55% - 100px);
   }
   .sectionTechnology .textMedicalLeaders h1 {
-    max-width: 400px;
+    max-width: 450px;
     top: 140px;
     font-size: 20px;
   }
   .sectionTechnology .textMedicalLeaders h2 {
-    max-width: 400px;
+    max-width: 450px;
     top: 160px;
     font-size: 20px;
   }
   .sectionTechnology .textMedicalLeaders .textBuildAwareness h6 {
-    max-width: 180px;
+    max-width: 230px;
     top: 185px;
     font-size: 12px;
   }
   .sectionTechnology .textMedicalLeaders .textBuildAwareness #textyellow {
-    max-width: 400px;
+    max-width: 450px;
     top: 185px;
     font-size: 12px;
   }
   .sectionTechnology .textMedicalLeaders .Readmore {
     top: 205px;
-    max-width: 400px;
+    max-width: 450px;
   }
   .sectionTechnology .textMedicalLeaders .btnReadmore {
     font-size: 10px;
@@ -1948,6 +2026,7 @@ header
     font-size: 14px;
   }
 }
+
 
 /*********************************** inpage_new_ok ***********************************/
 
