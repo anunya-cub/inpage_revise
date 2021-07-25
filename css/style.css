@@ -308,6 +308,7 @@ form .nav-link {
   background: #d3d3d3;
 }
 
+
 /************************ Trending Topic & Latest News **************************/
 
 .data-time {
@@ -915,18 +916,23 @@ header
   cursor: pointer;
   transition: 0.2s;
 }
+
+.sectionCarousel .carousel-indicators{
+  bottom: -20px;
+  margin-bottom: 0;
+}
 .sectionCarousel .button-medical:hover {
   background: #f5b433;
 }
 
 .sectionCarousel .carousel-indicators li {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #9f9f9f;
+  width: 22px;
+  height: 3px;
+  border-radius: 0%;
+  background-color: #d3d3d3;
 }
 .sectionCarousel .carousel-indicators .active {
-  background-color: #ff6400;
+  background-color: #2a928b;
 }
 
 /************** STRENGTH **************/
