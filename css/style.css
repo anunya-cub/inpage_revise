@@ -625,6 +625,7 @@ button.icon-btn {
 }
 .section-list-button #TextFooterGreenLink {
   color: #115d5e !important;
+  text-decoration: underline;
 }
 .section-list-button .FooterListDetalls::after{
   position: absolute;
@@ -1501,7 +1502,7 @@ header
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 340px;
+  height: 420px;
   color: #115d5e;
 }
 .sectionHospital-HGO h3 {
@@ -1522,7 +1523,7 @@ header
   background-image: url("../img/img-sale/sale_revise_Government.png");
   background-position: center;
   background-size: cover;
-  height: 340px;
+  height: 420px;
   color: #115d5e;
 }
 
@@ -1530,7 +1531,8 @@ header
   background-image: url("../img/img-sale/sale_revise_Others.png");
   background-position: center;
   background-size: cover;
-  height: 340px;
+  height: 420px;
+
   color: #115d5e;
 }
 .sectionHospital-HGO .card {
