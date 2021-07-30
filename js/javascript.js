@@ -24,7 +24,7 @@ function changeSlide(data, e) {
 
 function OurServerSlide(data, e) {
   $(".listBoxSlideDetalls").addClass("d-none");
-  $(".Digital-item a.btn").removeClass("active");
+  $(".Digital-item").removeClass("active");
   $(`.` + data).removeClass("d-none");
   $(e).addClass("active");
 }

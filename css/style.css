@@ -1029,7 +1029,7 @@ header
   font-size: 3rem;
   color: #797979;
 }
-.sectionOurServices .digital-grid .Digital-item:hover {
+.sectionOurServices .digital-grid .Digital-item:hover, .sectionOurServices .digital-grid .Digital-item.active {
   background: #115d5e;
 }
 .sectionOurServices .digital-grid .Digital-item img {
@@ -1044,6 +1044,9 @@ header
   font-weight: 700;
   transition: 0.2s;
   height: 20px;
+}
+.sectionOurServices .digital-grid .Digital-item:hover h6, .sectionOurServices .digital-grid .Digital-item.active h6{
+  color: #ffffff;
 }
 
 .modal-dialog .ModalDetallsImg{
