@@ -23,7 +23,9 @@ function changeSlide(data, e) {
 };
 
 function OurServerSlide(data, e) {
+  
   $(".listBoxSlideDetalls").addClass("d-none");
+  $(".onlyBtn1Active").addClass("d-none");
   $(".Digital-item").removeClass("active");
   $(`.` + data).removeClass("d-none");
   $(e).addClass("active");
