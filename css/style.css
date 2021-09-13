@@ -1029,8 +1029,11 @@ header
   font-size: 3rem;
   color: #797979;
 }
-.sectionOurServices .digital-grid .Digital-item:hover, .sectionOurServices .digital-grid .Digital-item.active {
-  background: #115d5e;
+.sectionOurServices .digital-grid .Digital-item:hover, .sectionOurServices .digital-grid .Digital-item.active, .sOurServices .digital-grid .Digital-item:hover, .sOurServices .digital-grid .Digital-item.active {
+  background-color: #115d5e;
+}
+.sOurServices .digital-grid .Digital-item h6:hover, .sOurServices .digital-grid .Digital-item.active h6 {
+  color: #ffffff;
 }
 .sectionOurServices .digital-grid .Digital-item img {
   width: 50px;
@@ -1048,7 +1051,6 @@ header
 .sectionOurServices .digital-grid .Digital-item:hover h6, .sectionOurServices .digital-grid .Digital-item.active h6{
   color: #ffffff;
 }
-
 .modal-dialog .ModalDetallsImg{
   padding: 30px;
   width: 100%;
@@ -1078,9 +1080,7 @@ header
   font-size: 18px;
   font-weight: 400;
 }
-/* .sectionOurServices .Digital-item .TextCommunication{
-  font-size: 12px !important;
-} */
+
 /************* Video & VirtualReality **************/
 
 .Video-VirtualReality {

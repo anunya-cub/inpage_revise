@@ -46,7 +46,7 @@ table {
     font-size: 14px;
     color: #b6b6b6;
     font-weight: 300;
-    top: 100px;
+    top: 90px;
     text-decoration: none;
   }
 
@@ -56,6 +56,10 @@ table {
   width: 100%;
   height: auto;
 }
+.sbenner-img .container .sbennerVDO img{
+width: 10px !important;
+}
+
 
 /******************* Our Services ****************/
 .sOurServices h1 {
