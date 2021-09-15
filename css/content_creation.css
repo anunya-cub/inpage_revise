@@ -32,8 +32,8 @@ table {
 /******************* Logo ******************/
 
 .imgLogoMedical {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: auto;
     position: relative;
   }
   header .tBoxDescription {
