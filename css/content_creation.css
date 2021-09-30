@@ -32,23 +32,24 @@ table {
 /******************* Logo ******************/
 
 .imgLogoMedical {
-  width: 80px;
-  height: 80px;
-  position: relative;
-}
-header .tBoxDescription {
-  display: flex;
-  justify-content: flex-end;
-  background: #f26f25;
-}
-header .tBoxDescription .t-txt-right {
-  position: absolute;
-  font-size: 14px;
-  color: #b6b6b6;
-  font-weight: 300;
-  top: 90px;
-  text-decoration: none;
-}
+
+    width: 100px;
+    height: auto;
+    position: relative;
+  }
+  header .tBoxDescription {
+    display: flex;
+    justify-content: flex-end;
+    background: #f26f25;
+  }
+  header .tBoxDescription .t-txt-right {
+    position: absolute;
+    font-size: 14px;
+    color: #b6b6b6;
+    font-weight: 300;
+    top: 90px;
+    text-decoration: none;
+  }
 
 /******************* Img benner ******************/
 .sbenner-img .container .sbenner img {
