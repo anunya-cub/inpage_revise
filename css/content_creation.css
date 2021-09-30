@@ -72,13 +72,13 @@ table {
   margin-bottom: 2.5rem;
   padding-top: 0.7rem;
 }
-.sOurServices .digital-grid {
+.sOurServices .btndigital-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-gap: 1rem;
   box-sizing: border-box;
 }
-.sOurServices .digital-grid .Digital-item {
+.sOurServices .btndigital-grid .Digital-item {
   background: #f3f3f3;
   border-radius: 10px;
   cursor: pointer;
@@ -86,18 +86,18 @@ table {
   transition: 0.2s;
   box-sizing: border-box;
 }
-.sOurServices .digital-grid .Digital-item:hover,
+.sOurServices .btndigital-grid .Digital-item:hover,
 .sectionOurServices .digital-grid .Digital-item.active {
   background: #115d5e;
 }
-.sOurServices .digital-grid .Digital-item img {
+.sOurServices .btndigital-grid .Digital-item img {
   width: 50px;
   height: 55px;
   margin-bottom: 0.5rem;
   padding: 5px;
 }
-.sOurServices .digital-grid .Digital-item h6 {
-  font-size: 16px;
+.sOurServices .btndigital-grid .Digital-item h6 {
+  font-size: 12px;
   color: #9a9898;
   font-weight: 600;
   transition: 0.2s;
@@ -106,8 +106,8 @@ table {
   word-wrap:break-word;
 margin-bottom: 0;
 }
-.sOurServices .digital-grid .Digital-item:hover h6,
-.sectionOurServices .digital-grid .Digital-item.active h6 {
+.sOurServices .btndigital-grid .Digital-item:hover h6,
+.sectionOurServices .btndigital-grid .Digital-item.active h6 {
   color: #ffffff;
 }
 
@@ -158,6 +158,12 @@ margin-bottom: 0;
 }
 .-vlistOnly li{
   font-size: 18px !important;
+}
+.-vlistOnly li span a{
+  font-size: 18px !important;
+  font-weight: 400;
+  color: #797979;
+  text-decoration: none;
 }
 .cbox-gray .txt-listdetails{
   margin-left: 0 !important;
@@ -247,6 +253,7 @@ ul .ctxt-headerGreen {
 ul .ctxt-headerGreen span{
   color: #9a9898;
   font-weight: 400 !important;
+  text-decoration: none;
 }
 .txt-listgray li {
   font-size: 18px !important;
@@ -326,6 +333,12 @@ ul .ctxt-headerGreen span{
   margin-left: 2rem ;
   margin-bottom: 0;
 }
+.vtxt-videoDetails{
+  font-size: 18px;
+  text-align: center;
+  padding: 0 15px;
+}
+
 
 
 /* communication wiht HCPs */
@@ -501,6 +514,13 @@ font-size: 18px;
 .ctxt-number{
   font-size: 14px !important;
 }
+.sOurServices .btndigital-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+}
 
 
 
@@ -564,6 +584,13 @@ font-size: 18px !important;
   }
   .txt-detailsdark-bold {
     font-size: 22px !important;
+  }
+  .sOurServices .btndigital-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 1rem;
+    box-sizing: border-box;
+    text-align: center;
   }
 }
 
