@@ -8,7 +8,7 @@ body {
 }
 ol,
 ul {
-  /* list-style: none; */
+  list-style: none;
 }
 blockquote,
 q {
@@ -32,34 +32,32 @@ table {
 /******************* Logo ******************/
 
 .imgLogoMedical {
-    width: 80px;
-    height: 80px;
-    position: relative;
-  }
-  header .tBoxDescription {
-    display: flex;
-    justify-content: flex-end;
-    background: #f26f25;
-  }
-  header .tBoxDescription .t-txt-right {
-    position: absolute;
-    font-size: 14px;
-    color: #b6b6b6;
-    font-weight: 300;
-    top: 90px;
-    text-decoration: none;
-  }
-
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
+header .tBoxDescription {
+  display: flex;
+  justify-content: flex-end;
+  background: #f26f25;
+}
+header .tBoxDescription .t-txt-right {
+  position: absolute;
+  font-size: 14px;
+  color: #b6b6b6;
+  font-weight: 300;
+  top: 90px;
+  text-decoration: none;
+}
 
 /******************* Img benner ******************/
 .sbenner-img .container .sbenner img {
   width: 100%;
   height: auto;
 }
-.sbenner-img .container .sbennerVDO img{
-width: 10px !important;
+.sbenner-img .container .sbennerVDO img {
+  width: 10px !important;
 }
-
 
 /******************* Our Services ****************/
 .sOurServices h1 {
@@ -89,9 +87,9 @@ width: 10px !important;
   background: #115d5e;
 }
 .sOurServices .digital-grid .Digital-item i {
-    font-size: 3rem;
-    color: #797979;
-  }
+  font-size: 3rem;
+  color: #797979;
+}
 .sOurServices .digital-grid .Digital-item img {
   width: 50px;
   height: 55px;
@@ -121,15 +119,124 @@ width: 10px !important;
   box-sizing: border-box;
   padding: 1.5rem;
 }
-/* CDO Project */
-.ShowDetallsItems .TestServer1 .mBox-textdetails p {
+/* CDP Project */
+.listBoxSlideDetalls .cboxProject-header .ctxtHeader-CPD {
+  font-size: 30px;
+  font-weight: 600;
+  color: #115d5e;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.listBoxSlideDetalls .cbox-ImgnewsTop {
+  position: relative;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  border-top: 8px solid #f26f25;
+
+}
+.listBoxSlideDetalls .cbox-ImgnewsTop .imgNews-Top{
+  width: 70% !important;
+  /* position: absolute; */
+}
+.listBoxSlideDetalls .cbox-ImgnewsTop .imgNews-Top img{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  width: 100% !important;
+}
+.listBoxSlideDetalls .cbox-TxtnewsTop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateY(50%);
+}
+.listBoxSlideDetalls .cbox-TxtnewsTop .txtNews-Top {
+  font-size: 26px;
+  font-weight: 600;
+  color: #115d5e;
+  margin-bottom: 0;
+}
+.-importantHeader{
+  content: "";
+  top: 30px;
+  margin-left: -1.5rem !important;
+  width: 30%;
+  border-bottom: 3px solid #f26f25;
+}
+.cbox-gray{
+  width: 100%;
+  height: 100%;
+  background-color: #eeeeee;
+  border-radius: 10px;
+  padding: 15px;
+}
+.cboxText{
+  display: flex;
+  flex-direction: row;
+}
+.cbg-number{
+  border-radius: 50%;
+  background-color: #424242;
+  width: 23px;
+  height: 23px;
+  text-align: center;
+  align-items: center;
+  align-self: center;
+  margin-right: .5rem;
+  padding-top: 1px;
+}
+.ctxt-number{
+  font-size: 14px;
+  color: #ffffff;
+}
+.ctxt-header{
+  margin-bottom: 0;
+  font-size: 15px;
+  color: #272727;
+}
+.txt-listgray{
+  font-size: 16px;
+  color: #115d5e;
+  z-index: 100;
+}
+.cbox-gray .txt-listdetails{
+  margin-left: 2rem;
+}
+.cbox-gray .txt-listdetails li{
+font-size: 14px;
+font-weight: 400;
+}
+.cbox-building .ctxt-ForInformation{
+  font-size: 14px;
+  font-weight: 400;
+  color: #424242;
+  margin-top: .5rem;
+}
+.ctxt-campaign{
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  border: 1px solid #115d5e;
+  background-color: #115d5e;
+  border-radius: 50px;
+  padding: 2px 30px;
+}
+
+
+
+
+
+/* .ShowDetallsItems .TestServer1 .mBox-textdetails p {
   color: #9a9898;
   font-size: 18px;
   font-weight: 400;
   font-family: "Prompt", "Roboto Condensed", sans-serif;
   line-height: 36px;
-}
-.ShowDetallsItems .TestServer1 ul {
+} */
+/* .ShowDetallsItems .TestServer1 ul {
   padding-left: 0;
   list-style-position: outside;
 }
@@ -142,9 +249,9 @@ width: 10px !important;
   padding-left: 5px;
 }
 
-.rowImg-cpd{
- margin: auto;   
-}
+.rowImg-cpd {
+  margin: auto;
+} */
 
 /* communication wiht HCPs */
 .ShowDetallsItems .TestServer2 .mBoxTextRight {
@@ -239,7 +346,6 @@ width: 10px !important;
   font-family: "Prompt", "Roboto Condensed", sans-serif;
   line-height: 36px;
 }
-
 
 /* VDO */
 .ShowDetallsItems .TestServer4 .txt-VDOProduction {
@@ -358,19 +464,18 @@ width: 10px !important;
   font-weight: 500;
   font-family: "Prompt", "Roboto Condensed", sans-serif;
 }
-.txt-listgray li{
-    color: rgb(233, 233, 233) !important;
-    margin-left: 50px;
-
+/* .txt-listgray li {
+  color: rgb(233, 233, 233) !important;
+  margin-left: 50px;
 }
-.txt-listgray li span{
-    color: #9a9898;
-    font-size: 18px;
-    font-weight: 400;
-    font-family: "Prompt", "Roboto Condensed", sans-serif;
-    list-style: disc;
-    list-style: inside;
-}
+.txt-listgray li span {
+  color: #9a9898;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Prompt", "Roboto Condensed", sans-serif;
+  list-style: disc;
+  list-style: inside;
+} */
 .Img-cbottom {
   margin: auto;
 }
@@ -463,11 +568,4 @@ width: 10px !important;
   .txt-detailsgreen {
     font-size: 19px;
   }
-
-  /* .mBox-textdetails ul li {
-    font-size: 17px;
-  } */
-  /* .txt-detailsIndent {
-    font-size: 17px;
-  } */
 }
