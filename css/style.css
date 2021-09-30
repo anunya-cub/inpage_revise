@@ -1041,12 +1041,15 @@ header
   margin-bottom: 0.5rem;
   padding: 5px;
 }
-.sectionOurServices .digital-grid .Digital-item h6 {
+/* .sectionOurServices .digital-grid .Digital-item h6 {
   font-size: 13px;
   color: #9a9898;
   font-weight: 700;
   transition: 0.2s;
-  height: 20px;
+  padding: 5px;
+} */
+.TextCommunication{
+  word-wrap:break-word;
 }
 .sectionOurServices .digital-grid .Digital-item:hover h6, .sectionOurServices .digital-grid .Digital-item.active h6{
   color: #ffffff;

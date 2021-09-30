@@ -26,6 +26,22 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Slick casousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="/lib/w3.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/footer.css" />
@@ -36,13 +52,13 @@
       <!-- logo / navbar -->
       <div class="container">
         <div class="logo fluid-top text-center m-0 p-3 d-none d-sm-block">
-          <img class="imgLogoMedical" src="./img/logo-top.png" alt="" />
+          <img class="imgLogoMedical" src="./images/logo/logo.png" alt="" />
         </div>
-        <div class="tBoxDescription">
+        <!-- <div class="tBoxDescription">
           <p class="t-txt-right" href="#">
             This site is intended for healthcare Professional ONLY
           </p>
-        </div>
+        </div> -->
       </div>
       <div class="navbar-one w-100">
         <div class="container">
@@ -56,7 +72,7 @@
                   background: white;
                   border-radius: 100%;
                 "
-                src="img/logo-top.png"
+                src="./images/logo/logo.png"
                 alt=""
               />
             </div>
@@ -120,7 +136,7 @@
     <section class="boxCDP onlyBtn1Active sbenner-img mb-5">
       <div class="container">
         <div class="sbenner">
-          <img src="./images/banners/benner-MLTOURservice.jpg" alt="" />
+          <img src="./images/banners/banner_main_all.png" alt="" />
         </div>
       </div>
     </section>
@@ -128,69 +144,66 @@
     <!-- Our Services - btn -->
     <section class="sOurServices">
       <div class="container">
-        <div class="digital-grid">
-          <div
-            class="Digital-item active"
+        <!-- <div class="digital-grid"> -->
+          <div class="row">
+            <div class="col-2">
+              <div
+            class="Digital-itemTop active"
             onclick="OurServerSlide('boxCDP', this)"
           >
-            <div class="Digital-text text-center p-3 align-self-center">
-              <img src="./img/img-sale/icon-3.png" alt="" />
-              <h6 class="pt-1">CDP PROJECT</h6>
-            </div>
+          <img src="./images/menu/CPD_G.png">
           </div>
-          <div
-            class="Digital-item"
-            onclick="OurServerSlide('boxCommunication', this)"
-          >
-            <div class="Digital-text text-center p-3 align-self-center">
-              <img src="./img/img-sale/icon-6.png" alt="" />
-              <h6 class="TextCommunication pt-1">COMMUNICATION with HCPs</h6>
             </div>
-          </div>
-          <div
-            class="Digital-item"
+
+            <div class="col-2">
+              <div
+              class="Digital-itemTop"
+              onclick="OurServerSlide('boxCommunication', this)"
+            >
+            <img src="./images/menu/HCPs_G.png">
+            </div>
+            </div>
+
+            <div class="col-2">
+              <div
+            class="Digital-itemTop"
             onclick="OurServerSlide('boxDigital', this)"
           >
-            <div class="Digital-text text-center p-3 align-self-center">
-              <img src="./img/img-sale/icon-1.png" alt="" />
-              <h6 class="pt-1">DIGITAL SOLUTION</h6>
-            </div>
+          <img src="./images/menu/digital_G.png">
           </div>
-          <div class="Digital-item" onclick="OurServerSlide('boxVRAR', this)">
-            <div class="Digital-text text-center p-3 align-self-center">
-              <img
-                class="img-iconvideo"
-                src="./images/icons/video-icon.png"
-                alt=""
-              />
-              <h6 class="pt-1">VDO PRODUCTION</h6>
             </div>
-          </div>
+
+            <div class="col-2">
+              <div class="Digital-itemTop" onclick="OurServerSlide('boxVRAR', this)">
+              <img src="./images/menu/vdo_G.png">
+              </div>
+            </div>
+            <div class="col-2">
+
           <div
-            class="Digital-item"
-            onclick="OurServerSlide('boxContent', this)"
-          >
-            <div class="Digital-text text-center p-3 align-self-center">
-              <img src="./img/img-sale/icon-4.png" alt="" />
-              <h6 class="text-item pt-1">CONTENT CREATION</h6>
-            </div>
-          </div>
-          <div
-            class="Digital-item"
-            onclick="OurServerSlide('boxCreative', this)"
-          >
-            <div class="Digital-text text-center p-3 align-self-center">
-              <img src="./img/img-sale/icon-5.png" alt="" />
-              <h6 class="pt-1">CREATIVE DESIGN</h6>
-            </div>
-          </div>
+          class="Digital-itemTop"
+          onclick="OurServerSlide('boxContent', this)"
+        >
+        <img src="./images/menu/content_G.png">
         </div>
+            </div>
+
+            <div class="col-2">
+          <div
+          class="Digital-itemTop"
+          onclick="OurServerSlide('boxCreative', this)"
+        >
+        <img src="./images/menu/creative_G.png">
+        </div>
+            </div>
+          </div>
+
       </div>
     </section>
 
     <!-- Our Services - Items -->
     <div class="container">
-      <div class="ShowDetallsItems mt-4">
+      <div class="ShowDetallsItems m-0">
         <!-- Page CPD -->
         <div class="boxCDP TestServer1 listBoxSlideDetalls">
           <div class="cboxProject-header">
@@ -198,24 +211,14 @@
           </div>
 
           <div class="cbox-ImgnewsTop">
-            <div class="imgNews-Top mb-3">
-              <img
-                class="w-100 img-fluid"
-                src="./images/news/CPD-Project.png"
-                alt=""
-              />
-            </div>
-            <div class="cbox-TxtnewsTop">
-              <h2 class="txtNews-Top">Customize your own CPD webinar</h2>
-              <h2 class="txtNews-Top">with our professional HCPs team</h2>
-            </div>
+            <img class="w-100 img-fluid" src="./images/news/CPD-mian-ad.jpeg" />
           </div>
 
           <div class="mBox-textdetails">
             <div class="mb-4">
               <p style="text-indent: 50px">
                 A full webinar service for creating an accredited CPD such as
-                CPE, CME, CMTE, CNEU, etc. Our service covers from the very
+                CPE, CME, CMTE, etc. Our service covers from the very
                 first step as finding the right topic with the right
                 speaker/moderator, requesting a CPD proposal, promoting an
                 event, setting up an exam session upon your request, as well as
@@ -225,7 +228,7 @@
             </div>
 
             <div>
-              <h3 class="txt-detailsgreen">
+              <h3 class="vtxt-Headergreen">
                 Let our experienced HCPs team helps you accomplish your
                 on-demand webinar
               </h3>
@@ -235,39 +238,40 @@
                 <div class="col-12 col-md-6 mb-4">
                   <div class="cbox-gray">
                     <div class="cboxText">
-                  <div class="cboxNumber">
-                    <div class="cbg-number">
-                      <p class="ctxt-number">1</p>
-                    </div>
-                    </div>
-                    <div>
-                      <p class="ctxt-header">
-                        Planning and selecting the right topic for both
-                        accredited webinars and academic articles.
-                      </p>
+                      <div class="cboxNumber">
+                        <div class="cbg-number">
+                          <p class="ctxt-number">1</p>
+                        </div>
+                      </div>
+                      <div>
+                        <p class="ctxt-header">
+                          Planning and selecting the right topic for both
+                          accredited webinars and academic articles.
+                        </p>
+                      </div>
                     </div>
                   </div>
-                </div>
                 </div>
 
                 <div class="col-12 col-md-6 mb-4">
                   <div class="cbox-gray">
                     <div class="cboxText">
-                  <div class="cboxNumber">
-                    <div class="cbg-number">
-                      <p class="ctxt-number">2</p>
-                    </div>
-                    </div>
-                    <div>
-                      <p class="ctxt-header">
-                        Providing a CPD certification service to support,
-                        advise, and propose CPD accreditation, including to
-                        submit a participants’ list to the responsible council.
-                      </p>
+                      <div class="cboxNumber">
+                        <div class="cbg-number">
+                          <p class="ctxt-number">2</p>
+                        </div>
+                      </div>
+                      <div>
+                        <p class="ctxt-header">
+                          Providing a CPD certification service to support,
+                          advise, and propose CPD accreditation, including to
+                          submit a participants’ list to the responsible
+                          council.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
               </div>
 
               <div class="row mb-4">
@@ -278,136 +282,134 @@
                         <p class="ctxt-number">3</p>
                       </div>
                       <div>
-                        <p class="ctxt-header">
-                          webinar & live streaming
-                        </p>
+                        <p class="ctxt-header">webinar & live streaming</p>
                       </div>
                     </div>
                     <div>
-                      <ul class="txt-listdetails">
+                      <ul class="txt-listdetails -vlistOnly">
                         <li>
-                          Create an effective online registration form and manage such
-                            registration system via our platform to drive a  better data
-                            collection, as well as diminish equipment usage, costs and
-                            manpower. (For more information, please refer to DIGITAL
-                            SOLUTIONS)
+                          Create an effective online registration form and
+                          manage such registration system via our platform to
+                          drive a  better data collection, as well as diminish
+                          equipment usage, costs and manpower. (For more
+                          information, please refer to <span><a href="#">DIGITAL SOLUTIONS</a></span>)
                         </li>
                         <li>
-                         Support all sizes and forms of events for both public and
-                            private contexts.
+                          Support all sizes and forms of events for both public
+                          and private contexts.
                         </li>
                         <li>
-                          Enhance the webinar engagement by live streaming on our
-                            various social media channels.
+                          Enhance the webinar engagement by live streaming on
+                          our various social media channels.
                         </li>
                       </ul>
                     </div>
                   </div>
                 </div>
               </div>
-  
-              
-              
+
               <div class="cbox-building">
-                <h3 class="txt-detailsgreen">
+                <h3 class="vtxt-Headergreen">
                   Building a virtual meeting hall to enhance perception and
                   exclusive experience for your company.
                 </h3>
                 <div class="-importantHeader"></div>
-                <p class="ctxt-ForInformation">(For more information,please refer to DIGITAL SOLUTIONS)</p>
+                <p class="ctxt-ForInformation">
+                  (For more information,please refer to DIGITAL SOLUTIONS)
+                </p>
               </div>
-            
-       
 
-          <div class="row">
-            <div class="col-12 col-sm-6 rowImg-cpd">
-              <img
-                class="w-100 img-fluid mb-5 imgcpe mb-4"
-                src="./images/board/bottom-CPD.jpg"
-              />
-            </div>
-            <div class="col-12 col-md-6">
-                <mark class="ctxt-campaign mb-0">Campaign planning</mark>
-              <ul class="my-0">
-                <li>
-                  Promoting CPD Webinars on MLT Platform
-                </li>
-              </ul>
-              <ul class="my-0 txt-listgray">
-                <li>MLT application and website</li>
-                <li>MLT social medias (Facebook, Instagram, etc.)</li>
-                <li>Push notification and offer appealing benefits</li>
-              </ul>
-              <ul class="my-0">
-                <li>Engaging HCPs with the right topic</li>
-              </ul>
-              <ul class="my-0 txt-listgray">
-                <li>
-                  <span
-                    >Create outstanding medical and healthcare contents which
-                    are best for your business.</span
-                  >
-                </li>
-              </ul>
-              <ul class="my-0">
-                <li>
-                  Providing the report and analytics information for marketing
-                  value. (all under Personal Data Protection Act)
-                </li>
-              </ul>
-              <ul class="my-0 txt-listgray">
-                <li><span>Average attendance time</span></li>
-                <li><span>Basic geographics</span></li>
-                <li><span>Participants’ specialities/occupations</span></li>
-                <li><span>etc.</span></li>
-              </ul>
-              <ul class="my-0">
-                <li>CPD rerun</li>
-              </ul>
-              <ul class="my-0 txt-listgray">
-                <li>
-                  <span
-                    >Keep your webinar active on MLT platform and allow
-                    customersto access the event within your preferable period
-                    of time.</span
-                  >
-                </li>
-              </ul>
+              
+              <div class="row">
+                <!--  slick slider -->
+                <div class="col-12 col-lg-6 mt-md-5 rowImg-cpd sliderImgs">
+                  <img
+                    class="w-100 img-fluid mb-5 imgcpe mb-4"
+                    src="./images/news/bottom-CPD.jpeg"
+                  />
+                  <img
+                    class="w-100 img-fluid mb-5 imgcpe mb-4"
+                    src="./images/news/bottom-CPD.jpeg"
+                  />
+                  <img
+                    class="w-100 img-fluid mb-5 imgcpe mb-4"
+                    src="./images/news/bottom-CPD.jpeg"
+                  />
+                </div>
+                <!-- end slick slider -->
+
+                <div class="col-12 col-lg-6">
+                  <mark class="ctxt-campaign mb-0">Campaign planning</mark>
+                  <div class="my-3">
+                    <ul class="my-0">
+                      <li class="ctxt-headerGreen">
+                        Promoting CPD Webinars on MLT Platform
+                      </li>
+                    </ul>
+                    <ul class="my-0 txt-listgray">
+                      <li>MLT application and website</li>
+                      <li>MLT social medias (Facebook, Instagram, etc.)</li>
+                      <li>Push notification and offer appealing benefits</li>
+                    </ul>
+                    <ul class="my-0">
+                      <li class="ctxt-headerGreen">
+                        Engaging HCPs with the right topic
+                      </li>
+                    </ul>
+                    <ul class="my-0 txt-listgray">
+                      <li>
+                        Create outstanding medical and healthcare contents which
+                        are best for your business.
+                      </li>
+                    </ul>
+                    <ul class="my-0">
+                      <li class="ctxt-headerGreen">
+                        Providing the report and analytics information for
+                        marketing value. <span
+                          >(all under Personal Data Protection Act)</span
+                        >
+                      </li>
+                    </ul>
+                    <ul class="my-0 txt-listgray">
+                      <li>Average attendance time</li>
+                      <li>Basic geographics</li>
+                      <li>Participants’ specialities/occupations</li>
+                      <li>etc.</li>
+                    </ul>
+                    <ul class="my-0">
+                      <li class="ctxt-headerGreen">CPD rerun</li>
+                    </ul>
+                    <ul class="my-0 txt-listgray">
+                      <li>
+                        Keep your webinar active on MLT platform and allow
+                        customersto access the event within your preferable
+                        period of time.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Page HCP -->
+        <!-- Page COMMUNICATION HCPs -->
         <div class="boxCommunication TestServer2 listBoxSlideDetalls d-none">
-          <div class="row">
-            <div class="col-12 col-md-7">
-              <img
-                class="w-100 img-fluid"
-                src="./images/board/img-ModalHCV.jpg"
-                alt=""
-              />
-            </div>
-            <div class="col-12 col-md-5 mt-5 text-center mBoxTextRight">
-              <p class="txt-Communication px-3">Communication with HCPs</p>
-              <p class="txt-Communicationdetails">
-                Reach potential audience eho are 100% verified HCPs from
-                Doctors, Nurses, Pharmacists, Medtech, Nutritionists and many
-                more in Thailand.
-              </p>
-              <ul class="li-Communication text-left ml-2">
-                <li>Advertorial</li>
-                <li>Advertising</li>
-                <li>Suvey with MLT Platform</li>
-                <li>Customized package (Advertorial and Advertising)</li>
-              </ul>
-            </div>
+          <div class="cboxProject-header">
+            <h1 class="ctxtHeader-CPD">Communication with HCPs</h1>
+          </div>
+          <div class="cbox-ImgnewsTop">
+            <img src="./images/news/benner-HCPs.png" />
+          </div>
 
-            <div class="mt-4 mBox-textdetails">
-              <div class="text-left">
-                <h3 class="txt-detailsgreen mt-2">
-                  Connecting with HCPs to raise up your brand recognition
-                </h3>
-                <p>
+          <div>
+            <h3 class="vtxt-Headergreen">
+              Connecting with HCPs to raise up your brand recognition
+            </h3>
+            <div class="-importantHeader mb-4"></div>
+            <div class="mBox-textdetails">
+              <div class="mb-4">
+                <p style="text-indent: 50px">
                   Place your confidence in our healthcare professionals team who
                   believe in the power of both proactive and reactive marketing
                   strategies. Projecting your idea right to HCPs audiences in
@@ -416,172 +418,197 @@
                   THERAPISTS,NUTRITIONISTS, and MEDICAL
                 </p>
               </div>
-
-              <h3 class="txt-detailsdark text-center my-4">
-                Get the borderless communication started here and now with MLT
-              </h3>
-              <p class="text-left">
-                Simply straightforwardly transfer your message to appeal your
-                products to HCPs through our advertising service and survey with
-                MLT Platfrom
-              </p>
-
-              <h3 class="txt-detailsdark-bold text-center my-5">
-                Ads Position
-              </h3>
-              <div class="row text-center">
-                <div class="col-12 col-md-6">
-                  <img
-                    class="w-100 img-fluid"
-                    src="./images/board/moblieHCP-left.jpg"
-                  />
-                </div>
-                <div class="col-12 col-md-6">
-                  <img
-                    class="w-100 img-fluid"
-                    src="./images//board/moblieHCP-right.jpg"
-                  />
-                </div>
-              </div>
-
-              <h3 class="txt-detailsgray mt-5 text-center">
-                Showing sample of advertising on MLT (banners on web/app)
-              </h3>
-              <h3 class="txt-detailsgreen mt-5">
-                Let HCPs read MLT articles describing about your products, it is
-                Advertorial
-              </h3>
-              <ul class="my-0">
-                <li>
-                  Ingeniously convey your stories by immersing them in our
-                  advertorial service
-                </li>
-              </ul>
-              <ul class="my-0 txt-listgray">
-                <li>
-                  <span
-                    >Various tools are now available for you to display your
-                    notice such as press releases, journals, leaflets,
-                    infographics, videos etc. (refer to VDO PRODUCTION)</span
-                  >
-                </li>
-              </ul>
-              <ul class="my-0">
-                <li>
-                  Our HCPs team will be involved in the entire process from the
-                  beginning until the end product is achieved, to ensure content
-                  accuracy and review the content as per their HCPs aspect.
-                </li>
-              </ul>
-              <ul class="my-0">
-                <li>
-                  Our service offers a wide variety of choices to promote your
-                  Ads straightly and directly to HCPs audiences
-                </li>
-              </ul>
-
-              <h3 class="txt-detailsgreen mt-5">
-                Drive your business with data-based approach by researching what
-                HCPs thinking
-              </h3>
-
-              <ul class="my-0">
-                <li>
-                  Create an assessment survey to integrate audience preference,
-                  trend, lifestyle as well as post-event feedback for analyzing
-                  audiences’ tendency. This data-based consulting service offers
-                  you the ideal insight information to reflect your product.
-                </li>
-              </ul>
-              <ul class="my-0">
-                <li>
-                  The survey offers both quantitative and qualitative data
-                </li>
-              </ul>
-              <ul class="my-0 txt-listgray">
-                <li>
-                  <span
-                    >Customize your own parameters to get an effective action
-                    plan.</span
-                  >
-                </li>
-                <li>
-                  <span
-                    >Obtain feedback from your audiences and figure the
-                    effective way to meet their needs.</span
-                  >
-                </li>
-              </ul>
-              <ul class="my-0">
-                <li>
-                  Discover the right marketing approach through actual data and
-                  advanced analytics.
-                </li>
-              </ul>
             </div>
           </div>
-          <section class="sectionDoctorTree mt-5 mb-4">
-            <div class="container">
-              <div class="doctorTree-grid">
-                <div class="doctorTreeitem">
-                  <div class="img-Verified p-3">
-                    <h1>575</h1>
-                    <h3>Verified</h3>
-                    <h3>HCPs Users</h3>
+
+          <div>
+            <h3 class="vtxt-Headergreen">
+              Get the borderless communication started here and now with MLT
+            </h3>
+            <div class="-importantHeader mb-4"></div>
+            <div class="mBox-textdetails">
+              <div class="mb-4">
+                <p style="text-indent: 50px">
+                  Simply straightforwardly transfer your message to appeal your
+                  products to HCPs through our advertising service and survey
+                  with MLT Platfrom
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="txt-detailsdark-bold text-center mt-5">Ads Position</h3>
+
+            <div class="text-center my-5">
+              <img class="w-100 img-fluid" src="./images/news/mobile.png" />
+            </div>
+          </div>
+
+          <div>
+            <h3 class="vtxt-Headergreen">
+              Let HCPs read MLT articles describing about your products, it is
+              Advertorial
+            </h3>
+            <div class="-importantHeader mb-4"></div>
+            <div class="mBox-textdetails">
+              <div class="mb-4">
+                <ul class="vtxt-listHCPs">
+                  <li>
+                    Ingeniously convey your stories by immersing them in our
+                    advertorial service
+                  </li>
+                </ul>
+                <ul class="vtxt-listIndent">
+                  <li>
+                    Various tools are now available for you to display your
+                    notice such as press releases, journals, leaflets,
+                    infographics, videos etc. <span><a href="#">(refer to VDO PRODUCTION)</a></span>
+                  </li>
+                </ul>
+                <ul class="vtxt-listHCPs">
+                  <li>
+                    Our HCPs team will be involved in the entire process from
+                    the beginning until the end product is achieved, to ensure
+                    content accuracy and review the content as per their HCPs
+                    aspect.
+                  </li>
+                </ul>
+                <ul class="vtxt-listHCPs">
+                  <li>
+                    Our service offers a wide variety of choices to promote your
+                    Ads straightly and directly to HCPs audiences
+                  </li>
+                </ul>
+                <ul class="vtxt-listIndent">
+                  <li>MLT platform, i.e., website and application</li>
+                  <li>MLT social mededia channels</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="vtxt-Headergreen">
+              Drive your business with data-based approach by researching what
+              HCPs thinking
+            </h3>
+            <div class="-importantHeader mb-4"></div>
+            <div class="mBox-textdetails">
+              <div class="mb-4">
+                <ul class="vtxt-listHCPs">
+                  <li>
+                    Create an assessment survey to integrate audience
+                    preference, trend, lifestyle as well as post-event feedback
+                    for analyzing audiences’ tendency. This data-based
+                    consulting service offers you the ideal insight information
+                    to reflect your product.
+                  </li>
+                </ul>
+                <ul class="vtxt-listHCPs">
+                  <li>
+                    The survey offers both quantitative and qualitative data.
+                  </li>
+                </ul>
+                <ul class="vtxt-listIndent">
+                  <li>
+                    Customize your own parameters to get an effective action
+                    plan.
+                  </li>
+                  <li>
+                    Obtain feedback from your audiences and figure the effective
+                    way to meet their needs.
+                  </li>
+                </ul>
+                <ul class="vtxt-listHCPs">
+                  <li>
+                    Discover the right marketing approach through actual data
+                    and advanced analytics.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- <section class="sectionDoctorTree mt-5 mb-4">
+              <div class="container">
+                <div class="doctorTree-grid">
+                  <div class="doctorTreeitem">
+                    <div class="img-Verified p-3">
+                      <h1>575</h1>
+                      <h3>Verified</h3>
+                      <h3>HCPs Users</h3>
+                    </div>
                   </div>
-                </div>
-                <div class="doctorTreeitem">
-                  <div class="img-cpe p-3">
-                    <h1>4,000</h1>
-                    <h3>CPE/CPD</h3>
-                    <h3>Accredited Delivered</h3>
+                  <div class="doctorTreeitem">
+                    <div class="img-cpe p-3">
+                      <h1>4,000</h1>
+                      <h3>CPE/CPD</h3>
+                      <h3>Accredited Delivered</h3>
+                    </div>
                   </div>
-                </div>
-                <div class="doctorTreeitem">
-                  <div class="img-Partnerships p-3">
-                    <h1>345</h1>
-                    <h3>Partnerships</h3>
-                    <h3>and Medical</h3>
+                  <div class="doctorTreeitem">
+                    <div class="img-Partnerships p-3">
+                      <h1>345</h1>
+                      <h3>Partnerships</h3>
+                      <h3>and Medical</h3>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </section>
+            </section> -->
+
+            <section class="sectionDoctorTree mt-5 mb-4">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 col-md-4">
+                    <div>
+                      <img
+                        class="w-100 img-fluid my-2"
+                        src="./images/news/01.png"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <div>
+                      <img
+                        class="w-100 img-fluid my-2"
+                        src="./images/news/02.png"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <div>
+                      <img
+                        class="w-100 img-fluid my-2"
+                        src="./images/news/03.png"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
 
         <!-- Page Digital Solutions -->
         <div class="boxDigital TestServer3 listBoxSlideDetalls d-none">
-          <div class="row">
-            <div class="col-12 col-md-7">
-              <img
-                class="w-100 img-fluid img-ModalDigital"
-                src="./images/board/img-ModalDigital.jpg"
-                alt=""
-              />
-            </div>
-            <div class="col-12 col-md-5 mt-5 text-center mBoxTextRight">
-              <p class="txt-digitalsolution px-3">Digital Solution</p>
-              <p class="txt-digitalsolutiondetails">
-                100% customizable with full-cycle digital services from idea to
-                launch. Our HCPs in-house team works closely with developers and
-                designers to understand you and your user's needs. Leveraging
-                next-gen technology, intelligent algorithms, and modern UI/UX
-              </p>
-              <ul class="li-digitalsolution text-left ml-2">
-                <li>Website Development</li>
-                <li>Mobile Application Development</li>
-                <li>Live streaming</li>
-                <li>VDO Production</li>
-              </ul>
-            </div>
+          <div class="cboxProject-header">
+            <h1 class="ctxtHeader-CPD">DIGITAL SOLUTION</h1>
+          </div>
 
-            <div class="mt-4 mBox-textdetails">
-              <div class="text-center">
-                <h3 class="txt-hgreen mb-4">
-                  Experience an effective, innovative and impressive online
-                  attendance from our award-winning team
-                </h3>
-                <p>
+          <div class="cbox-ImgnewsTop">
+            <img src="./images/news/digital-main.jpeg" />
+          </div>
+
+          <div>
+            <h3 class="vtxt-Headergreen">
+              Experience an effective, innovative and impressive online
+              attendance from our award-winning team
+            </h3>
+            <div class="-importantHeader mb-4"></div>
+            <div class="mBox-textdetails">
+              <div class="mb-4">
+                <p style="text-indent: 50px">
                   Tailor-made digital services that will complete your project
                   from rough ideas until the launching. Our HCPs team works
                   closely with developers and designers to convey your concept
@@ -592,53 +619,61 @@
                   extraordinary users’ experience.
                 </p>
               </div>
+            </div>
+          </div>
 
-              <h3 class="txt-hgreen text-center mt-5">
-                Remarkable website and application that will diversify your
-                services into different stage
-              </h3>
-              <h3 class="txt-detailsgreen mt-5">
-                Develop a website and mobile application that support healthcare
-                industry
-              </h3>
+          <div>
+            <h3 class="vtxt-Headergreen">
+              Remarkable application and website that will diversify your
+              services into different stage
+            </h3>
+            <div class="-importantHeader mb-4"></div>
+            <div class="mBox-textdetails">
+              <div class="mb-4">
+                <h3 class="vtxt-header2">
+                  Develop a website and mobile application that support
+                  healthcare industry
+                </h3>
 
-              <ul>
-                <li>
-                  Construct your own unique digital solutions to lift up your
-                  brand value.
-                </li>
-                <li>
-                  Our service also includes prototyping, wireframes, landing
-                  page designation, along with post-delivery maintenance and
-                  problem consultation.
-                </li>
-                <li>Potentially promote the content via our platforms</li>
-              </ul>
-              <h3 class="txt-detailsgreen mt-5">
-                Impress your audience with augmented (AR) and virtual reality
-                (VR) technologies
-              </h3>
-              <ul class="my-0">
-                <li>AR/VR application counseling service</li>
-              </ul>
-              <ul class="my-0 txt-listgray">
-                <li>
-                  <span
-                    >Build up the virtual meeting rooms, games, medical device
+                <ul class="stxt-listDetails">
+                  <li>
+                    Construct your own unique digital solutions to lift up your
+                    brand value.
+                  </li>
+                  <li>
+                    Our service also includes prototyping, wireframes, landing
+                    page designation, along with post-delivery maintenance and
+                    problem consultation.
+                  </li>
+                  <li>Potentially promote the content via our platforms.</li>
+                </ul>
+                <h3 class="vtxt-header2">
+                  Impress your audience with augmented (AR) and virtual reality
+                  (VR) technologies
+                </h3>
+                <ul class="my-0 stxt-listDetails">
+                  <li>AR/VR application counseling service</li>
+                </ul>
+                <ul class="my-0 stxt-listDetails-Only">
+                  <li>
+                    Build up the virtual meeting rooms, games, medical device
                     demonstration, conferences, or interactive kiosks that fit
-                    your requirements.</span
-                  >
-                </li>
-              </ul>
+                    your requirements.
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="Img-cbottom mt-4">
-              <img
-                class="w-100 img-fluid"
-                src="./images/board/bottom-digital.jpg"
-              />
-            </div>
+          </div>
+
+          <div class="Img-cbottom mt-4">
+            <img
+              class="w-100 img-fluid"
+              src="./images/news/gigital-photo.png"
+            />
+          </div>
+          <div class="vbox-ImgDetails">
             <h3 class="txt-hgreen mt-4 text-center">
-              The winner of the “Scaling Healthcare Through Innovation” program
+              The winner of the “SCALING HEALTHCARE THROUGH INNOVATION” program
               from a startup pitching contest to improve asthma care
             </h3>
           </div>
@@ -646,321 +681,303 @@
 
         <!-- Page VDO -->
         <div class="boxVRAR TestServer4 listBoxSlideDetalls d-none">
-          <div class="row">
-            <div class="mBox-textdetails">
-              <div class="text-center">
-                <h3 class="txt-VDOProduction mb-4">VDO Production</h3>
-                <h3 class="txt-hgreen mb-4">
-                  One stop service that will shape up and transfer your whole
-                  story right to audiences
-                </h3>
-                <div class="embed-responsive embed-responsive-21by9">
-                  <iframe
-                    class="embed-responsive-item"
-                    src="https://player.vimeo.com/external/516532097.sd.mp4?s=644e0e4b8427c25c0b422f831b36a1cc17ead76f&profile_id=165"
-                  ></iframe>
+          <div class="mBox-textdetails">
+            <div class="cboxProject-header">
+              <h1 class="ctxtHeader-CPD">VDO PRODUCTON</h1>
+            </div>
+
+            <div class="cbox-ImgnewsTop">
+              <h5 class="vtxt-VDOTop">
+                One stop service that will shape up and transfer tour ehole
+                story right to audienes
+              </h5>
+              <div class="imgNews-Top mb-3">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="./video/MLT.mp4" allowfullscreen></iframe>
                 </div>
-                <p class="mt-4 text-left">
-                  Our full-service production covers video creation,
-                  photography, post-production services and animation. This
-                  service will visualize your message and create a clear image
-                  to your audiences.
-                </p>
               </div>
-
-              <h3 class="txt-hgreen text-center mt-5">
-                Elevate your brand's perception and present your story with us
-              </h3>
-              <h3 class="txt-detailsgreen mt-5">
-                Complete the entire video production in one place
-              </h3>
-
-              <ul class="my-0">
-                <li>Video for marketing purpose</li>
-              </ul>
-              <ul class="my-0 txt-listgray">
-                <li>
-                  <span
-                    >advertisement to lower unexpected risks (refer to
-                    COMMUNICATION with HCPs)</span
-                  >
-                </li>
-                <li>
-                  <span
-                    >Easy to catch attention and easy for viewer’s
-                    understanding</span
-                  >
-                </li>
-                <li>
-                  <span
-                    >Compose a storyboard with optimal mood and tone to attract
-                    audiences’ attention and harmonize with their preference or
-                    expectation.</span
-                  >
-                </li>
-                <li>
-                  <span
-                    >Achieve your goals by fulfilling audiences’ needs.</span
-                  >
-                </li>
-              </ul>
-              <ul class="my-0">
-                <li>Offer all types of videos as requested</li>
-              </ul>
-              <ul class="my-0 txt-listgray">
-                <li>
-                  <span
-                    >Product presentation, how-to/tutorial, interview and
-                    company overview videos</span
-                  >
-                </li>
-              </ul>
-              <h3 class="txt-detailsgreen mt-5">
-                Apart from full video production, we also provide video editing
-                and animation services
-              </h3>
-              <ul>
-                <li>Offer a wide range of post-production services</li>
-                <li>
-                  Voice over service for Thai, Japanese, English, Chinese and so
-                  on.
-                </li>
-              </ul>
             </div>
-            <div class="Img-cbottom my-3">
-              <img
-                class="w-100 img-fluid"
-                src="./images/board/bottom-VDO.jpg"
-              />
+            <div class="sbox-TxtNewsTop">
+              <p class="txt-Communicationdetails">
+                Our full-service production covers video creation, photography,
+                post-production services and animation. This service will
+                visualize your message and create a clear image to your
+                audiences.
+              </p>
             </div>
+
+            <div>
+              <h3 class="vtxt-Headergreen">
+                Experience an effective, innovative and impressive online
+                attendance from our award-winning team
+              </h3>
+              <div class="-importantHeader mb-0"></div>
+              <div class="mBox-textdetails">
+                <div class="mb-4">
+                  <h3 class="vtxt-header2 mt-3">
+                    Complete the entire video production in one place
+                  </h3>
+                  <ul class="my-0">
+                    <li class="vtxt-Headerlist">Video for marketing purpose</li>
+                  </ul>
+                  <ul class="vtxt-listDetails">
+                    <li>
+                      Advertisement to lower unexpected risks 
+                      <span><a href="#">(refer to COMMUNICATION with HCPs)</a></span>
+                    </li>
+                    <li>
+                      Easy to catch attention and easy for viewer’s
+                      understanding
+                    </li>
+                    <li>
+                      Compose a storyboard with optimal mood and tone to attract
+                      audiences’ attention and harmonize with their preference
+                      or expectation.
+                    </li>
+                    <li>Achieve your goals by fulfilling audiences’ needs.</li>
+                  </ul>
+                  <ul class="my-0">
+                    <li class="vtxt-Headerlist">
+                      Offer all types of videos as requested
+                    </li>
+                  </ul>
+                  <ul class="vtxt-listDetails">
+                    <li>
+                      Product presentation, how-to/tutorial, interview and
+                      company overview videos
+                    </li>
+                  </ul>
+                  <h3 class="vtxt-header2">
+                    Apart from full video production, we also provide video
+                    editing and animation services
+                  </h3>
+                  <ul>
+                    <li class="vtxt-Headerlist">
+                      Offer a wide range of post-production services
+                    </li>
+                    <li class="vtxt-Headerlist">
+                      Voice over service for Thai, Japanese, English, Chinese
+                      and so on.
+                    </li>
+                    <li class="vtxt-Headerlist">
+                      Create a motion graphic and 2D/3D animation
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Img-cbottom my-4">
+            <img
+              class="w-100 img-fluid"
+              src="./images/news/TownHallStreaming.jpeg"
+            />
           </div>
         </div>
 
         <!-- Page CONTENT CREATION -->
         <div class="boxContent TestServer5 listBoxSlideDetalls d-none">
-          <div class="row">
-            <div class="col-12 col-md-7">
-              <img
-                class="w-100 img-fluid"
-                src="./images/board/img-modalContent.jpg"
-                alt=""
-              />
-            </div>
-            <div class="col-12 col-md-5 text-center mBoxTextRight">
-              <p class="txt-contentcreation px-3">Content Creation</p>
-              <p class="txt-contentdetails">
-                Custom content with editorial insights and engage content that
-                will level up your brand in terms of both content and designing
-              </p>
-              <ul class="li-contentcreation text-left ml-2">
-                <li>Symposium Highlights</li>
-                <li>Expest Opinion</li>
-                <li>Summarize article, journal, press release or reviews</li>
-                <li>Research consultancy</li>
-                <li>Translation (TH, EN, JN, CN, BM..)</li>
-              </ul>
-            </div>
+          <div class="cboxContent-header">
+            <h1 class="ctxtHeader-CONTENT">CONTENT CREATION</h1>
+          </div>
 
-            <div class="mt-4 mBox-textdetails">
-              <div class="text-center">
-                <h3 class="txt-hgreen mb-4">
-                  Converse your thought directly to audiences over a content by
-                  our HCP writers
-                </h3>
-                <p class="text-left">
-                  Achieve your desired editorials with solid content that will
-                  point out your objective in terms of wording and layout
-                  design. We are pleased to hand our skills in voicing your tone
-                  and highlighting your awareness in the market. Our writers aim
-                  to considerably declare your goal to the audiences and build a
-                  recognition upon your brand image.
-                </p>
+          <div class="cbox-ImgnewsTop">
+            <img src="./images/news/Content_rev2.png">
+          </div>
+
+            <div>
+              <h3 class="vtxt-Headergreen">
+                Converse your thought directly to audiences over a content by
+                our HCP writers
+              </h3>
+              <div class="-importantHeader mb-3"></div>
+              <div class="mBox-textdetails">
+                <div class="mb-4">
+                  <p style="text-indent: 50px">
+                    Achieve your desired editorials with solid content that will
+                    point out your objective in terms of wording and layout
+                    design. We are pleased to hand our skills in voicing your
+                    tone and highlighting your awareness in the market. Our
+                    writers aim to considerably declare your goal to the
+                    Target and build a recognition upon your brand image.
+                  </p>
+                </div>
               </div>
+            </div>
 
-              <h3 class="txt-hgreen text-center mt-5">
+            <div>
+              <h3 class="vtxt-Headergreen">
                 Maximize the value of your content with our determined services
               </h3>
-              <h3 class="txt-detailsgreen mt-5">
-                Discover an impressive content developed by our experienced team
-              </h3>
-              <ul class="my-0">
-                <li>There are various formats available</li>
-              </ul>
-              <ul class="my-0 txt-listgray">
-                <li>
-                  <span
-                    >For instance, symposium highlights, social media posts,
-                    landing pages, infographics, email marketing, press releases
-                    and blogs.</span
-                  >
-                </li>
-              </ul>
-              <ul class="my-0">
-                <li>Potentially promote the content via our platforms</li>
-              </ul>
-              <ul class="my-0 txt-listgray">
-                <li>
-                  <span
-                    >Boost your brand awareness and engage more healthcare
-                    population</span
-                  >
-                </li>
-                <li>
-                  <span
-                    >promote your own contents by using our experienced
-                    strategies, such as pay-per-click, or promote them across
-                    MLT platforms (refer to COMMUNICATION with HCPs)</span
-                  >
-                </li>
-              </ul>
-              <h3 class="txt-detailsgreen mt-5">
-                Reader-friendly articles summarized by healthcare professionals
-              </h3>
-              <ul>
-                <li>
-                  summarize long-form content, such as, journals, press releases
-                  or reviews, for an infographic or other types of articles
-                  which is easier and clearer for the audience to consume.
-                  (refer to CREATIVE DESIGN)
-                </li>
-              </ul>
-              <h3 class="txt-detailsgreen mt-5">
-                Medical translation services by HCP team
-              </h3>
-              <ul class="my-0">
-                <li>
-                  The service is available for Thai, English, Japanese, Chinese
-                  and Burmese.
-                </li>
-                <li>
-                  The translation can be done on every form of medical content.
-                </li>
-              </ul>
-              <ul class="my-0 txt-listgray">
-                <li>
-                  <span
-                    >Physician manuals, clinical protocols/clinical protocal
-                    synopsis, patient information leaflets, study drug labels
-                    and drug inserts.</span
-                  >
-                </li>
-              </ul>
+              <div class="-importantHeader mb-0"></div>
+              <div class="mBox-textdetails">
+                <div class="mb-4">
+                  <h3 class="vtxt-header2 mt-3">
+                    Discover an impressive content developed by our experienced
+                    team.
+                  </h3>
+                  <ul class="my-0">
+                    <li class="vtxt-Headerlist">
+                      There are various formats available.
+                    </li>
+                  </ul>
+                  <ul class="vtxt-listDetails">
+                    <li>
+                      For instance, symposium highlights, social media posts,
+                      landing pages, infographics, email marketing, press
+                      releases and blogs.
+                    </li>
+                  </ul>
+                  <ul class="my-0">
+                    <li class="vtxt-Headerlist">
+                      Potentially promote the content via our platforms.
+                    </li>
+                  </ul>
+                  <ul class="vtxt-listDetails">
+                    <li>
+                      Boost your brand awareness and engage more healthcare
+                      population.
+                    </li>
+                    <li>
+                      Promote your own contents by using our experienced
+                      strategies, such as pay-per-click, or promote them across
+                      MLT platforms <span><a href="#">(refer to COMMUNICATION with HCPs).</a></span>
+                    </li>
+                  </ul>
+                  <h3 class="vtxt-header2 mt-3">
+                    Reader-friendly articles summarized by healthcare
+                    professionals
+                  </h3>
+                  <ul class="my-0">
+                    <li class="vtxt-Headerlist">
+                      Summarize long-form content, such as, journals, press
+                      releases or reviews, for an infographic or other types of
+                      articles which is easier and clearer for the Target to
+                      consume. <span><a href="#">(refer to CREATIVE DESIGN)</a></span> 
+                    </li>
+                  </ul>
+                  <h3 class="vtxt-header2 mt-3">
+                    Medical translation services by HCP team
+                  </h3>
+                  <ul class="my-0">
+                    <li class="vtxt-Headerlist">
+                      The service is available for Thai, English, Japanese,
+                      Chinese and Burmese.
+                    </li>
+                    <li class="vtxt-Headerlist">The translation can be done on every form of medical content.</li>
+                  </ul>
+                  <ul class="vtxt-listDetails">
+                    <li>
+                      Physician manuals, clinical protocols/clinical protocal
+                      synopsis, patient information leaflets, study drug labels
+                      and drug inserts
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="cbox-Imgsbottom">
+                  <img
+                    class="w-100 img-fluid"
+                    src="./images/news/Good-Doctors-COVID-19.png"
+                  />
+                </div>
+              </div>
             </div>
-            <div class="Img-cbottom mt-3">
-              <img
-                class="w-100 img-fluid"
-                src="./images/board/bottom-content.jpg"
-              />
-            </div>
-          </div>
+         
         </div>
 
         <!-- Page Creative design -->
         <div class="boxCreative TestServer6 listBoxSlideDetalls d-none">
-          <div class="row">
-            <div class="col-12 col-md-7">
-              <img
-                class="w-100 img-fluid"
-                src="./images/board/img-ModalCreative.jpg"
-                alt=""
-              />
-            </div>
-            <div class="col-12 col-md-5 mt-5 text-center mBoxTextRight">
-              <p class="txt-creativedesign">Creative Design</p>
-              <p class="txt-contentdetails">
-                Be outatanding with attractive banners that help your audience
-                to engage with your content easier. Keep your branding and Cl on
-                point throughout all channels.
-              </p>
-              <ul class="li-contentcreation text-left ml-2">
-                <li>Logo design</li>
-                <li>Characters designing: Cartoon, Icon</li>
-                <li>Infographic</li>
-                <li>Advertising Key Visual</li>
-                <li>Social Media Post</li>
-              </ul>
-            </div>
+          <div class="cboxContent-header">
+            <h1 class="ctxtHeader-CONTENT">CONTENT CREATION</h1>
+          </div>
 
-            <div class="mt-4 mBox-textdetails">
-              <div class="text-center">
-                <h3 class="txt-hgreen mb-4">
-                  Publish an outstanding work with our full-spectrum designing
-                  concepts
-                </h3>
-                <p class="text-left">
-                  Let the admirable graphics helps you to improve audiences’
-                  engagement. Our graphic designing team experiences in
-                  composing creative designs for many leading pharmaceutical
-                  companies as well as medical organizations. We use the most
-                  modern data, tools, and technologies to illustrate artsy
-                  visuals.
-                </p>
+          <div class="cbox-ImgnewsTop">
+            <img src="./images/news/Our-sevice_design_Creative_rev2.png">
+          </div>
+
+            <div>
+              <h3 class="vtxt-Headergreen">
+                Publish an outstanding work with our full-spectrum designing
+                concepts
+              </h3>
+              <div class="-importantHeader mb-3"></div>
+              <div class="mBox-textdetails">
+                <div class="mb-4">
+                  <p style="text-indent: 50px">
+                    Let the admirable graphics helps you to improve Target
+                    engagement. Our graphic designing team experiences in
+                    composing creative designs for many leading pharmaceutical
+                    companies as well as medical organizations. We use the most
+                    modern data, tools, and technologies to illustrate artsy
+                    visuals.
+                  </p>
+                </div>
               </div>
+            </div>
 
-              <h3 class="txt-hgreen text-center mt-5">
+            <div>
+              <h3 class="vtxt-Headergreen">
                 Inspire your brand with MLT graphic design services
               </h3>
-              <h3 class="txt-detailsgreen mt-5">
-                Get started with our customizable designs
-              </h3>
-              <ul class="my-0">
-                <li>Infographic concepts</li>
-              </ul>
-              <ul class="my-0 txt-listgray">
-                <li>
-                  <span
-                    >Shorten difficult contents into coherent phrases and
-                    presented as images, charts or minimal texts. You can also
-                    maximize the use of your content with this service.</span
-                  >
-                </li>
-              </ul>
-              <ul class="my-0">
-                <li>Animate the content to improve attractiveness</li>
-              </ul>
-              <ul class="my-0 txt-listgray">
-                <li>
-                  <span
-                    >Pioneer an animation to bring your product to light.</span
-                  >
-                </li>
-              </ul>
-              <ul class="my-0">
-                <li>Advertising the key visual along with your key message</li>
-              </ul>
-              <ul class="my-0 txt-listgray">
-                <li>
-                  <span
-                    >Design an optimal key visual to promote projects,
-                    campaigns, events and awards. (refer to COMMUNICATION with
-                    HCPs)</span
-                  >
-                </li>
-              </ul>
-              <ul class="my-0">
-                <li>Art Design</li>
-              </ul>
-              <ul class="my-0 txt-listgray">
-                <li>
-                  <span
-                    >Design a mascot character to represent your context</span
-                  >
-                </li>
-                <li>
-                  <span
-                    >Offer a wide range of designing formats to cover every
-                    marketing approach, such as posters, catalogs,</span
-                  >
-                </li>
-              </ul>
+              <div class="-importantHeader mb-0"></div>
+              <div class="mBox-textdetails">
+                <div class="mb-4">
+                  <h3 class="vtxt-header2 mt-3">
+                    Get started with our customizable designs
+                  </h3>
+                  <ul class="my-0">
+                    <li class="vtxt-Headerlist">
+                      There are various formats available
+                    </li>
+                  </ul>
+                  <ul class="vtxt-listDetails">
+                    <li>
+                      Shorten difficult contents into coherent phrases and
+                      presented as images, charts or minimal texts. You can also
+                      maximize the use of your content with this service.
+                    </li>
+                  </ul>
+                  <ul class="my-0">
+                    <li class="vtxt-Headerlist">
+                      Animate the content to improve attractiveness
+                    </li>
+                  </ul>
+                  <ul class="vtxt-listDetails">
+                    <li>
+                      Pioneer an animation to bring your product to light.
+                    </li>
+                  </ul>
+                  <ul class="my-0">
+                    <li class="vtxt-Headerlist">
+                      Advertising the key visual along with your key message
+                    </li>
+                  </ul>
+                  <ul class="vtxt-listDetails">
+                    <li>
+                      Design an optimal key visual to promote projects,
+                      campaigns, events and awards. <span><a href="#">(refer to COMMUNICATION with
+                        HCPs)</a></span>
+                    </li>
+                  </ul>
+                  <ul class="vtxt-listDetails">
+                    <li>Design a mascot character to represent your context.</li>
+                    <li>
+                      Offer a wide range of designing formats to cover every
+                      marketing approach, such as posters, catalogs, Brochure, roll ups, pull ups, flip charts, tear sheets, artwork for social media post, etc.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="cbox-Imgsbottom">
+                <img
+                  class="w-100 img-fluid"
+                  src="./images/news/Series-CPE-COVID.jpeg"
+                />
+              </div>
             </div>
-            <div class="Img-cbottom mt-4">
-              <img
-                class="w-100 img-fluid"
-                src="./images/board/bottom-creative.jpg"
-              />
-            </div>
-          </div>
+          
         </div>
       </div>
     </div>
@@ -1078,7 +1095,7 @@
     <footer class="p-3">
       <div class="container">
         <p class="text-center text-white pt-2">
-          Copyright &copy; 2021 ASEC Frontier (Thailand) Co,. Ltd. All rights
+          Copyright &copy; 2021 ASEC Frontier (Thailand) Co., Ltd. All rights
           reserved
         </p>
       </div>
@@ -1095,6 +1112,58 @@
       integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Google CDN: -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="text/javascript">
+      $(".sliderImgs").slick({
+        // dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              // dots: true
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ],
+      });
+    </script>
+
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"
     ></script>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>

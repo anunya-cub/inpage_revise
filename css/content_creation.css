@@ -60,6 +60,9 @@ header .tBoxDescription .t-txt-right {
 }
 
 /******************* Our Services ****************/
+.sOurServices{
+  margin-bottom: 2rem;
+}
 .sOurServices h1 {
   color: #115d5e;
   font-weight: 600;
@@ -86,10 +89,6 @@ header .tBoxDescription .t-txt-right {
 .sectionOurServices .digital-grid .Digital-item.active {
   background: #115d5e;
 }
-.sOurServices .digital-grid .Digital-item i {
-  font-size: 3rem;
-  color: #797979;
-}
 .sOurServices .digital-grid .Digital-item img {
   width: 50px;
   height: 55px;
@@ -97,16 +96,20 @@ header .tBoxDescription .t-txt-right {
   padding: 5px;
 }
 .sOurServices .digital-grid .Digital-item h6 {
-  font-size: 13px;
+  font-size: 16px;
   color: #9a9898;
-  font-weight: 700;
+  font-weight: 600;
   transition: 0.2s;
   height: 20px;
+  height: auto;
+  word-wrap:break-word;
+margin-bottom: 0;
 }
 .sOurServices .digital-grid .Digital-item:hover h6,
 .sectionOurServices .digital-grid .Digital-item.active h6 {
   color: #ffffff;
 }
+
 .modal-dialog .ModalDetallsImg {
   padding: 30px;
   width: 100%;
@@ -117,9 +120,10 @@ header .tBoxDescription .t-txt-right {
 /******************* Page ****************/
 .ShowDetallsItems {
   box-sizing: border-box;
-  padding: 1.5rem;
+  /* padding: 1.5rem; */
 }
-/* CDP Project */
+
+/***** CDP Project */
 .listBoxSlideDetalls .cboxProject-header .ctxtHeader-CPD {
   font-size: 30px;
   font-weight: 600;
@@ -128,30 +132,40 @@ header .tBoxDescription .t-txt-right {
   margin-bottom: 1rem;
 }
 .listBoxSlideDetalls .cbox-ImgnewsTop {
-  position: relative;
-  content: "";
+  /* content: "";
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
-  border-top: 8px solid #f26f25;
-
+  border-top: 8px solid #f26f25; */
+  margin-bottom: 1.5rem;
 }
-.listBoxSlideDetalls .cbox-ImgnewsTop .imgNews-Top{
-  width: 70% !important;
-  /* position: absolute; */
+.listBoxSlideDetalls .cbox-ImgnewsTop img{
+  width: 100%;
 }
-.listBoxSlideDetalls .cbox-ImgnewsTop .imgNews-Top img{
+.listBoxSlideDetalls .cbox-ImgnewsTop .imgNews-Top {
+  width: 100% !important;
+}
+.listBoxSlideDetalls .cbox-ImgnewsTop .imgNews-Top img {
   display: flex;
   flex-direction: row;
   justify-content: left;
   width: 100% !important;
 }
-.listBoxSlideDetalls .cbox-TxtnewsTop {
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translateY(50%);
+.-vlistOnly{
+  margin-top: .5rem;
+}
+.-vlistOnly li{
+  font-size: 18px !important;
+}
+.cbox-gray .txt-listdetails{
+  margin-left: 0 !important;
+}
+
+
+.cbox-TextHeader {
+  display: flex;
+  flex-direction: row;
 }
 .listBoxSlideDetalls .cbox-TxtnewsTop .txtNews-Top {
   font-size: 26px;
@@ -159,64 +173,64 @@ header .tBoxDescription .t-txt-right {
   color: #115d5e;
   margin-bottom: 0;
 }
-.-importantHeader{
+.mBox-textdetails {
+  color: #797979;
+  font-size: 16px;
+  font-weight: 400;
+}
+.-importantHeader {
   content: "";
   top: 30px;
-  margin-left: -1.5rem !important;
   width: 30%;
+  margin-left: -1.5rem !important;
   border-bottom: 3px solid #f26f25;
 }
-.cbox-gray{
+.cbox-gray {
   width: 100%;
   height: 100%;
   background-color: #eeeeee;
   border-radius: 10px;
   padding: 15px;
 }
-.cboxText{
+.cboxText {
   display: flex;
   flex-direction: row;
 }
-.cbg-number{
+.cbg-number {
   border-radius: 50%;
   background-color: #424242;
-  width: 23px;
-  height: 23px;
+  width: 30px;
+  height: 30px;
   text-align: center;
   align-items: center;
   align-self: center;
-  margin-right: .5rem;
-  padding-top: 1px;
+  margin-right: 0.5rem;
+  padding-top: 2px;
 }
-.ctxt-number{
-  font-size: 14px;
+.ctxt-number {
+  font-size: 18px !important;
   color: #ffffff;
 }
-.ctxt-header{
+.ctxt-header {
   margin-bottom: 0;
   font-size: 15px;
   color: #272727;
 }
-.txt-listgray{
-  font-size: 16px;
-  color: #115d5e;
-  z-index: 100;
-}
-.cbox-gray .txt-listdetails{
+.cbox-gray .txt-listdetails {
   margin-left: 2rem;
 }
-.cbox-gray .txt-listdetails li{
-font-size: 14px;
-font-weight: 400;
-}
-.cbox-building .ctxt-ForInformation{
+.cbox-gray .txt-listdetails li {
   font-size: 14px;
   font-weight: 400;
-  color: #424242;
-  margin-top: .5rem;
 }
-.ctxt-campaign{
+.cbox-building .ctxt-ForInformation {
   font-size: 18px;
+  font-weight: 400;
+  color: #424242;
+  margin-top: 0.5rem;
+}
+.ctxt-campaign {
+  font-size: 24px;
   font-weight: 400;
   color: #ffffff;
   border: 1px solid #115d5e;
@@ -224,348 +238,345 @@ font-weight: 400;
   border-radius: 50px;
   padding: 2px 30px;
 }
-
-
-
-
-
-/* .ShowDetallsItems .TestServer1 .mBox-textdetails p {
-  color: #9a9898;
-  font-size: 18px;
-  font-weight: 400;
-  font-family: "Prompt", "Roboto Condensed", sans-serif;
-  line-height: 36px;
-} */
-/* .ShowDetallsItems .TestServer1 ul {
-  padding-left: 0;
-  list-style-position: outside;
+ul .ctxt-headerGreen {
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  color: #115d5e !important;
 }
-.ShowDetallsItems .TestServer1 ul li {
+ul .ctxt-headerGreen span{
   color: #9a9898;
-  font-size: 18px;
-  font-weight: 400;
-  font-family: "Prompt", "Roboto Condensed", sans-serif;
+  font-weight: 400 !important;
+}
+.txt-listgray li {
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  color: #9a9898;
+  margin-left: 3rem;
+}
+.sbox-TxtNewsTop {
+  text-align: left;
+}
+.txt-Communicationdetails {
+  font-size: 20px;
+  font-weight: 500;
+  color: #115d5e;
+}
+.li-Communication {
   list-style: inside;
-  padding-left: 5px;
+  font-size: 16px;
+  color: #f26f25;
+}
+.mBox-textdetails p{
+  font-size: 20px;
+
+}
+.vtxt-Headergreen {
+  font-size: 24px;
+  font-weight: 500;
+  color: #115d5e;
+  margin-bottom: 0;
+  padding-bottom: 10px;
+}
+.vtxt-header2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #555555;
+}
+.vtxt-Headerlist {
+  font-size: 18px ;
+  font-weight: 400;
+  color: #555555 ;
+  margin-left: 3rem;
+}
+.vtxt-Headerlist span a{
+  font-size: 18px ;
+  font-weight: 400;
+  color: #555555 ;
+  text-decoration: none;
+}
+.vtxt-listDetails {
+  margin-bottom: 0;
+}
+.vtxt-listDetails li {
+  font-size: 18px ;
+  font-weight: 400 ;
+  color: #797979 ;
+  margin-left: 5rem ;
+  margin-bottom: 0;
+}
+.vtxt-listDetails li span a{
+  font-size: 18px ;
+  font-weight: 400 ;
+  color: #797979 ;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+.stxt-listDetails-Only{
+  font-size: 18px ;
+  font-weight: 400 ;
+  color: #797979 ;
+  margin-left: 5rem ;
+  margin-bottom: 0;
+}
+.stxt-listDetails li{
+  font-size: 18px;
+  font-weight: 400 ;
+  color: #797979 ;
+  margin-left: 2rem ;
+  margin-bottom: 0;
 }
 
-.rowImg-cpd {
-  margin: auto;
-} */
 
 /* communication wiht HCPs */
-.ShowDetallsItems .TestServer2 .mBoxTextRight {
-  padding-left: 2rem;
-  margin-top: 3rem;
+.TestServer2 .li-Communication .noInside {
+  list-style: none;
+  padding-left: 1.5rem;
+  color: #9a9898;
 }
-.ShowDetallsItems .TestServer2 .txt-Communication {
-  color: #ffffff;
-  background-color: #115d5e;
-  font-weight: 400;
-  font-size: 24px;
-  padding: 5px 0;
-  margin-bottom: 0;
-}
-.ShowDetallsItems .TestServer2 .txt-Communicationdetails {
+.TestServer2 .txt-detailsdark-bold {
   color: #115d5e;
-  font-weight: 400;
+  font-size: 26px;
+  font-weight: 500;
+}
+.TestServer2 hr {
+  border: 1px solid #f26f25;
+}
+.TestServer2 .vtxt-listHCPs{
+  margin: 0 0 0 3rem;
   font-size: 18px;
-  padding: 10px 0;
-  margin-bottom: 0;
 }
-.ShowDetallsItems .TestServer2 .li-Communication {
-  color: #ffffff;
-  border: 1px solid #115d5e;
-  background-color: #115d5e;
-  padding: 10px 20px;
-  list-style: inside;
-  font-size: 16px;
-  font-weight: 200;
-}
-.ShowDetallsItems .TestServer2 .txt-detailsdark {
-  color: #272727;
-  font-size: 20px;
-  font-weight: 400;
-  font-family: "Prompt", "Roboto Condensed", sans-serif;
-}
-.ShowDetallsItems .TestServer2 .txt-detailsdark-bold {
-  color: #272727;
+.TestServer2 .vtxt-listIndent{
+  margin: 0 0 0 6rem;
   font-size: 18px;
-  font-weight: 600;
-  font-family: "Prompt", "Roboto Condensed", sans-serif;
 }
-.ShowDetallsItems .TestServer2 .txt-detailsgray {
-  color: #9a9898;
-  font-size: 18px;
-  font-weight: 400;
-  font-family: "Prompt", "Roboto Condensed", sans-serif;
-}
-.ShowDetallsItems .TestServer2 .mBox-textdetails p {
-  color: #9a9898;
-  font-size: 18px;
-  font-weight: 400;
-  font-family: "Prompt", "Roboto Condensed", sans-serif;
-  line-height: 36px;
+.TestServer2 .vtxt-listIndent span a{
+  text-decoration: none;
+  color: #838383;
 }
 
+
 /* Digital Solutions  */
-.ShowDetallsItems .TestServer3 .img-ModalDigital {
-  margin-top: 3rem;
-}
-.ShowDetallsItems .TestServer3 .mBoxTextRight {
-  padding-left: 2rem;
-}
-.ShowDetallsItems .TestServer3 .txt-digitalsolution {
-  color: #ffffff;
-  background-color: #115d5e;
-  font-weight: 400;
-  font-size: 24px;
-  padding: 5px 0;
-  margin-bottom: 0;
-}
-.ShowDetallsItems .TestServer3 .txt-digitalsolutiondetails {
-  color: #115d5e;
-  font-weight: 400;
-  font-size: 18px;
-  padding: 10px 0;
-  margin-bottom: 0;
-}
-.ShowDetallsItems .TestServer3 .li-digitalsolution {
-  color: #ffffff;
-  border: 1px solid #115d5e;
-  background-color: #115d5e;
-  padding: 10px 20px;
-  list-style: inside;
-  font-size: 16px;
-  font-weight: 200;
-}
-.ShowDetallsItems .TestServer3 .mBox-textdetails p {
+.TestServer3 .li-Communication .noInside {
+  list-style: none;
+  padding-left: 1.5rem;
   color: #9a9898;
-  font-size: 18px;
-  font-weight: 400;
-  font-family: "Prompt", "Roboto Condensed", sans-serif;
-  line-height: 36px;
+}
+.TestServer3 .txt-detailsdark-bold {
+  color: #115d5e;
+  font-size: 26px;
+  font-weight: 500;
+}
+.TestServer3 hr {
+  border: 1px solid #f26f25;
 }
 
 /* VDO */
-.ShowDetallsItems .TestServer4 .txt-VDOProduction {
-  color: #115d5e;
-  font-weight: 500;
-  font-size: 38px;
-  margin-bottom: 0.5rem !important;
-}
-.ShowDetallsItems .TestServer4 .mBox-textdetails p {
-  color: #9a9898;
-  font-size: 18px;
+.TestServer4 .cbox-ImgnewsTop .vtxt-VDOTop {
+  font-size: 24px;
   font-weight: 400;
-  font-family: "Prompt", "Roboto Condensed", sans-serif;
-  line-height: 36px;
+  color: #115d5e;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 0;
 }
+
 
 /* content creation */
-.ShowDetallsItems .TestServer5 .mBoxTextRight {
-  padding-left: 2rem;
-  margin-top: 3rem;
+.TestServer5 .cboxContent-header .ctxtHeader-CONTENT {
+  font-size: 30px;
+    font-weight: 600;
+    color: #115d5e;
+    text-align: center;
+    margin-bottom: 1rem;
 }
-.ShowDetallsItems .TestServer5 .txt-contentcreation {
-  color: #ffffff;
-  background-color: #115d5e;
-  padding: 5px 0;
-  font-weight: 400;
-  font-size: 24px;
+.TestServer5 .cbox-Imgsbottom{
+margin-bottom: 2rem;
 }
-.ShowDetallsItems .TestServer5 .txt-contentdetails {
-  color: #115d5e;
-  font-weight: 400;
-  font-size: 18px;
-  padding: 10px 0;
-  margin-bottom: 0;
-}
-.ShowDetallsItems .TestServer5 .li-contentcreation {
-  color: #ffffff;
-  border: 1px solid #115d5e;
-  background-color: #115d5e;
-  padding: 10px 20px;
-  list-style: inside;
-  font-size: 16px;
-  font-weight: 200;
-}
-.ShowDetallsItems .TestServer5 .mBox-textdetails p {
-  color: #9a9898;
-  font-size: 18px;
-  font-weight: 400;
-  font-family: "Prompt", "Roboto Condensed", sans-serif;
-  line-height: 36px;
-}
-.ShowDetallsItems .TestServer5 .mBox-textdetails ul {
-  padding-left: 0;
-  list-style-position: outside;
-}
+
 
 /* creative design */
-.ShowDetallsItems .TestServer6 .mBoxTextRight {
-  padding-left: 2rem;
-  margin-top: 3rem;
+.TestServer6 .cboxContent-header .ctxtHeader-CONTENT {
+  font-size: 30px;
+    font-weight: 600;
+    color: #115d5e;
+    text-align: center;
+    margin-bottom: 1rem;
 }
-.ShowDetallsItems .TestServer6 .txt-creativedesign {
-  color: #ffffff;
-  background-color: #115d5e;
-  padding: 0;
-  font-weight: 400;
-  font-size: 24px;
-  padding: 5px 0;
-  margin-bottom: 0;
-}
-.ShowDetallsItems .TestServer6 .mBox-textdetails p {
-  color: #9a9898;
-  font-size: 18px;
-  font-weight: 400;
-  font-family: "Prompt", "Roboto Condensed", sans-serif;
-  line-height: 36px;
-}
-.ShowDetallsItems .TestServer6 .txt-contentdetails {
-  color: #115d5e;
-  font-weight: 400;
-  font-size: 18px;
-  padding: 10px 0;
-  margin-bottom: 0;
-}
-.ShowDetallsItems .TestServer6 .li-contentcreation {
-  color: #ffffff;
-  border: 1px solid #115d5e;
-  background-color: #115d5e;
-  padding: 10px 20px;
-  list-style: inside;
-  font-size: 16px;
-  font-weight: 200;
+.TestServer6 .cbox-Imgsbottom{
+margin-bottom: 2rem;
 }
 
-/*  .css ใช้ร่วมกัน */
+
+
 .mBox-textdetails ul {
-  padding-left: 0;
+  /* padding-left: 0; */
 }
 .mBox-textdetails ul li {
-  color: #9a9898;
+  /* color: #9a9898;
   font-size: 18px;
   font-weight: 400;
-  font-family: "Prompt", "Roboto Condensed", sans-serif;
+  font-family: "Prompt", "Roboto Condensed", sans-serif; */
   list-style: inside;
-  padding-left: 0;
+  /* padding-left: 0; */
+}
+.vbox-ImgDetails{
+  width: 100%;
+  align-items: center;
+display: flex;
+justify-content: center;
+margin-bottom: 1.5rem;
 }
 .txt-hgreen {
   color: #115d5e;
   font-size: 22px;
-  font-weight: bold;
-  font-family: "Prompt", "Roboto Condensed", sans-serif;
-}
-.txt-detailsgreen {
-  color: #115d5e;
-  font-size: 20px;
-  font-weight: 500;
-  font-family: "Prompt", "Roboto Condensed", sans-serif;
-}
-/* .txt-listgray li {
-  color: rgb(233, 233, 233) !important;
-  margin-left: 50px;
-}
-.txt-listgray li span {
-  color: #9a9898;
-  font-size: 18px;
   font-weight: 400;
-  font-family: "Prompt", "Roboto Condensed", sans-serif;
-  list-style: disc;
-  list-style: inside;
-} */
-.Img-cbottom {
-  margin: auto;
+  width: 80%;
 }
 
+
 @media only screen and (max-width: 768px) {
-  /* communication wiht HCPs */
-  .ShowDetallsItems .TestServer2 .mBoxTextRight {
-    padding-left: 0rem;
-    margin-top: 3rem;
+  /* .sOurServices .digital-grid .Digital-item h6 {
+    font-size: 12px !important;
+  } */
+.txt-Communicationdetails{
+  font-size: 18px;
+}
+.txt-detailsgreen{
+  color: #115d5e;
+  font-size: 20px;
+}
+.mBox-textdetails p{
+  font-size: 16px;
+}
+.vtxt-Headergreen{
+font-size: 20px;
+}
+.vtxt-header2 {
+font-size: 18px;
+}
+.vtxt-Headerlist {
+  font-size: 16px;
+  margin-left: 1rem;
+}
+.vtxt-listDetails li{
+  margin-left: 4rem;
+  font-size: 16px;
+}
+.TestServer4 .cbox-ImgnewsTop .vtxt-VDOTop{
+  font-size: 20px;
+}
+.TestServer2 .vtxt-listHCPs{
+  margin: 0;
+}
+.TestServer2 .vtxt-listIndent{
+  margin: 0 0 0 3rem;
+}
+.txt-hgreen{
+  font-size: 18px;
+}
+.-vlistOnly li{
+  font-size: 16px !important;
+}
+.listBoxSlideDetalls .cbox-TxtnewsTop{
+  margin-bottom: 1rem;
+}
+.listBoxSlideDetalls .cbox-TxtnewsTop .txtNews-Top {
+  font-size: 24px;
+  text-align: center;
+}
+.stxt-listDetails-Only{
+  font-size: 16px ;
+  margin-left: 2rem ;
+}
+.stxt-listDetails li{
+  font-size: 16px ;
+  margin-left: 0 ;
+}
+.cbg-number{
+  width: 20px;
+  height: 20px;
+  padding-top: 0;
+}
+.ctxt-number{
+  font-size: 14px !important;
+}
+
+
+
+@media only screen and (max-width: 576px)
+{
+  .sOurServices .digital-grid .Digital-item h6 {
+    font-size: 12px !important;
   }
-  .ShowDetallsItems .TestServer2 .txt-Communication {
-    font-size: 22px;
+  .TestServer2 .vtxt-listHCPs{
+    margin: 0 0 0 0rem;
   }
-  .ShowDetallsItems .TestServer2 .txt-Communicationdetails {
-    font-size: 16px;
-    padding: 15px 0;
+  .TestServer2 .vtxt-listIndent{
+    margin: 0 0 0 3rem;
   }
-  .ShowDetallsItems .TestServer2 .txt-detailsdark {
-    font-size: 18px;
+  .listBoxSlideDetalls .cbox-TxtnewsTop .txtNews-Top {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
   }
-  .ShowDetallsItems .TestServer2 .txt-detailsdark-bold {
-    font-size: 17px;
+  .vtxt-listDetails li{
+    margin-left: 1rem;
   }
-  .ShowDetallsItems .TestServer2 .txt-detailsgray {
-    font-size: 18px;
-  }
-  .ShowDetallsItems .TestServer2 .mBox-textdetails p {
-    font-size: 17px;
-    line-height: 30px;
-  }
-  /* Digital Solutions  */
-  .ShowDetallsItems .TestServer3 .img-ModalDigital {
-    margin-top: 0rem;
-  }
-  .ShowDetallsItems .TestServer3 .mBoxTextRight {
-    padding-left: 0rem;
-  }
-  .ShowDetallsItems .TestServer3 .txt-digitalsolution {
-    font-size: 22px;
-  }
-  .ShowDetallsItems .TestServer3 .txt-digitalsolutiondetails {
-    font-size: 16px;
-    padding: 15px 0;
-  }
-  .ShowDetallsItems .TestServer3 .mBox-textdetails p {
-    font-size: 17px;
-    line-height: 30px;
-  }
-  /* VDO */
-  .ShowDetallsItems .TestServer4 .txt-VDOProduction {
-    font-size: 30px;
-  }
-  .ShowDetallsItems .TestServer4 .mBox-textdetails p {
-    font-size: 17px;
-    line-height: 30px;
-  }
-  /* content creation */
-  .ShowDetallsItems .TestServer5 .mBoxTextRight {
-    padding-left: 0rem;
-  }
-  .ShowDetallsItems .TestServer5 .txt-contentcreation {
-    font-size: 22px;
-  }
-  .ShowDetallsItems .TestServer5 .txt-contentdetails {
-    font-size: 16px;
-    padding: 15px 0;
-  }
-  .ShowDetallsItems .TestServer5 .mBox-textdetails p {
-    font-size: 17px;
-    line-height: 30px;
-  }
-  /* creative design */
-  .ShowDetallsItems .TestServer6 .mBoxTextRight {
-    padding-left: 0rem;
-    margin-top: 3rem;
-  }
-  .ShowDetallsItems .TestServer6 .txt-creativedesign {
-    font-size: 22px;
-  }
-  .ShowDetallsItems .TestServer6 .mBox-textdetails p {
-    font-size: 17px;
-    line-height: 30px;
-  }
-  .mBoxTextRight {
-    margin-top: 1rem;
-  }
-  .txt-hgreen {
+  .ctxt-campaign{
     font-size: 20px;
   }
-  .txt-detailsgreen {
-    font-size: 19px;
+  .cbox-building .ctxt-ForInformation{
+font-size: 14px;
+  }
+  ul .ctxt-headerGreen{
+font-size: 18px !important;
+  }
+  .txt-listgray li{
+    font-size: 16px !important;
+  }
+  .cbg-number{
+    width: 20px;
+    height: 20px;
+    padding-top: 0;
+  }
+  .ctxt-number{
+    font-size: 14px !important;
+  }
+  .TestServer2 .vtxt-listHCPs{
+    margin: 0 0 0 0rem;
+    font-size: 16px;
+  }
+  .TestServer2 .vtxt-listIndent{
+    margin: 0 0 0 1rem;
+    font-size: 16px;
+  }
+  .vtxt-Headerlist{
+    margin-left: 0;
+  }
+  .stxt-listDetails-Only{
+    font-size: 16px ;
+    margin-left: 2rem ;
+  }
+  .stxt-listDetails li{
+    font-size: 16px ;
+    margin-left: 0 ;
+  }
+  .txt-detailsdark-bold {
+    font-size: 22px !important;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
