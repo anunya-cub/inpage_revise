@@ -26,7 +26,8 @@ function OurServerSlide(data, e) {
   
   $(".listBoxSlideDetalls").addClass("d-none");
   // $(".onlyBtn1Active").addClass("d-none");
-  $(".Digital-item").removeClass("active");
+  $(".igital-itemTop").removeClass("active");
   $(`.` + data).removeClass("d-none");
   $(e).addClass("active");
 }
+

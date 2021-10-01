@@ -78,25 +78,116 @@ table {
   grid-gap: 1rem;
   box-sizing: border-box;
 }
-.sOurServices .btndigital-grid .Digital-item {
+.sOurServices .btndigital-grid .btnImgCPD{
+  background-image: url('../images/menu/CPD_G.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 175px;
+  height: 120px;
+  margin-bottom: 0;
+  z-index: 100;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .2s;
+}
+.sOurServices .btndigital-grid .btnImgCPD:hover{
+  background-image: url('../images/menu/CPD.png');
+}
+.sOurServices .btndigital-grid .btnImgHCPs{
+  background-image: url('../images/menu/HCPs_G.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 175px;
+  height: 120px;
+  margin-bottom: 0;
+  z-index: 100;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .2s;
+}
+.sOurServices .btndigital-grid .btnImgHCPs:hover{
+  background-image: url('../images/menu/HCPs.png');
+}
+.sOurServices .btndigital-grid .btnImgdigital{
+  background-image: url('../images/menu/digital_G.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 175px;
+  height: 120px;
+  margin-bottom: 0;
+  z-index: 100;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .2s;
+}
+.sOurServices .btndigital-grid .btnImgdigital:hover{
+  background-image: url('../images/menu/digital.png');
+}
+.sOurServices .btndigital-grid .btnImgvdo{
+  background-image: url('../images/menu/vdo_G.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 175px;
+  height: 120px;
+  margin-bottom: 0;
+  z-index: 100;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .2s;
+}
+.sOurServices .btndigital-grid .btnImgvdo:hover{
+  background-image: url('../images/menu/vdo.png');
+}
+.sOurServices .btndigital-grid .btnImgcontent{
+  background-image: url('../images/menu/content_G.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 175px;
+  height: 120px;
+  margin-bottom: 0;
+  z-index: 100;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .2s;
+}
+.sOurServices .btndigital-grid .btnImgcontent:hover{
+  background-image: url('../images/menu/content.png');
+}
+.sOurServices .btndigital-grid .btnImgcreative{
+  background-image: url('../images/menu/creative_G.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 175px;
+  height: 120px;
+  margin-bottom: 0;
+  z-index: 100;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .2s;
+}
+.sOurServices .btndigital-grid .btnImgcreative:hover{
+  background-image: url('../images/menu/creative.png');
+}
+
+/* .sOurServices .btndigital-grid .Digital-item {
   background: #f3f3f3;
   border-radius: 10px;
   cursor: pointer;
   border: none;
   transition: 0.2s;
   box-sizing: border-box;
-}
-.sOurServices .btndigital-grid .Digital-item:hover,
+} */
+/* .sOurServices .btndigital-grid .Digital-item:hover,
 .sectionOurServices .digital-grid .Digital-item.active {
   background: #115d5e;
-}
-.sOurServices .btndigital-grid .Digital-item img {
+} */
+/* .sOurServices .btndigital-grid .Digital-item img {
   width: 50px;
   height: 55px;
   margin-bottom: 0.5rem;
   padding: 5px;
-}
-.sOurServices .btndigital-grid .Digital-item h6 {
+} */
+/* .sOurServices .btndigital-grid .Digital-item h6 {
   font-size: 12px;
   color: #9a9898;
   font-weight: 600;
@@ -105,11 +196,11 @@ table {
   height: auto;
   word-wrap:break-word;
 margin-bottom: 0;
-}
-.sOurServices .btndigital-grid .Digital-item:hover h6,
+} */
+/* .sOurServices .btndigital-grid .Digital-item:hover h6,
 .sectionOurServices .btndigital-grid .Digital-item.active h6 {
   color: #ffffff;
-}
+} */
 
 .modal-dialog .ModalDetallsImg {
   padding: 30px;
@@ -121,7 +212,6 @@ margin-bottom: 0;
 /******************* Page ****************/
 .ShowDetallsItems {
   box-sizing: border-box;
-  /* padding: 1.5rem; */
 }
 
 /***** CDP Project */
@@ -133,12 +223,6 @@ margin-bottom: 0;
   margin-bottom: 1rem;
 }
 .listBoxSlideDetalls .cbox-ImgnewsTop {
-  /* content: "";
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  border-top: 8px solid #f26f25; */
   margin-bottom: 1.5rem;
 }
 .listBoxSlideDetalls .cbox-ImgnewsTop img{
@@ -427,12 +511,10 @@ margin-bottom: 2rem;
   /* padding-left: 0; */
 }
 .mBox-textdetails ul li {
-  /* color: #9a9898;
-  font-size: 18px;
-  font-weight: 400;
-  font-family: "Prompt", "Roboto Condensed", sans-serif; */
   list-style-type: disc;
-  /* padding-left: 0; */
+}
+ol{
+  list-style-type: disc;
 }
 .vbox-ImgDetails{
   width: 100%;
@@ -448,9 +530,6 @@ margin-bottom: 1.5rem;
   width: 80%;
 }
 
-ol{
-  list-style-type: disc;
-}
 
 
 
