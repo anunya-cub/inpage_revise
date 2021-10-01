@@ -158,6 +158,7 @@ margin-bottom: 0;
 }
 .-vlistOnly li{
   font-size: 18px !important;
+  margin-left: 1rem;
 }
 .-vlistOnly li span a{
   font-size: 18px !important;
@@ -430,7 +431,7 @@ margin-bottom: 2rem;
   font-size: 18px;
   font-weight: 400;
   font-family: "Prompt", "Roboto Condensed", sans-serif; */
-  list-style: inside;
+  list-style-type: disc;
   /* padding-left: 0; */
 }
 .vbox-ImgDetails{
@@ -446,6 +447,14 @@ margin-bottom: 1.5rem;
   font-weight: 400;
   width: 80%;
 }
+
+ol{
+  list-style-type: disc;
+}
+
+
+
+
 
 
 @media only screen and (max-width: 768px) {
@@ -521,6 +530,9 @@ font-size: 18px;
   box-sizing: border-box;
   text-align: center;
 }
+.-vlistOnly li span a{
+  font-size: 16px !important;
+}
 
 
 
@@ -591,6 +603,9 @@ font-size: 18px !important;
     grid-gap: 1rem;
     box-sizing: border-box;
     text-align: center;
+  }
+  .-vlistOnly li span a{
+    font-size: 16px !important;
   }
 }
 
