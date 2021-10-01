@@ -592,10 +592,7 @@ button.icon-btn {
   border-radius: 100px;
 }
 
-.img-fluid {
-  background: url(../img/pic-b.png);
-  height: auto;
-}
+
 .section-4 h3 {
   font-weight: 500;
   font-size: 22px;

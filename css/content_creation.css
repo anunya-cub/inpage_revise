@@ -90,7 +90,7 @@ table {
   overflow: hidden;
   transition: .2s;
 }
-.sOurServices .btndigital-grid .btnImgCPD:hover{
+.sOurServices .btndigital-grid .btnImgCPD:hover, .sOurServices .btndigital-grid .Digital-item.active .btnImgCPD{
   background-image: url('../images/menu/CPD.png');
 }
 .sOurServices .btndigital-grid .btnImgHCPs{
@@ -105,7 +105,7 @@ table {
   overflow: hidden;
   transition: .2s;
 }
-.sOurServices .btndigital-grid .btnImgHCPs:hover{
+.sOurServices .btndigital-grid .btnImgHCPs:hover,.sOurServices .btndigital-grid .Digital-item.active .btnImgHCPs{
   background-image: url('../images/menu/HCPs.png');
 }
 .sOurServices .btndigital-grid .btnImgdigital{
@@ -120,7 +120,7 @@ table {
   overflow: hidden;
   transition: .2s;
 }
-.sOurServices .btndigital-grid .btnImgdigital:hover{
+.sOurServices .btndigital-grid .btnImgdigital:hover, .sOurServices .btndigital-grid .Digital-item.active .btnImgdigital{
   background-image: url('../images/menu/digital.png');
 }
 .sOurServices .btndigital-grid .btnImgvdo{
@@ -135,7 +135,7 @@ table {
   overflow: hidden;
   transition: .2s;
 }
-.sOurServices .btndigital-grid .btnImgvdo:hover{
+.sOurServices .btndigital-grid .btnImgvdo:hover , .sOurServices .btndigital-grid .Digital-item.active .btnImgvdo{
   background-image: url('../images/menu/vdo.png');
 }
 .sOurServices .btndigital-grid .btnImgcontent{
@@ -150,7 +150,7 @@ table {
   overflow: hidden;
   transition: .2s;
 }
-.sOurServices .btndigital-grid .btnImgcontent:hover{
+.sOurServices .btndigital-grid .btnImgcontent:hover , .sOurServices .btndigital-grid .Digital-item.active .btnImgcontent{
   background-image: url('../images/menu/content.png');
 }
 .sOurServices .btndigital-grid .btnImgcreative{
@@ -165,7 +165,7 @@ table {
   overflow: hidden;
   transition: .2s;
 }
-.sOurServices .btndigital-grid .btnImgcreative:hover{
+.sOurServices .btndigital-grid .btnImgcreative:hover, .sOurServices .btndigital-grid .Digital-item.active .btnImgcreative{
   background-image: url('../images/menu/creative.png');
 }
 
@@ -424,6 +424,22 @@ ul .ctxt-headerGreen span{
   padding: 0 15px;
 }
 
+.vbox-ImgdoctorHCPs{
+  position: relative;
+}
+.vtxt-numberHCPs{
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  font-size: 50px;
+  font-weight: 600;
+  color: #f26f25;
+}
+
+
+
+
+
 
 
 /* communication wiht HCPs */
@@ -613,6 +629,12 @@ font-size: 18px;
   font-size: 16px !important;
 }
 
+.vtxt-numberHCPs{
+  top: .9rem;
+  right: 2rem;
+  font-size: 32px;
+}
+
 
 
 @media only screen and (max-width: 576px)
@@ -685,6 +707,11 @@ font-size: 18px !important;
   }
   .-vlistOnly li span a{
     font-size: 16px !important;
+  }
+  .vtxt-numberHCPs{
+    top: 1.5rem;
+    right: 2rem;
+    font-size: 50px;
   }
 }
 
